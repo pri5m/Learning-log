@@ -1,17 +1,25 @@
 # A
+**Arguments**
+
+**argv** -Argument variable. This variable holds the arguments you pass to your Python script when you run it.
 # B
 # C
 # D
 # E
 **Escape symbols** -Used so that punctuation and grammar can be used and not mistaken as being 'code' symbols
 # F
+**Functions**
 # H
 # I
+**Import** -This is how you add features to your script from the Python feature set. Rather than give you all the features at once, Python asks you to say what you plan to use. This keeps your programs small, but it also acts as documentation for other programmers who read your code later.
+
 **input()** -The input() function will try to convert things you enter as if they were Python code, but it has security problems so you should avoid it.
 # J
 # K
 # L
 # M
+**Modules** -little things you import to make your Python program do more. eg. the sys module. They are also called 'libraries' by some programmers
+
 **Modulo** -They tell Python to take the variable on the right and put it in to replace the %s with its value. eg. %d, %s, %r. %r is used for debugging and %s is used for displaying to the user. Also known as formatters
 # N
 **Number**
@@ -21,6 +29,8 @@
 **Parenthesis** -() Used to separate out bits of code or to contain extra information in a function
 
 **print** -Displays the line in a terminal
+
+**Pydoc** -Used in the terminal, provides information on functions and other python features. eg. python -m pydoc raw_input
 # Q
 # R
 **raw_input** -Takes an input from a user
