@@ -4,6 +4,9 @@
 **argv** -Argument variable. This variable holds the arguments you pass to your Python script when you run it.
 # B
 # C
+**close()** -Close a file
+
+**Command**
 # D
 # E
 **Escape symbols** -Used so that punctuation and grammar can be used and not mistaken as being 'code' symbols
@@ -22,10 +25,14 @@
 
 **Modulo** -They tell Python to take the variable on the right and put it in to replace the %s with its value. eg. %d, %s, %r. %r is used for debugging and %s is used for displaying to the user. Also known as formatters
 # N
-**Number**
+**Number** -Sometimes numbers have to be converted from a string into a number
 # O
+**open()** -Open a file
+
 **Operations**
 # P
+**Parameter**
+
 **Parenthesis** -() Used to separate out bits of code or to contain extra information in a function
 
 **print** -Displays the line in a terminal
@@ -39,7 +46,7 @@
 # S
 **String** -How you make something that might be given to a human. Numbers can be written in a string but will not act as a number
 # T
-**Terminal**
+**Terminal** -eg. Powershell
 # U
 # V
 **Variable**
@@ -93,3 +100,10 @@
 | \v	          | ASCII vertical tab (VT)|
 | \ooo	        | Character with octal value ooo|
 | \xhh	        | Character with hex value hh|
+
+| Command        | What it does  |
+| close          | Closes the file. Like File->Save.. in your editor.|
+| read           | Reads the contents of the file. You can assign the result to a variable.|
+| readline       | Reads just one line of a text file.|
+| truncate       |Empties the file. Watch out if you care about the file.|
+| write('stuff') |Writes "stuff" to the file.|
