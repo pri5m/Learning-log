@@ -13,10 +13,12 @@
 # M
 # N
 # O
+Operations
 # P
 print
 # Q
 # R
+raw_input
 # S
 # T
 Terminal
@@ -46,6 +48,10 @@ Variable
 **>** Greater than
 
 **<** Less than
+
+== Tests if two things are true
+
+= Asigns a value eg. for variables
 
 **<=** Less than or equal to
 
