@@ -1,12 +1,12 @@
 # A
-**Arguments**
+**Arguments** -In programming, a value that is passed between programs, subroutines or functions. Arguments are independent items, or variables, that contain data or codes. When an argument is used to customize a program for a user, it is typically called a "parameter."
 
 **argv** -Argument variable. This variable holds the arguments you pass to your Python script when you run it.
 # B
 # C
 **close()** -Close a file
 
-**Command**
+**Command** -A command is an instruction given by a user telling a computer to do something, such a run a single program or a group of linked programs.
 # D
 **def** -Create a function 'def'
 # E
@@ -28,8 +28,6 @@
 # K
 # L
 # M
-**Modifiers**
-
 **Modules** -little things you import to make your Python program do more. eg. the sys module. They are also called 'libraries' by some programmers
 
 **Modulo** -They tell Python to take the variable on the right and put it in to replace the %s with its value. eg. %d, %s, %r. %r is used for debugging and %s is used for displaying to the user. Also known as formatters
@@ -37,10 +35,8 @@
 **Number** -Sometimes numbers have to be converted from a string into a number
 # O
 **open()** -Open a file
-
-**Operations**
 # P
-**Parameter**
+**Parameter** -A parameter is a special kind of variable, used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are called arguments.
 
 **Parenthesis** -() Used to separate out bits of code or to contain extra information in a function
 
@@ -55,14 +51,14 @@
 
 **round()** -A function that rounds floating point numbers
 # S
-**seek()** -Deals with bytes
+**seek()** -Deals with bytes. Moves the pointer to a place withing the file
 
 **String** -How you make something that might be given to a human. Numbers can be written in a string but will not act as a number
 # T
 **Terminal** -eg. Powershell
 # U
 # V
-**Variable**
+**Variable** -A variable or scalar is a storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
 # W
 # X
 # Y
@@ -79,7 +75,7 @@
 
 **-** Subtract
 
-* Multiplication
+'*' Multiplication
 
 **/** Divide
 
@@ -117,6 +113,7 @@
 | \v	          | ASCII vertical tab (VT)|
 | \ooo	        | Character with octal value ooo|
 | \xhh	        | Character with hex value hh|
+
 
 
 | Command        | What it does  |
