@@ -53,6 +53,8 @@
   </body>
 </html>
 ```
+[elements video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4449853-dt-content-rid-7834305_2/xid-7834305_2)
+
 # 3) Lists and tables
 ```HTML
 <!DOCTYPE html>
@@ -134,6 +136,8 @@ When finding links make sure to use image lins directly from the website, not fr
   </body>
 </html>
 ```
+[attributes video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4449855-dt-content-rid-7834309_2/xid-7834309_2)
+
 # 5) links
 ```HTML
 <!DOCTYPE html>
@@ -154,6 +158,8 @@ Scroll down
   </body>
 </html>
 ```
+[Links, lists and tables video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4449862-dt-content-rid-7834311_2/xid-7834311_2)
+
 # 6) Forms
 ```HTML
 <!DOCTYPE html>
@@ -182,3 +188,4 @@ Scroll down
   </body>
 </html>
 ```
+[form video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4449867-dt-content-rid-7834316_2/xid-7834316_2)
