@@ -53,3 +53,46 @@
   </body>
 </html>
 ```
+# 3) Lists and tables
+```HTML
+<!DOCTYPE html>
+<!-- comment -->
+<html>
+  <head>
+    <title> Lists Tables </title>
+  </head>
+
+  <body>
+    <h1>Lists and Tables</h1>
+    <!-- new stuff -->
+    <h3>Favourite Films</h3>
+    <ul>
+      <li>Star Wars</li>
+      <li>Star Trek</li>
+      <ul>
+        <li>the new ones</li>
+        <li>the old ones</li>
+      </ul>
+    </ul>
+
+      <table>
+      <caption> Shopping </caption>
+      <thead>
+        <tr>
+          <th> Item </th>
+          <th> Quantity </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>apples</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>bananas</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <!-- end new stuff -->
+  </body>
+</html>
+```
