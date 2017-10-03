@@ -96,3 +96,38 @@
   </body>
 </html>
 ```
+# 4) Attributes
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attributes </title>
+  </head>
+
+  <body>
+    <p title = "bio"> hi I am Ian Cooper</p>
+    <h1>Ian Cooper</h1>
+    <a href ="http://bbc.co.uk">
+      <img src = "ian.jpg" width = "20%">
+    </a>
+      <table draggable = "true" title = "shopping list">
+      <caption> Shopping </caption>
+      <thead>
+        <tr>
+          <th> Item </th>
+          <!-- colspan="2"   width ="20%"-->
+          <th> Quantity </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>apples</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>bananas</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </body>
+</html>
+```
