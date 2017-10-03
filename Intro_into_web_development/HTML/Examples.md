@@ -96,6 +96,9 @@
   </body>
 </html>
 ```
+**Important**
+When finding links make sure to use image lins directly from the website, not from google, else it won't work
+
 # 4) Attributes
 ```HTML
 <!DOCTYPE html>
