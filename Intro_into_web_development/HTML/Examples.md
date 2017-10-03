@@ -151,3 +151,31 @@ Scroll down
   </body>
 </html>
 ```
+# 6) Forms
+```HTML
+<!DOCTYPE html>
+<!-- comment -->
+<html>
+  <head>
+    <title> Forms </title>
+  </head>
+
+  <body>
+    <h1>Ian Cooper</h1>
+    <p>Contact me...</p>
+
+    <form action = "http://127.0.0.1:8080/myAction" method = "get" id="myform">
+      First name:<br>
+      <input type="text" name="firstname">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      comments:<br>
+      <textarea rows="5" cols = "50" name = "text">Write something here</textarea>
+      <br><br>
+      <button type="submit">submit</button>
+    </form>
+
+  </body>
+</html>
+```
