@@ -131,3 +131,23 @@
   </body>
 </html>
 ```
+# 5) links
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Links </title>
+  </head>
+
+  <body>
+    <h1 id = "top">Ian Cooper</h1>
+    <p>Hi I am Ian Cooper, I work
+      in <a href = "http://www.cs.cf.ac.uk"> COMSC </a>.</p>
+    <a href = "mailto:i.m.cooper@cs.cf.ac.uk">mail me</a>
+    <br><br><br><br><br><br><br>
+Scroll down
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href = "#top">go to top</a>
+  </body>
+</html>
+```
