@@ -46,7 +46,7 @@ The structure of a document, i.e., the semantic structure of what is between <bo
   
 More generally, HTML5 brings precision to the sectioning and heading features, allowing document outlines to be predictable and used by the browser to improve the user experience.
 
-The heading elements have a rank given by the number in the element name, where <h1> has the highest rank, and <h6> has the lowest rank. Relative ranking matters only within a section; the structure of the sections determines the outline, not the heading rank of the sections.
+The heading elements have a rank given by the number in the element name, where ```<h1>``` has the highest rank, and ```<h6>``` has the lowest rank. Relative ranking matters only within a section; the structure of the sections determines the outline, not the heading rank of the sections.
 
 
 The new semantic elements introduced in HTML5 bring the ability to describe the structure and the outline of a web document in a standard way. They bring a big advantage for people having HTML5 browsers and needing the structure to help them understand the page, for instance people needing the help of some assistive technology. These new semantic elements are simple to use and, with very few burdens, can be made to work also in non-HTML5 browsers. Therefore they should be used without restrictions.
