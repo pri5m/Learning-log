@@ -42,7 +42,7 @@ But if you remember the basics — that *section, article, aside and nav* cr
 
 2) [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document)
 
-The structure of a document, i.e., the semantic structure of what is between <body> and </body>, is fundamental to presenting the page to the user. HTML4 uses the notion of sections and sub-sections of a document to describe its structure. A section is defined by a "(<div>)" element with heading elements "(<h1>, <h2>, <h3>, <h4>, <h5>, or <h6>)" within it, defining its title. The relationships of these elements leads to the structure of the document and its outline.
+The structure of a document, i.e., the semantic structure of what is between <body> and </body>, is fundamental to presenting the page to the user. HTML4 uses the notion of sections and sub-sections of a document to describe its structure. A section is defined by a ```(<div>)``` element with heading elements ```(<h1>, <h2>, <h3>, <h4>, <h5>, or <h6>)``` within it, defining its title. The relationships of these elements leads to the structure of the document and its outline.
   
 More generally, HTML5 brings precision to the sectioning and heading features, allowing document outlines to be predictable and used by the browser to improve the user experience.
 
