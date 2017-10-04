@@ -55,4 +55,7 @@ Inline styles are CSS declarations that affect one element only, contained withi
 *Please don't do this, unless you really have to! It is really bad for maintenance (you might have to update the same information multiple times per document), and it also mixes your presentational CSS information with your HTML structural information, making the CSS harder to read and understand. Keeping your different types of code separated and pure makes for a much easier job for all who work on the code.*
 
 *The only time you might have to resort to using inline styles is when your working environment is really restrictive (perhaps your CMS only allows you to edit the HTML body.)*
-3) []()
+
+3) [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+Contans keyword index
