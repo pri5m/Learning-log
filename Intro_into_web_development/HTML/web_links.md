@@ -42,4 +42,15 @@ But if you remember the basics — that *section, article, aside and nav* cr
 
 2) [Using HTML sections and outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document)
 
+The structure of a document, i.e., the semantic structure of what is between <body> and </body>, is fundamental to presenting the page to the user. HTML4 uses the notion of sections and sub-sections of a document to describe its structure. A section is defined by a (<div>) element with heading elements (<h1>, <h2>, <h3>, <h4>, <h5>, or <h6>) within it, defining its title. The relationships of these elements leads to the structure of the document and its outline.
+  
+More generally, HTML5 brings precision to the sectioning and heading features, allowing document outlines to be predictable and used by the browser to improve the user experience.
+
+The heading elements have a rank given by the number in the element name, where <h1> has the highest rank, and <h6> has the lowest rank. Relative ranking matters only within a section; the structure of the sections determines the outline, not the heading rank of the sections.
+
+
+The new semantic elements introduced in HTML5 bring the ability to describe the structure and the outline of a web document in a standard way. They bring a big advantage for people having HTML5 browsers and needing the structure to help them understand the page, for instance people needing the help of some assistive technology. These new semantic elements are simple to use and, with very few burdens, can be made to work also in non-HTML5 browsers. Therefore they should be used without restrictions.
+
 3) [MDN docs on semantic tags](http://html5doctor.com/resources/#flowchart)
+
+HTML5 Sectioning Element Flowchart pdf. Refer to tag names
