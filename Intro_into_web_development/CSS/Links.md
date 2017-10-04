@@ -1,6 +1,6 @@
 # Pre-session reading
 
-1)[HTML.net](http://html.net/tutorials/css/lesson1.php)
+1) [HTML.net](http://html.net/tutorials/css/lesson1.php)
 
 CSS is an acronym for Cascading Style Sheets.
 
@@ -23,7 +23,7 @@ CSS was a revolution in the world of web design. The concrete benefits of CSS in
 - apply different layout to different media-types (screen, print, etc.);
 - numerous advanced and sophisticated techniques.
 
-2)[How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
+2) [How CSS works](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
 
 Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed from:
 
@@ -33,4 +33,26 @@ Web browsers apply CSS rules to a document to affect how they are displayed. A C
 
 You will learn a lot more about what CSS syntax looks like in the next article of the module — CSS Syntax.
 
-3)[]()
+When a browser displays a document, it must combine the document's content with its style information. It processes the document in two stages:
+
+- The browser converts HTML and CSS into the DOM (Document Object Model). The DOM represents the document in the computer's memory. It combines the document's content with its style.
+- The browser displays the contents of the DOM.
+
+A DOM has a tree-like structure. Each element, attribute and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings.
+
+Understanding the DOM helps you design, debug and maintain your CSS because the DOM is where your CSS and the document's content meet up.
+
+There are three different ways to apply CSS to an HTML document that you'll commonly come across, some more useful than others. Here we'll briefly review each one.
+
+**External stylesheet**
+You've already seen external stylesheets in this article, but not by that name. An external stylesheet is when you have your CSS written in a separate file with a .css extension, and you reference it from an HTML <link> element.
+
+**Internal stylesheet**
+An internal stylesheet is where you don't have an external CSS file, but instead place your CSS inside a <style> element, contained inside the HTML head.
+  
+**Inline styles**
+Inline styles are CSS declarations that affect one element only, contained within a style attribute
+*Please don't do this, unless you really have to! It is really bad for maintenance (you might have to update the same information multiple times per document), and it also mixes your presentational CSS information with your HTML structural information, making the CSS harder to read and understand. Keeping your different types of code separated and pure makes for a much easier job for all who work on the code.*
+
+*The only time you might have to resort to using inline styles is when your working environment is really restrictive (perhaps your CMS only allows you to edit the HTML body.)*
+3) []()
