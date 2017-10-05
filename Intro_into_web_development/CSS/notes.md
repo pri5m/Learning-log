@@ -4,7 +4,7 @@
 style = "border: 3px dotted"
 ```
 
-**example 1**
+**Example 1**
 ```
 <!DOCTYPE html>
 <!-- comment -->
@@ -47,6 +47,7 @@ style = "border: 3px dotted"
 ```
 
 **Classes or IDs**
+
 They work in a v similar way. Which should you use, where and why?
 
 IDs should be used for one off items
