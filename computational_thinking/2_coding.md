@@ -5,7 +5,9 @@
 
 snake_case- All lower case words should be separated by underscores
 
-[pep link](https://www.python.org/dev/peps/pep-0008/)
+[pep link- A python style guide](https://www.python.org/dev/peps/pep-0008/)
+
+
 
 # Variables
 
