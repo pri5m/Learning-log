@@ -48,3 +48,10 @@ style = "border: 3px dotted"
   </body>
 </html>
 ```
+
+**Classes or IDs**
+They work in a v similar way. Which should you use, where and why?
+
+IDs should be used for one off items
+Class should be used for a bunch of elementes. If it is going to be reused.
+It doesn't actually make much difference, it is just best practice. It is assumed that IDs are used for one off items and will be treated by others as such.
