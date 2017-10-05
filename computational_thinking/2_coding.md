@@ -52,3 +52,7 @@ Anything. Any value
 Tells you what var type it is
 
 [Jupyter notebook](http://localhost:8888/notebooks/My_code/Types.ipynb)
+
+# Escapes
+
+Backslash and then the symbol you want to escape
