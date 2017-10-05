@@ -13,10 +13,7 @@ style = "border: 3px dotted"
     <title> Exercise1 </title>
     <style>
       /* To Do: add the style in here.*/
-      h1{
-        color: green;
-      }
-      h2{
+      h1, h2{
         color: green;
       }
       .main_links {
@@ -55,3 +52,11 @@ They work in a v similar way. Which should you use, where and why?
 IDs should be used for one off items
 Class should be used for a bunch of elementes. If it is going to be reused.
 It doesn't actually make much difference, it is just best practice. It is assumed that IDs are used for one off items and will be treated by others as such.
+
+**Selectors**
+
+- x,y{...}     AND        Applies to x and y
+
+- xy{...}      WITHIN     Applies to y within x
+
+- x > y{...}         DIRECT DECENDANTS
