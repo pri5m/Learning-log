@@ -1,5 +1,5 @@
 # 1- Some CSS styling
-
+```
 <!DOCTYPE html>
 
 <html>
@@ -147,7 +147,8 @@
     <p>
       Please e-mail me if you have any further requirements. I will aim to respond <br>
       within 48 hours
-      <a href = "mailto:SmithHL2@cardiff.ac.uk"> My e-mail address </a>
+      <a href = "mailto:blah@cardiff.ac.uk"> My e-mail address </a>
     </p>
   </footer>
 </html>
+```
