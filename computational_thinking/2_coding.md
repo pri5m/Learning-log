@@ -82,3 +82,8 @@ print("Morty:\"I mean, why would a pop-Tart what to live in a toaster, Rick? I m
 print(10 % 3) #Modulo
 # output = 1
 ```
+# Functions
+
+help() - gives a brief summary of a function
+
+len()- returns the number of items in a container. eg. returns the number of items in a list
