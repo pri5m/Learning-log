@@ -84,7 +84,7 @@ print(10 % 3) #Modulo
 ```
 # Functions
 
-help() - gives a brief summary of a function **Don't forget to quit by resettign the kernal**
+help() - gives a brief summary of a function **Don't forget to quit by resetting the kernal**
 
 len()- returns the number of items in a container. eg. returns the number of items in a list
 
