@@ -62,4 +62,6 @@ print("""Morty:\"I mean, why would a pop-Tart what to live in a toaster, Rick? I
      for them to live. You know what I mean?\" """)
 
 print('Morty:"I mean, why would a pop-Tart what to live in a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?" ')
+
+print("Morty:\"I mean, why would a pop-Tart what to live in a toaster, Rick? I mean, that would be like the scariest place for them to live. You know what I mean?\" ")
 ```
