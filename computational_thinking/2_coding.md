@@ -56,3 +56,8 @@ Tells you what var type it is
 # Escapes
 
 Backslash and then the symbol you want to escape
+
+```
+print("""Morty:\"I mean, why would a pop-Tart what to live in a toaster, Rick? I mean, that would be like the scariest place
+     for them to live. You know what I mean?\" """)
+```
