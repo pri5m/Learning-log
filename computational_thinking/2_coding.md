@@ -29,6 +29,9 @@ dynamically typed means yes to changing the type of a var
 
 **What is REPL?**
 
+Read–Eval–Print Loop
+
+Also known as an interactive toplevel or language shell, is a simple, interactive computer programming environment that takes single user inputs (i.e. single expressions), evaluates them, and returns the result to the user; a program written in a REPL environment is executed piecewise.
 
 **What does strongly typed?**
 
@@ -36,7 +39,12 @@ It keeps track of what type of variale it is
 
 **What does dynamically typed mean?**
 
+Statically typed programming languages do type checking (the process of verifying and enforcing the constraints of types) at compile-time as opposed to run-time. Dynamically typed programming languages do type checking at run-time as opposed to Compile-time.
 
 **What is a literal**
 
 Anything. Any value
+
+# Type
+
+Tells you what var type it is
