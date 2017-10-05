@@ -46,6 +46,8 @@ style = "border: 3px dotted"
   </body>
 </html>
 ```
+Put the <style> tags within the <head> tags, not the <body> tag
+
 
 **Classes or IDs**
 
