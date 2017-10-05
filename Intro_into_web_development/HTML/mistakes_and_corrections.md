@@ -10,4 +10,4 @@ Also image file already had .jpg at the end of the image name, but this was hidd
 **Also** Always use " double quotation marks for attributes.
 
 # Links
-Corrected "https://SmithHL2@caridff.ac.uk" to the correct "mailto:SmithHL2@cardiff.ac.uk"
+Corrected "https://Random@caridff.ac.uk" to the correct "mailto:Random@cardiff.ac.uk"
