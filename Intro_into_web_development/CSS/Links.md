@@ -59,3 +59,8 @@ Inline styles are CSS declarations that affect one element only, contained withi
 3) [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 
 Contans keyword index
+
+# Slides
+ [Session slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4454992-dt-content-rid-7858968_2/courses/1718-CM6112/Session2_CSS.pdf)
+
+# Post session reading
