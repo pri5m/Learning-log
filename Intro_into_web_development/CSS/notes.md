@@ -6,21 +6,22 @@ style = "border: 3px dotted"
 
 **Example 1**
 ```
-<!DOCTYPE html>
-<!-- comment -->
 <html>
   <head>
     <title> Exercise1 </title>
     <style>
       /* To Do: add the style in here.*/
-      h1, h2{
+      h1{
         color: green;
       }
-      .main_links {
+      h2{
+        color: green;
+      }
+      .main_links {  <!-- Use of dot (.) as it is a a class -->
         color: red;
         background: black;
       }
-      #adverts1{
+      #adverts1{   <!-- Use of hash # as it is a ID -->
         color: blue;
         background: green;
         border-radius: 5px;
@@ -47,6 +48,10 @@ style = "border: 3px dotted"
 ```
 
 **Classes or IDs**
+
+Classes use a dot (.). eg  .main_links
+
+IDs use a #     eg. #adverts1
 
 They work in a v similar way. Which should you use, where and why?
 
