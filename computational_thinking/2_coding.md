@@ -23,3 +23,20 @@ elif if or yield assert
 else import pass break except
 in raise None
 
+Strongly typed means no adding differet types together
+
+dynamically typed means yes to changing the type of a var
+
+**What is REPL?**
+
+
+**What does strongly typed?**
+
+It keeps track of what type of variale it is
+
+**What does dynamically typed mean?**
+
+
+**What is a literal**
+
+Anything. Any value
