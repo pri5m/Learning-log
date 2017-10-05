@@ -50,3 +50,5 @@ Anything. Any value
 # Type
 
 Tells you what var type it is
+
+[Jupyter notebook](http://localhost:8888/notebooks/My_code/Types.ipynb)
