@@ -47,6 +47,15 @@ Statically typed programming languages do type checking (the process of verifyin
 
 Anything. Any value
 
+**Useful lonks on python variables**
+1)  [Link](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#other-languages-have-variables)
+
+2)  [Link](http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/variables.html)
+
+3)  [Link](http://foobarnbaz.com/2012/07/08/understanding-python-variables/)
+
+4)  [Link](http://www.diveintopython.net/native_data_types/declaring_variables.html)
+
 # Type
 
 Tells you what var type it is
