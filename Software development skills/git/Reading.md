@@ -1,5 +1,6 @@
-#Learning Styles: An overview of theories, models, and measures
-**6/10**
+# Learning Styles: An overview of theories, models, and measures
+
+**6/10/17**
 
 Hartley (1998 Hartley J 1998 Learning and studying: A research perspective London: Routledge
 [Crossref], [Google Scholar]
