@@ -65,4 +65,16 @@ Contans keyword index
 # Slides
  [Session slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4454992-dt-content-rid-7858968_2/courses/1718-CM6112/Session2_CSS.pdf)
 
+1) [w3schools demo page](https://www.w3schools.com/css/demo_default.htm)
+
+2) [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+3) [Scoped CSS](http://caniuse.com/#search=scoped)
+
+4) [MDN web docs- CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+5) [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
+
+6) [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+
 # Post session reading
