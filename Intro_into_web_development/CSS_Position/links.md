@@ -59,3 +59,7 @@ By the way, max-width is supported by all major browsers including IE7+ so you s
 # Slides
 
 # Post_session reading
+
+1) [A Hands-On Guide to Mobile-First Responsive Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
+
+2) [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
