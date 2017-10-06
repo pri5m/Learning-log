@@ -1,3 +1,5 @@
+[Lesson Plan](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4447737-dt-content-rid-7822420_2/courses/1718-CM6112/CSS%20LessonPlan.pdf)
+
 # Pre-session reading
 
 1) [HTML.net](http://html.net/tutorials/css/lesson1.php)
