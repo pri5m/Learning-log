@@ -55,3 +55,7 @@ The only problem occurs when the browser window is narrower than the width of yo
 Using max-width instead of width in this situation will improve the browser's handling of small windows. This is important when making a site usable on mobile. Resize this page to check it out!
 
 By the way, max-width is supported by all major browsers including IE7+ so you shouldn't be afraid of using it.
+
+# Slides
+
+# Post_session reading
