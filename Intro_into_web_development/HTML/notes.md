@@ -1,6 +1,6 @@
 # Notes
 
-**notes**
+**Linking between html pages**
 ```
   <div>
       <a href = "home.html" >Home</a>&nbsp;|&nbsp;
