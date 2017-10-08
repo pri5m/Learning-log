@@ -24,3 +24,5 @@ Do not use capital letters at all. Avoid the use of numbers. Use underscores ins
 computer_science is a good name
 
 computerScience is not a good name, nor is Computer_science
+
+[How to Create Good Filenames for Your Web Pages](https://www.thesitewizard.com/webdesign/create-good-filenames.shtml)
