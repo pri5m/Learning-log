@@ -68,3 +68,7 @@ It doesn't actually make much difference, it is just best practice. It is assume
 - xy{...}      WITHIN     Applies to y within x
 
 - x > y{...}   DIRECT DECENDANTS   applies to x as parent of y (y is a direct child of x)
+
+**Commenting**
+
+Use /* __________ */
