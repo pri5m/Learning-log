@@ -26,3 +26,7 @@ computer_science is a good name
 computerScience is not a good name, nor is Computer_science
 
 [How to Create Good Filenames for Your Web Pages](https://www.thesitewizard.com/webdesign/create-good-filenames.shtml)
+
+**Forms**
+
+[HTML Input Types](https://www.w3schools.com/html/html_form_input_types.asp)
