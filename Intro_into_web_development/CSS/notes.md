@@ -72,3 +72,18 @@ It doesn't actually make much difference, it is just best practice. It is assume
 **Commenting**
 
 Use /* __________ */
+
+**Cascading nature of CSS**
+
+```
+video{
+  width: 600px;
+  height: 600px;
+}
+
+video.video_small{
+  width: 320px;
+  height: 240px;
+}
+```
+Use of sub categories- 'cascading'
