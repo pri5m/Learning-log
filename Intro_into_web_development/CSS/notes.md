@@ -87,3 +87,14 @@ video.video_small{
 }
 ```
 Use of sub categories- 'cascading'
+
+**Syntax**
+```
+video{
+  width: 600px;
+  height: 600px;
+}
+```
+Use : NOT =
+
+Also: use units when stating sizes. Different units include: px, pt
