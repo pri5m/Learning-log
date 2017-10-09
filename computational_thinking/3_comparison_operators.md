@@ -1,6 +1,6 @@
 [Lesson notes](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4458206-dt-content-rid-7878557_2/courses/1718-CM6114/3_Conditionals_Flow_Control_InClass.pdf)
 
-# Warm up
+# Review
 Correct code
 ```
 def good_morning (name):
