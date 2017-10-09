@@ -48,3 +48,16 @@ if age > 100:
     print("this will only print if Rincewind is over 100") #as long as you stay indented, this is all part of the if
 print("this will print regardless")
 ```
+# Else if statements
+```
+pet = "Lizard"
+
+if pet == "Dog" or pet == "Cat":
+    print("four legged friend")
+elif pet == "Lizard" or pet == "Dragon":
+    print("Reptillian rapport")
+elif pet == "Fish":
+    print("Aquatic amigo")
+else:
+    print("What the smeg is that?!")
+```
