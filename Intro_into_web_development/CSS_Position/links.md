@@ -64,4 +64,32 @@ By the way, max-width is supported by all major browsers including IE7+ so you s
 
 1) [A Hands-On Guide to Mobile-First Responsive Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
 
+**Mobile-First = Content-First**
+
+If your site is good on a mobile device, it translates better to all devices. More important, though, is that the mobile-first approach is also a content-first approach. Mobile has the most limitations, screen size and bandwidth to name a few, and so designing within these parameters force you to prioritize content ruthlessly.
+
+The mobile-first approach organically leads to a design that’s more content-focused, and therefore user-focused. The heart of the site is content — that’s what the users are there for.
+
+One caveat, though, is that mobile users sometimes require different content than desktop users. Device-specific content can be gauged by considering context — what, in a given situation and a given environment, will your user appreciate more. The best way to plan ahead for these is creating user scenarios.
+
+Another advantage to mobile-first approach is that the small-screen breakpoints can better fit around the content. Again, the alternative is worse: having to squeeze an already plump design into a tiny framework. But with the mobile-first approach, the breakpoints develop naturally around content, so you don’t need any awkward edits.
+
+**1. Content Inventory** — This is a spreadsheet or equivalent document containing all the elements you want to include.
+
+**2. Visual Hierarchy** — Prioritize the elements in the content inventory and determine how to display the most important elements prominently.
+
+**3. Design with the smallest breakpoints and then scale up** — Build the mobile wireframe first, then use that as the model for larger breakpoints. Expand the screen until there’s too much white space
+
+**4. Enlarge touch targets** — Fingers are much wider than pixel-precise mouse cursors, and so need larger elements on which to tap. At the time of this writing, Apple recommends 44 pixels square for touch targets. Give hyperlinks plenty of space, and slightly enlarge buttons, and make sure that
+
+**5. Don’t count on hovers** — It almost goes without saying, but designers often rely on hover and mouseover effects in their interactive work. If you’re thinking mobile-friendly, don’t. There is no hover control for fingertips yet.
+
+**6. Think “app”** — Mobile users are accustomed to motion and a modicum of control in their experience. Think about off-canvas navigation, expandible widgets, AJAX calls, or other elements on the screen with which users can interact without refreshing the page.
+
+**7. Avoid large graphics** — Landscape photos and complex graphics don’t display well when your screen is only a few inches across. Cater to mobile users with images that are readable on handheld screens.
+
+**8. Test it in a real device** — Nothing beats discovering for yourself how usable a website is (or isn’t). Step away from your desktop/laptop computer and load up your product on a real phone or tablet. Tap through pages. Is the site easy to navigate? Does it load in a timely fashion? Are the text and graphics easy to read?
+
 2) [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+
+
