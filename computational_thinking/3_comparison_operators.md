@@ -16,3 +16,15 @@ I wrote print = ("good morning" + name) which is wrong.
 The = is not needed as print is a function and cannot be defined.
 
 # Identity vs comparison
+
+```
+make = "Tesla"
+capacity = 80000
+year = 2016
+
+print(make == "Tesla" or make == "Tesla")
+print(make == "Tesla" and make == "Tesla")
+print(capacity < 80000 and capacity > 60000)
+print(capacity > 60000 or capacity < 100000 and year == 2014 or year == 2016)
+```
+True, True, False, True
