@@ -61,3 +61,15 @@ elif pet == "Fish":
 else:
     print("What the smeg is that?!")
 ```
+
+# User inputs
+
+```
+num = int(input("Type in a number: "))
+
+
+if num > 20:
+    print(num * 2)
+else:
+    print(num / 2)
+```
