@@ -1,3 +1,5 @@
+[Lesson plan](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4459026-dt-content-rid-7886549_2/courses/1718-CM6112/LessonPlanJavaScript.pdf)
+
 # Pre- session reading
 
 1) [JS intro- Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
