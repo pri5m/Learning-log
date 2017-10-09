@@ -28,3 +28,18 @@ print(capacity < 80000 and capacity > 60000)
 print(capacity > 60000 or capacity < 100000 and year == 2014 or year == 2016)
 ```
 True, True, False, True
+
+# Flow control
+
+```
+name = "Rincewind"
+age = 32
+
+print("My name is " + name)
+print("I am " + age)
+
+if age > 100:
+    print("I am over one hundred years old!")
+    print("this will only print if Rincewind is over 100") #as long as you stay indented, this is all part of the if
+print("this will print regardless")
+```
