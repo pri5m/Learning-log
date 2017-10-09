@@ -56,11 +56,13 @@ Using max-width instead of width in this situation will improve the browser's ha
 
 By the way, max-width is supported by all major browsers including IE7+ so you shouldn't be afraid of using it.
 
-# Slides
+# Slides and videos
 
 [Position video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4459839-dt-content-rid-7897449_2/xid-7897449_2)
 
 [Drop down video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4459843-dt-content-rid-7897461_2/xid-7897461_2)
+
+[Box models video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4459865-dt-content-rid-7897469_2/xid-7897469_2)
 
 # Post_session reading
 
