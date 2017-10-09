@@ -74,6 +74,8 @@ One caveat, though, is that mobile users sometimes require different content tha
 
 Another advantage to mobile-first approach is that the small-screen breakpoints can better fit around the content. Again, the alternative is worse: having to squeeze an already plump design into a tiny framework. But with the mobile-first approach, the breakpoints develop naturally around content, so you don’t need any awkward edits.
 
+**Checklist**
+
 **1. Content Inventory** — This is a spreadsheet or equivalent document containing all the elements you want to include.
 
 **2. Visual Hierarchy** — Prioritize the elements in the content inventory and determine how to display the most important elements prominently.
@@ -92,4 +94,4 @@ Another advantage to mobile-first approach is that the small-screen breakpoints 
 
 2) [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
 
-
+Really helpful e-book
