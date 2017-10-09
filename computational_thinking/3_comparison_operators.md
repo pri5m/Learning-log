@@ -18,6 +18,11 @@ The = is not needed as print is a function and cannot be defined.
 # Identity vs comparison
 
 ```
+print(a is b) # identity (True)
+print(a == b) # equality (True)
+```
+
+```
 make = "Tesla"
 capacity = 80000
 year = 2016
