@@ -210,3 +210,22 @@ robot that will soon replace them) gets to scan the items.
 
 • Baggage carousel - FIFO
 
+# Loops
+
+**For loops**
+```
+great_movies = ['Avatar', 'Spirited away', 'Your name', 'Your name', 'Your name', 'Blade runner', 'Shawn of the dead']
+
+for item in great_movies:
+    print(item)
+```
+**Output**
+```
+Avatar
+Spirited away
+Your name
+Your name
+Your name
+Blade runner
+Shawn of the dead
+```
