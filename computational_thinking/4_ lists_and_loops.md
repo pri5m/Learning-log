@@ -56,7 +56,9 @@ Lists a and b have different names but refer to the same object. The are called 
 
 Aliasing can be undesirable.
 Copying or cloning mutable objects.
+
 a = b[:]
 or
 a = b.copy()
+
 Both options create a new list. Changing a will not affect b.
