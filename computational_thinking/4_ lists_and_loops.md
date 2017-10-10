@@ -135,3 +135,12 @@ print(alphabet[1:3])
 [b, c]
 ```
 [1:3] Up to 3 so position 1 and  2 will be printed
+
+
+Lists, like all Python objects, have methods built into them. We can find these out by using the dir
+function:
+```
+alphabet = ['a','b', 'c', 'd', 'e', 'f']
+print(alphabet[:3])
+dir([])
+```
