@@ -45,7 +45,7 @@ print(a is b)
 a.append(45)
 print(a is b)
 ```
-Output
+**Output**
 ```
 False
 True
@@ -90,7 +90,8 @@ Blade Runner
 Terminator
 Matrix
 ```
-**exercise**
+**Exercise**
+
 • Instantiate a list with 3 elements inside
 • Print the first element
 • Change the first element to c-137
