@@ -112,10 +112,17 @@ print(len(my_list))
 
 print (my_list[-2])
 ```
-Output
+**Output**
 ```
 c-137
 ['c-137', 'Hi!', 'Nice to meet you']
 3
 Hi!
 ```
+
+```
+my_empty_list = []
+
+print (my_empty_list[1])
+```
+Error message: list index out of range
