@@ -144,3 +144,14 @@ alphabet = ['a','b', 'c', 'd', 'e', 'f']
 print(alphabet[:3])
 dir([])
 ```
+
+**Append**
+```
+movie_list = ['Blade Runner', 'AI', 'I Robot', 'Matrix', 'Terminator']
+movie_list.append ('Back to the Future')
+movie_list.append ('Indiana Jones')
+print(movie_list)
+
+
+['Blade Runner', 'AI', 'I Robot', 'Matrix', 'Terminator', 'Back to the Future', 'Indiana Jones']
+```
