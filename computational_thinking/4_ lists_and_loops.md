@@ -83,7 +83,7 @@ print (movie_list[-1])
 
 print (movie_list[-2])
 ```
-Output
+**Output**
 ```
 Blade Runner
 5
