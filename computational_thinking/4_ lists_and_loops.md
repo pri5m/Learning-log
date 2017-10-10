@@ -299,3 +299,44 @@ Shawn of the dead
 - 
 - 
 - 
+
+Given the list [31,45,12,300,40000,2]
+Write a for loop to calculate the sum of all the values and print out the mean of all values
+
+```
+numbers = [31, 45, 12, 300, 40000, 2]
+
+total = 0
+
+for n in  numbers:
+    total = total + n
+    print("total: {}".format(total))
+    print("number: {}".format(numbers))
+    print('--------')
+```
+**Output**
+```
+total: 31
+number: [31, 45, 12, 300, 40000, 2]
+--------
+31
+total: 76
+number: [31, 45, 12, 300, 40000, 2]
+--------
+45
+total: 88
+number: [31, 45, 12, 300, 40000, 2]
+--------
+12
+total: 388
+number: [31, 45, 12, 300, 40000, 2]
+--------
+300
+total: 40388
+number: [31, 45, 12, 300, 40000, 2]
+--------
+40000
+total: 40390
+number: [31, 45, 12, 300, 40000, 2]
+--------
+```
