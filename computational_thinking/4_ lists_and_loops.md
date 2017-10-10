@@ -35,3 +35,21 @@ In [ ]:
 Think of it in 3D space, two points of a triangle converge to one point. List_one converges to the same point as list_two as list_one = list_two. Pointing to the same place, so even if one of the lists is changed, the other is changed as well. They are **mutible**
 
 *Will be a question on mulibility in the exam*
+
+```
+a = [1,2,3]
+b = [1,2,3]
+print(a is b)
+a = b
+print(a is b)
+a.append(45)
+print(a is b)
+```
+Output
+```
+False
+True
+True
+```
+
+Lists a and b have different names but refer to the same object. The are called **aliased.**
