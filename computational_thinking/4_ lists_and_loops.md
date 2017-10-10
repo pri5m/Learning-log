@@ -184,3 +184,29 @@ Shawn of the dead
 In [ ]:
 ```
 # Stacks and queues
+
+LIFO- Last in First Out
+
+FIFO- First in First Out
+
+**Last In First Out -- STACK**
+
+Think of a shopping cart that you fill as you go around a supermarket. Assuming you are organised
+and fill from the bottom up, then you will empty the cart at the checkout with the last items
+you put in there first.
+
+**First In First Out -- QUEUE**
+
+Now think of the conveyor belt that you put the shopping on. When the checkout assistant (or
+robot that will soon replace them) gets to scan the items.
+
+*Which of the examples are FIFO and which are LIFO?*
+
+• Backpack-LIFO
+
+• Supermarket Queue- FIFO
+
+• Smarties packet - LIFO
+
+• Baggage carousel - FIFO
+
