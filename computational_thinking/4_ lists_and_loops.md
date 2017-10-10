@@ -340,3 +340,19 @@ total: 40390
 number: [31, 45, 12, 300, 40000, 2]
 --------
 ```
+# Breaking loops
+
+Sometimes, we may only want to execute when certain elements match some criteria we define.
+Like in the example above, we can use if statements for this, but there are some other keywords
+
+24.0.1 **break**
+
+Using the break keyword, we can break out of our loop before it has finished. Why might this be
+useful?
+
+24.0.2 **continue**
+
+The continue keyword passes over the current iteration and heads straight for the next one. For
+example, if a value matches a value we do not want.
+The difference here is that the loop does not stop. The loop continues until the end and just
+skips when continue is used.
