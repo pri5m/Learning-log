@@ -155,3 +155,29 @@ print(movie_list)
 
 ['Blade Runner', 'AI', 'I Robot', 'Matrix', 'Terminator', 'Back to the Future', 'Indiana Jones']
 ```
+**Create the list above. Using the dir and help functions, do the following:**
+
+- Copy the list to a new list and call it great_movies
+- Pop the last element off the new list
+- Find a method to count the number of occurrences of an item in a list
+- Print the number of occurrences of Rambo 4
+- Find the index of movie "The room" in both of the lists
+```
+great_movies = ['Avatar', 'Spirited away', 'Your name', 'Your name', 'Your name', 'Blade runner', 'Shawn of the dead']
+
+print(great_movies.pop(6))
+
+print(great_movies.count('Avatar'))
+
+print(great_movies.count('Your name'))
+
+print(great_movies.index('Blade runner'))
+```
+**Output**
+```
+Shawn of the dead
+1
+3
+5
+In [ ]:
+```
