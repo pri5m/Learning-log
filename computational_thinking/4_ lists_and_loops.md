@@ -356,3 +356,16 @@ The continue keyword passes over the current iteration and heads straight for th
 example, if a value matches a value we do not want.
 The difference here is that the loop does not stop. The loop continues until the end and just
 skips when continue is used.
+```
+for i in range(0,5):
+    if i == 2:
+        continue #head back to the top and go to the next value for i
+    print(i) #if i == 2 then this line is not executed
+```
+```
+0
+1
+3
+4
+In [ ]:
+```
