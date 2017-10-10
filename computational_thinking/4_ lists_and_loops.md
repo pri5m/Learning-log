@@ -294,3 +294,8 @@ Your name
 Blade runner
 Shawn of the dead
 ```
+3 ways to access a list:
+
+- 
+- 
+- 
