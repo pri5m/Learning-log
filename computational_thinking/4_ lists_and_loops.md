@@ -218,6 +218,9 @@ great_movies = ['Avatar', 'Spirited away', 'Your name', 'Your name', 'Your name'
 
 for item in great_movies:
     print(item)
+
+for item in great_movies:
+    print(great_movies.index(item))
 ```
 **Output**
 ```
@@ -228,4 +231,11 @@ Your name
 Your name
 Blade runner
 Shawn of the dead
+0
+1
+2
+2
+2
+5
+6
 ```
