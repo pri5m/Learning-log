@@ -71,3 +71,22 @@ print(movie_list[0])
 
 'Blade Runner'
 ```
+
+```
+movie_list = ['Blade Runner', 'AI', 'I Robot', 'Matrix', 'Terminator']
+
+print(movie_list[0])
+
+print(len(movie_list))
+
+print (movie_list[-1])
+
+print (movie_list[-2])
+```
+Output
+```
+Blade Runner
+5
+Terminator
+Matrix
+```
