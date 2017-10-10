@@ -221,6 +221,12 @@ for item in great_movies:
 
 for item in great_movies:
     print(great_movies.index(item))
+
+temp = 0
+    
+for item in great_movies:
+    print("{}:{}".format(temp,item))
+    temp += 1 
 ```
 **Output**
 ```
@@ -238,4 +244,11 @@ Shawn of the dead
 2
 5
 6
+0:Avatar
+1:Spirited away
+2:Your name
+3:Your name
+4:Your name
+5:Blade runner
+6:Shawn of the dead
 ```
