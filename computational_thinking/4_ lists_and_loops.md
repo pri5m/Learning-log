@@ -127,3 +127,11 @@ my_empty_list = []
 print (my_empty_list[1])
 ```
 Error message: list index out of range
+
+```
+alphabet = ['a','b', 'c', 'd', 'e', 'f']
+print(alphabet[1:3])
+
+[b, c]
+```
+[1:3] Up to 3 so position 1 and  2 will be printed
