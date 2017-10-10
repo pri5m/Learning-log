@@ -252,3 +252,45 @@ Shawn of the dead
 5:Blade runner
 6:Shawn of the dead
 ```
+**Pythonic**
+```
+great_movies = ['Avatar', 'Spirited away', 'Your name', 'Your name', 'Your name', 'Blade runner', 'Shawn of the dead']
+
+for index in range(len(great_movies)):
+    print(index)
+    
+#PYTHONIC
+print('--------')
+for index, value in enumerate(great_movies):
+    print(index, value) #Access both key and value
+
+print('--------')
+for value in great_movies: #Called a For in or a For each loop
+    print(value) # Access just value but NO index
+```
+**Output**
+```
+0
+1
+2
+3
+4
+5
+6
+--------
+0 Avatar
+1 Spirited away
+2 Your name
+3 Your name
+4 Your name
+5 Blade runner
+6 Shawn of the dead
+--------
+Avatar
+Spirited away
+Your name
+Your name
+Your name
+Blade runner
+Shawn of the dead
+```
