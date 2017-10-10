@@ -167,7 +167,7 @@ print(movie_list)
 ```
 great_movies = ['Avatar', 'Spirited away', 'Your name', 'Your name', 'Your name', 'Blade runner', 'Shawn of the dead']
 
-print(great_movies.pop(6))
+print(great_movies.pop())
 
 print(great_movies.count('Avatar'))
 
