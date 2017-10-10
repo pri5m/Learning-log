@@ -33,3 +33,5 @@ print(list_two)
 In [ ]:
 ```
 Think of it in 3D space, two points of a triangle converge to one point. List_one converges to the same point as list_two as list_one = list_two. Pointing to the same place, so even if one of the lists is changed, the other is changed as well. They are **mutible**
+
+*Will be a question on mulibility in the exam*
