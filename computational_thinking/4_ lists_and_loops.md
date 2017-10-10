@@ -18,3 +18,18 @@ if num % 2 == 0:
 else:
     print("0")
 ```
+# Lists
+```
+list_one = ['Rick', 'Morty', 'Beth', 'Summer']
+list_two = list_one
+list_two.append('Jerry')
+print(list_one)
+print(list_two)
+```
+**output**
+```
+['Rick', 'Morty', 'Beth', 'Summer', 'Jerry']
+['Rick', 'Morty', 'Beth', 'Summer', 'Jerry']
+In [ ]:
+```
+Think of it in 3D space, two points of a triangle converge to one point. List_one converges to the same point as list_two as list_one = list_two
