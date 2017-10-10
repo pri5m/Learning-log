@@ -90,3 +90,32 @@ Blade Runner
 Terminator
 Matrix
 ```
+**exercise**
+• Instantiate a list with 3 elements inside
+• Print the first element
+• Change the first element to c-137
+• Print the whole list
+• Print the length of the list
+• Print the second to last element
+• Create an empty list
+• What happens when you try and print the second element?
+• What about when you assign a literal to the first element?
+
+```
+my_list = ['c-137', 'Hi!', 'Nice to meet you']
+
+print(my_list[0])
+
+print(my_list)
+
+print(len(my_list))
+
+print (my_list[-2])
+```
+Output
+```
+c-137
+['c-137', 'Hi!', 'Nice to meet you']
+3
+Hi!
+```
