@@ -62,3 +62,12 @@ or
 a = b.copy()
 
 Both options create a new list. Changing a will not affect b.
+
+**Numbering**
+```
+movie_list = ['Blade Runner', 'AI', 'I Robot', 'Matrix', 'Terminator']
+
+print(movie_list[0])
+
+'Blade Runner'
+```
