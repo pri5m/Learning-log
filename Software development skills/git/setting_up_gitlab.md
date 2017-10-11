@@ -372,3 +372,30 @@ Date:   Wed Oct 11 20:44:07 2017 +0100
 c1712480@NSA107D1A0AE75B MINGW64 ~/Documents/Semester_1/Intro to web development (master)
 $
 ```
+# Sequence
+
+[Slide 25-30](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4396624-dt-content-rid-7659108_2/courses/1718-CM6113/CM6113%20-%2001c%20-%20Introduction%20to%20Verison%20Control%20and%20Git.pdf)
+
+1) **git add / remove file**
+
+git add filename
+
+The filename should include
+
+the file extension and if your
+
+filename has spaces then it
+needs to be embedded in “”
+
+
+2) **git status**
+
+git status
+
+3) **git commit**
+
+$ git commit –m “First commit”
+
+4) **git log**
+
+git log
