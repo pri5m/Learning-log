@@ -144,16 +144,189 @@
 # 2- Selection
 
 ```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kata 2</title>
+    <style>
 
+      .links ul{
+        text-align:center;
+      }
+
+      .links ul li{
+        display:inline-block;
+        padding: 20px;
+      }
+
+      #first{
+        padding-right: : 60px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- The corporate links block -->
+    <nav class ="corporateLinks">
+      <p>
+        Introduction to Web Development: <a href="http://www.cs.cf.ac.uk">COMSC</a> <a href="http://www.cs.cf.ac.uk/software-academy">National Software Academy</a>
+      </p>
+    </nav>
+
+    <!-- The page title block -->
+    <headder class ="title">
+     <h1> Kata 2 </h1>
+    </headder>
+
+    <!-- The site links block -->
+    <nav class = "links" id = "move">
+      <h3>Site Links</h3>
+      <ul>
+        <li><a href="kata1Semantics.html" id = "first">Home</a></li>
+        <li><a href="kata1Semantics.html">Kata 1</a></li>
+        <li><a href="kata2Selection.html">Kata 2</a></li>
+        <li><a href="kata3Dropdown.html">Kata 3</a></li>
+        <li><a href="kata4Pseudo.html">Kata 4</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content of page -->
+    <article class="content">
+      <section class="mainItem">
+        Look at the HTML file for this page and think about the Site Links block. <br>
+        Create a horizontal links bar. center and pad the menu items, 20 pixels all round each item apart from the first which needs 60 pixels on the right.
+
+        <section class="comments">
+          <h3>Comments</h3>
+
+          <p>The MDN site has an example of this in the hover description.</p>
+          <p> Comment by Ian <date>20/10/2012</date></p>
+
+          <p>You may need to think about the position of the menu items.</p>
+          <p> Comment by Ian <date>20/10/2012</date></p>
+        </section>
+      </section>
+    </article>
+
+    <!-- Other stuff that needs to be on page -->
+    <aside class="ads">
+      adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts
+    </aside>
+
+    <!-- Info at the end of page -->
+    <footer class="bottom">
+      <p> The GamesCompany..... a <a href="parentCompany.htm">parent</a> subsiduary. </p>
+      <address>
+        <p>The GamesHouse.website... <br> Corporate address: 20 ARoad, AStreet, ATown. CF0 3TF</p>
+      </address>
+    </footer>
+
+  </body>
+
+</html>
 ```
 **Answer**
 
 ```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kata 2</title>
+    <style>
+      *{
+        padding:0;
+        margin: 0;
+      }
+      
+      .links li{
+        padding: 0px 20px 0px 20px;
+        display:block;
+        float: left;
+        list-style: none;
+      }
+      .links > ul >li:nth-child(1) {
+        padding: 0 60px 0 10px;
+      }
+      
+      .content{
+        clear: both;
+      }
+    
+    </style>
+  </head>
 
+  <body>
+    
+    <!-- The corporate links block -->
+    <nav class ="corporateLinks"> 
+      <p> 
+        Introduction to Web Development: <a href="http://www.cs.cf.ac.uk">COMSC</a> <a href="http://www.cs.cf.ac.uk/software-academy">National Software Academy</a> 
+      </p>
+    </nav>
+    
+    <!-- The page title block -->
+    <headder class ="title">
+     <h1> Kata 2 </h1>
+    </headder> 
+  
+    <!-- The site links block -->
+    <nav class = "links">
+      <h3>Site Links</h3>
+      <ul>
+        <li><a href="kata1Semantics.html">Home</a></li>
+        <li><a href="kata1Semantics.html">Kata 1</a></li> 
+        <li><a href="kata2Selection.html">Kata 2</a></li>
+        <li><a href="kata3Dropdown.html">Kata 3</a></li> 
+        <li><a href="kata4Pseudo.html">Kata 4</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content of page -->
+    <article class="content">
+      <section class="mainItem">
+        Look at the HTML file for this page and think about the Site Links block. <br>
+        center and pad the menu items 20 pixels all round each item apart from the first which needs 50pixels on the right. 
+        
+        <section class="comments">
+          <h3>Comments</h3>
+        
+          <p>The MDN site has an example of this in the hover description.</p>
+          <p> Comment by Ian <date>20/10/2012</date></p>
+
+          <p>You may need to think about the position of the menu items.</p>
+          <p> Comment by Ian <date>20/10/2012</date></p> 
+        </section>
+      </section>
+    </article>
+
+    <!-- Other stuff that needs to be on page -->
+    <aside class="ads">
+      adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts adverts 
+    </aside>
+    
+    <!-- Info at the end of page -->
+    <footer class="bottom">
+      <p> The GamesCompany..... a <a href="parentCompany.htm">parent</a> subsiduary. </p>
+      <address>
+        <p>The GamesHouse.website... <br> Corporate address: 20 ARoad, AStreet, ATown. CF0 3TF</p>
+      </address>
+    </footer>
+      
+  </body>
+
+</html>
 ```
 
 # 3- Dropdown
+```
 
+```
+**Answers**
+```
+
+```
 
 # 4- Pseudo
 
