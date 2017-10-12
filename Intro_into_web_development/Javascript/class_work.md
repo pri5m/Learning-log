@@ -33,3 +33,25 @@
 - Semicolons at the end ofeach statement line
 
 - Indentation not strict (but do it anyway)
+```
+<html>
+<head>
+  <title>JS Basics</title>
+</head>
+<body>
+  <h1> JavaScript Basics</h1>
+  <p> open the console in the browser</p>
+
+<script>
+    var x = 0;
+    console.log(x);
+    x+=4;
+    console.log(x);
+    x+='5';
+    console.log(x);
+
+</script>
+</body>
+</html>
+```
+
