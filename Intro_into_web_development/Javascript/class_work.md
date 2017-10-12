@@ -144,3 +144,31 @@ Double click on the array in the console and right click and can watch it in the
 - array.indexOf(...) The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 - array.splice(...) The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
+
+# 4 equality
+```
+<html>
+<head>
+  <title>JS Equality</title>
+</head>
+<body>
+  <h1>Equality</h1>
+  <p> there are two types of equality in js, </p>
+
+  <p></p>
+  <script>
+    var a = 'foo';  //primitive
+    var b = 'foo';  // primitive
+    var c = new String('foo');  //object
+    var d = new String('foo');  //object
+    console.log(a==b);  // true
+    console.log(a==c);  // true
+
+    console.log(a===b);  // true
+    console.log(a===c);  // false
+    console.log(d===c);  // false
+
+  </script>
+</body>
+</html>
+```
