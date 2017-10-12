@@ -59,3 +59,28 @@ Do not do this, it makes your code hard to read and modularise
 However, it is good to import multiple modules from the same package in one line:
 
 from random import randrange, randint
+
+# Importing files
+
+**City.py**
+```
+name = "London"
+population = "Large"
+country = "England"
+
+def print_city():
+    city = ('{} {} {}'.format (name, population, country))
+    return city
+```
+
+**Main.py**
+```
+import city
+
+print(city.print_city())
+```
+
+**Powershell -main.py**
+```
+London Large England
+```
