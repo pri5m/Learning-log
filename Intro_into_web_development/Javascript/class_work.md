@@ -20,3 +20,8 @@
 </html>
 
 ```
+**Problems with using console.log**
+
+- Takes longer to execute
+
+- Tend to use it as a debug tool but is visible to everyone who visits the page. Should be careful
