@@ -88,3 +88,20 @@
 </html>
 ```
 
+# Basic rules
+
+- JS: dynamically, weakly typed language
+
+- Python: dynamically, strongly typed language
+
+- Java: statically, strongly typed language
+
+**Dynamic**- Literals have a type
+
+**Static**- Vars have a type
+
+**Weak**- the type of value (literal) may change
+
+**Strong** - type of a value (literal) can't change
+
+
