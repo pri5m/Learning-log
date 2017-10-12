@@ -133,6 +133,7 @@ Arrays are list like structures
 </body>
 </html>
 ```
+**Debugger tools**
 Double click on the array in the console and right click and can watch it in the watch list to keep an eye on what the variables are doing.
 
 [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -146,6 +147,7 @@ Double click on the array in the console and right click and can watch it in the
 - array.splice(...) The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
 
 # 4 equality
+
 ```
 <html>
 <head>
@@ -172,3 +174,36 @@ Double click on the array in the console and right click and can watch it in the
 </body>
 </html>
 ```
+
+# 5 Loops
+
+```
+<html>
+<head>
+  <title>JS Loops</title>
+</head>
+<body>
+  <h1>Loops and the debugger</h1>
+  <p> Use the debugger to view the variables during each iteration of the loop.</p>
+  <p> ?? In this loop, for each element in the array,  pop off an element. ?? </p>
+  <p> ?? after the loop, log the array (which should be empty). ?? </p>
+  <p> Why does this not work? Use the debugger tools to investigate. </p>
+
+  <p></p>
+  <script>
+    var array1 = ['h','e','l','l','o']
+    // this works as expected
+    for(var i=0;i<array1.length;i++){
+          console.log(array1[i]);
+    }
+    // use the debugger to work out why this doesn't
+    for(var i=0;i<array1.length;i++){
+      console.log(array1.pop());
+    }
+    console.log(array1);
+  </script>
+</body>
+</html>
+```
+
+Can set a var and is an index. Use i the index of the value you are looking at so must explicitly ask for the index.
