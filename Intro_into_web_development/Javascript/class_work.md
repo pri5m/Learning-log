@@ -1,6 +1,6 @@
 # Class work
 
-# o Hello world
+# 0 Hello world
 ```
 <html>
   <head>
