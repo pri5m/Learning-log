@@ -369,3 +369,26 @@ for i in range(0,5):
 4
 In [ ]:
 ```
+# Review no. 2
+```
+user_nums = []
+total = 0
+for i in range(0,5):
+    user_input = input("enter a pos int please: ")
+    if user_input.isdigit():
+        user_nums.append(user_input)
+        total += int(user_input)
+    else:
+        print("I said a positive number")
+if len(user_nums) == 5:
+    print(total/len(user_nums))
+```
+**Output**
+```
+enter a pos int please: 4
+enter a pos int please: 4
+enter a pos int please: 4
+enter a pos int please: 4
+enter a pos int please: 4
+4.0
+```
