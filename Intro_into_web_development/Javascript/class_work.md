@@ -79,9 +79,9 @@
   x+=4;				//what is x now? //X will now be 400 as it is assigned
   var a = 4;
   console.log(a); //4
-  console.log(a++); // use it and then increment it //4
-  console.log(a); //4
-  console.log(++a); //increment a and then use it //5
+  console.log(a++); // use a and then increment it //4
+  console.log(a); //5
+  console.log(++a); //increment a and then use it //6
 
 </script>
 </body>
