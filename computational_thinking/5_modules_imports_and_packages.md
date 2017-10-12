@@ -143,3 +143,92 @@ From here you can, specify Python versions, install packages and run code.
 virtualenv <environment_name>
 
 That is how you get started. Do not type this yet!
+
+**Command prompt**
+```
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\c1712480>pip install <termcolor>
+The syntax of the command is incorrect.
+
+C:\Users\c1712480>pip install termcolor
+Collecting termcolor
+  Downloading termcolor-1.1.0.tar.gz
+Building wheels for collected packages: termcolor
+  Running setup.py bdist_wheel for termcolor ... done
+  Stored in directory: C:\Users\c1712480\AppData\Local\pip\Cache\wheels\de\f7\bf\1bcac7bf30549e6a4957382e2ecab04c88e513117207067b03
+Successfully built termcolor
+Installing collected packages: termcolor
+Successfully installed termcolor-1.1.0
+
+C:\Users\c1712480>cd Desktop
+
+C:\Users\c1712480\Desktop>cd Semester_1
+The system cannot find the path specified.
+
+C:\Users\c1712480\Desktop>cd Semester_1
+The system cannot find the path specified.
+
+C:\Users\c1712480\Desktop>virtualenv comp_thinking
+'virtualenv' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\c1712480\Desktop>pip install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB)
+    100% |################################| 1.8MB 546kB/s
+Installing collected packages: virtualenv
+Successfully installed virtualenv-15.1.0
+
+C:\Users\c1712480\Desktop>virtualenv comp_thinking
+Using base prefix 'c:\\python35'
+New python executable in C:\Users\c1712480\Desktop\comp_thinking\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+C:\Users\c1712480\Desktop>Scripts\activates
+The system cannot find the path specified.
+
+C:\Users\c1712480\Desktop>cd comp_thinking
+
+C:\Users\c1712480\Desktop\comp_thinking>cd scripts
+
+C:\Users\c1712480\Desktop\comp_thinking\Scripts>cd activate
+The directory name is invalid.
+
+C:\Users\c1712480\Desktop\comp_thinking\Scripts>activte
+'activte' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\c1712480\Desktop\comp_thinking\Scripts>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2AB5-E52C
+
+ Directory of C:\Users\c1712480\Desktop\comp_thinking\Scripts
+
+12/10/2017  12:04    <DIR>          .
+12/10/2017  12:04    <DIR>          ..
+12/10/2017  12:04             2,213 activate
+12/10/2017  12:04               784 activate.bat
+12/10/2017  12:04             8,325 activate.ps1
+12/10/2017  12:04             1,137 activate_this.py
+12/10/2017  12:04               508 deactivate.bat
+12/10/2017  12:04            98,189 easy_install-3.5.exe
+12/10/2017  12:04            98,189 easy_install.exe
+12/10/2017  12:04            98,161 pip.exe
+12/10/2017  12:04            98,161 pip3.5.exe
+12/10/2017  12:04            98,161 pip3.exe
+12/10/2017  12:04            42,136 python.exe
+12/10/2017  12:04         3,942,552 python35.dll
+12/10/2017  12:04            42,136 pythonw.exe
+12/10/2017  12:04            98,168 wheel.exe
+              14 File(s)      4,628,820 bytes
+               2 Dir(s)  135,513,509,888 bytes free
+
+C:\Users\c1712480\Desktop\comp_thinking\Scripts>cd ..
+
+C:\Users\c1712480\Desktop\comp_thinking>Scripts\activate
+
+(comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>deactivate
+C:\Users\c1712480\Desktop\comp_thinking>
+```
