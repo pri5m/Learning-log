@@ -104,7 +104,7 @@
 
 **Strong** - type of a value (literal) can't change
 
-# Arrays
+# 3 Arrays
 
 Arrays are list like structures
 
@@ -134,3 +134,13 @@ Arrays are list like structures
 </html>
 ```
 Double click on the array in the console and right click and can watch it in the watch list to keep an eye on what the variables are doing.
+
+[MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+- array.shift(...)
+
+- array.unshift(...)
+
+- array.indexOf(...)
+
+- array.splice(...)
