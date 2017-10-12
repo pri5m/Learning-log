@@ -392,3 +392,17 @@ enter a pos int please: 4
 enter a pos int please: 4
 4.0
 ```
+# Review no. 3
+```
+user_string = input()
+vowels = ['a', 'e', 'i', 'o', 'u']
+for letter in user_string:
+    if letter in vowels:
+        continue
+    print(letter,end='')
+```
+**Output**
+```
+this is cool
+ths s cl
+```
