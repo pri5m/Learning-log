@@ -28,3 +28,34 @@ print(f'{dice()} {dice()} {dice()}')
 4 4 1
 3 5 4
 ```
+# Modules and Packages
+
+A Python module is just a .py file, which you can import directly.
+import config (relates to config.py somewhere on your system)
+
+A package is a collection of Python modules that you can import all of, or just import the
+modules you want. 
+
+For example:
+
+import random (all modules in random package)
+from random import randint (importing module from packages)
+
+# Import dos and don’ts
+You can (and will) import many modules in one script, PEP asks that you follow this structure:
+
+import standard_library_modules
+
+import external_library_modules
+
+import local_modules
+
+More info on this and other styles can be found here
+
+You will also see that some people will import multiple modules in one line:
+import os, sys, csv, math, random
+
+Do not do this, it makes your code hard to read and modularise
+However, it is good to import multiple modules from the same package in one line:
+
+from random import randrange, randint
