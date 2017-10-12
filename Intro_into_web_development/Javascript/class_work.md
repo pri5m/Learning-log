@@ -54,7 +54,7 @@
 </body>
 </html>
 ```
-# Fundamentals
+# 1 Fundamentals
 
 - Literals (100, 'Holly')
 
@@ -88,7 +88,7 @@
 </html>
 ```
 
-# Basic rules
+# 2 Basic rules
 
 - JS: dynamically, weakly typed language
 
@@ -137,10 +137,10 @@ Double click on the array in the console and right click and can watch it in the
 
 [MDN Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-- array.shift(...)
+- array.shift(...) The shift() method removes the first element from an array and returns that element.
 
-- array.unshift(...)
+- array.unshift(...) The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
 
-- array.indexOf(...)
+- array.indexOf(...) The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
-- array.splice(...)
+- array.splice(...) The splice() method changes the contents of an array by removing existing elements and/or adding new elements.
