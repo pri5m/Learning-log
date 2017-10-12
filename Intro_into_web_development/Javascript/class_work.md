@@ -240,8 +240,48 @@ A block of code that can be called multiple times and preforms a particular task
     }
 
     console.log(myFunc());
-    // console.log(b);   //It will error as it is not defined. It is only applicable within the function- it does not exist. The scope           of var b is limited as it is only available within the function.
+    // console.log(b);   //It will error as it is not defined. It is only applicable within the function- it does not exist. The scope                              of var b is limited as it is only available within the function.
     console.log(double(5));
+
+  </script>
+</body>
+</html>
+```
+Always decide what scope you want your var to be- global or local
+
+# 7 Scope
+
+```
+<html>
+<head>
+  <title>JS Scope</title>
+</head>
+<body>
+  <h1>Scope</h1>
+  <p>JavaScript does not have block scope (like python) so variables declared within a
+    block ( {between the curly braces} ) are scoped to the containing function or script.  </p>
+
+  <p>Unlike python, variables declares without the var keyword are,
+    if not already declared at an outer scope,
+     declared within global scope.  </p>
+  <script>
+// a is in a {} but not a function so is global
+    for(i=0;i<10;i++){
+      // a=i*10;
+      var a=i*10;
+      console.log(a);
+    }
+    console.log(a*10);
+
+// b is within a function so is local to that function
+    var myFunc = function(){
+      var b='foo';
+      // b='foo';
+      console.log(b);
+    }
+// var b='bar';
+    myFunc();
+    console.log(b);
 
   </script>
 </body>
