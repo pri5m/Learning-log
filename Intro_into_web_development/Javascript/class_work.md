@@ -202,6 +202,13 @@ Double click on the array in the console and right click and can watch it in the
     for(var i=0;i<array1.length;i++){
       console.log(array1.pop());
     }
+    // Two reasons:
+    // As i is increasing and the list is decreasing
+    // Writing it in reverse
+    
+    // Get rid of the i ++
+    // Before the loop, store the length
+    // While loops ect.
     console.log(array1);
   </script>
 </body>
