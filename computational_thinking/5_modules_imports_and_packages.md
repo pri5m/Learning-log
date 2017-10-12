@@ -119,3 +119,27 @@ cprint('Hello world', 'red', attrs=['reverse', 'blink'])
 text = colored('Hello world!', "red", attrs=['bold'])
 print (text)
 ```
+# Virtual Environments (virtual env)
+Picture this: You are given a project to work on in a team. You install some packages, write some
+code and push it to git. Your team-mates say they cannot get it to run.
+
+Why can they not get it to run?
+• Modules not installed
+• Modules won’t install
+6
+• Different operating system
+• Different Python version
+Any number of these and more.
+
+# VirtualEnv
+
+pip installs packages globally by default. This means your Python code is always affected by the
+current state of your system. If you upgrade a package to the latest version that breaks what you
+are working on, it will also break every other project that uses that system.
+VirtualEnv aims to address this. This package creates an isolated Python environment in a
+directory with your name of choice.
+
+From here you can, specify Python versions, install packages and run code.
+virtualenv <environment_name>
+
+That is how you get started. Do not type this yet!
