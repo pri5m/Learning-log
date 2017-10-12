@@ -25,3 +25,11 @@
 - Takes longer to execute
 
 - Tend to use it as a debug tool but is visible to everyone who visits the page. Should be careful
+
+# Basics
+
+- camelCase
+
+- Semicolons at the end ofeach statement line
+
+- Indentation not strict (but do it anyway)
