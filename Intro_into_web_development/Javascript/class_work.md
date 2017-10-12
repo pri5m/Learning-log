@@ -240,7 +240,7 @@ A block of code that can be called multiple times and preforms a particular task
     }
 
     console.log(myFunc());
-    // console.log(b);
+    // console.log(b);   //It will error as it is not defined. It is only applicable within the function- it does not exist. The scope           of var b is limited as it is only available within the function.
     console.log(double(5));
 
   </script>
