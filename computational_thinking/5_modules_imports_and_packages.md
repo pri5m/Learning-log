@@ -231,4 +231,19 @@ C:\Users\c1712480\Desktop\comp_thinking>Scripts\activate
 
 (comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>deactivate
 C:\Users\c1712480\Desktop\comp_thinking>
+C:\Users\c1712480\Desktop\comp_thinking>Scripts\activate
+
+(comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>pip install colorama
+Collecting colorama
+  Downloading colorama-0.3.9-py2.py3-none-any.whl
+Installing collected packages: colorama
+Successfully installed colorama-0.3.9
+
+(comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>pip freeze\ requirments.txt
+ERROR: unknown command "freeze\" - maybe you meant "freeze"
+
+(comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>pip freeze requirments.txt
+colorama==0.3.9
+
+(comp_thinking) C:\Users\c1712480\Desktop\comp_thinking>
 ```
