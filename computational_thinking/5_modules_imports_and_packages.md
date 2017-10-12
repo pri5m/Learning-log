@@ -101,3 +101,21 @@ removed print(print_city) from city.py
 [Explanation](https://packaging.python.org/guides/tool-recommendations/)
 
 [PyPI](https://pypi.python.org/pypi)
+
+**Command prompt**
+
+eg.
+```
+pip install termcolor
+
+```
+eg. termcolor package
+```
+import sys
+from termcolor import colored, cprint #https://pypi.python.org/pypi/termcolor/1.1.0
+
+cprint('Hello world', 'red', attrs=['reverse', 'blink'])
+
+text = colored('Hello world!', "red", attrs=['bold'])
+print (text)
+```
