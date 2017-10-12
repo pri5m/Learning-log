@@ -104,4 +104,33 @@
 
 **Strong** - type of a value (literal) can't change
 
+# Arrays
 
+Arrays are list like structures
+
+```
+<html>
+<head>
+  <title>JS Arrays</title>
+</head>
+<body>
+  <h1>Arrays</h1>
+
+<script>
+  var myArray = ['foo', 'bar', 'baz'];
+  console.log(myArray);
+  myArray.push('qux');
+  console.log(myArray);
+  console.log(myArray.pop());
+  console.log(myArray);
+  console.log(myArray.pop());
+  console.log(myArray);
+  console.log(myArray.pop());
+  console.log(myArray);
+
+
+</script>
+</body>
+</html>
+```
+Double click on the array in the console and right click and can watch it in the watch list to keep an eye on what the variables are doing.
