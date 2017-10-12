@@ -287,3 +287,6 @@ Always decide what scope you want your var to be- global or local
 </body>
 </html>
 ```
+
+
+
