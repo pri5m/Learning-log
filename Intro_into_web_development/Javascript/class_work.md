@@ -214,5 +214,36 @@ Double click on the array in the console and right click and can watch it in the
 </body>
 </html>
 ```
-
 Can set a var and is an index. Use i the index of the value you are looking at so must explicitly ask for the index.
+
+# 6 Functions
+
+A block of code that can be called multiple times and preforms a particular task. Takes an input, preforms some operations, and (generally) returns an output.
+
+```
+<html>
+<head>
+  <title>Functions</title>
+</head>
+<body>
+  <h1>Functions</h1>
+  <p> </p>
+  <script>
+    function myFunc(){
+      var b='foo';
+      console.log(b);
+      return b;
+    }
+
+    function double(input){
+      return input *2;
+    }
+
+    console.log(myFunc());
+    // console.log(b);
+    console.log(double(5));
+
+  </script>
+</body>
+</html>
+```
