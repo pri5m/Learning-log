@@ -1,5 +1,7 @@
 [Lesson pdf](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4459785-dt-content-rid-7897048_2/courses/1718-CM6114/4_Lists_and_Loops_InClass.pdf)
 
+[Lesson part b pdf](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4462166-dt-content-rid-7908167_2/courses/1718-CM6114/4_Lists_and_Loops_InClass_b.pdf)
+
 [Lesson work link](http://localhost:8888/notebooks/Work/My_code/4_lesson_work.ipynb)
 
 # Review
@@ -369,6 +371,8 @@ for i in range(0,5):
 4
 In [ ]:
 ```
+## Part B
+
 # Review no. 2
 ```
 user_nums = []
