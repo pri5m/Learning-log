@@ -1,6 +1,6 @@
 # Class work
 
-[Class slides](file:///C:/Users/c1712480/Documents/Semester_1/Intro%20to%20web%20development/Javascript/JavaScript_Slides.pdf)
+Class slides: Documents/Semester_1/Intro%20to%20web%20development/Javascript/JavaScript_Slides.pdf
 
 # 0 Hello world
 ```
