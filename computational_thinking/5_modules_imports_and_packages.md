@@ -95,3 +95,9 @@ returned print_city()
 returned city()
 
 removed print(print_city) from city.py
+
+# PIP
+
+[Explanation](https://packaging.python.org/guides/tool-recommendations/)
+
+[PyPI](https://pypi.python.org/pypi)
