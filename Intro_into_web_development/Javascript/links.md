@@ -50,3 +50,9 @@ At their core, these two techniques are not the same thing at all.
 3) []()
 
 # Slides and videos
+
+1) [Into to Javascript - video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4467222-dt-content-rid-7936776_2/xid-7936776_2)
+
+2) [Functions and scope - video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4467222-dt-content-rid-7936775_2/xid-7936775_2)
+
+3) [Arrays - video](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4467222-dt-content-rid-7936774_2/xid-7936774_2)
