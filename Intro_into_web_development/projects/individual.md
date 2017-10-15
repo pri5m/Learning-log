@@ -282,3 +282,324 @@
 
 </html>
 ```
+# contacts
+```
+<html>
+
+  <head>
+    <title> Project | Contact Information </title>
+    <link rel = "stylesheet" type = "text/css" href = "Profile_styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+      *{
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .links li{
+        padding: 0px 20px 0px 20px;
+        display:block;
+        float: left;
+        list-style: none;
+      }
+      .links > ul >li:nth-child(1) {
+        padding: 0 60px 0 10px;
+      }
+
+      .content{
+        clear: both;
+      }
+
+      .web-links{
+        margin: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        width:40%;
+        text-align: left;
+        float: left;
+      }
+
+      .queries{
+        margin: 10px;
+        border: 1px solid black;
+        padding: 5px;
+        width:40%;
+        text-align: left;
+        float: left;
+      }
+
+      .footer{
+        margin: 10px;
+        padding: 5px;
+        width:40%;
+        text-align: left;
+        float: left;
+      }
+    </style>
+
+  </head>
+
+  <body class = "main-body">
+    <h1> Contact Information </h1>
+
+    <nav class = "links">
+     <ul>
+       <li><a href = "home.html" class = "highlight">Home</a></li>&nbsp; &nbsp; <!--target="_blank" opens lnk into a new tab-->
+       <li><a href = "profile.html" class = "highlight">Profile</a></li>&nbsp; &nbsp;
+       <li><a href = "contact.html" class = "highlight">Contacts</a></li>&nbsp; &nbsp;
+       <li><a href = "video.html" class = "highlight">Videos</a></li>&nbsp;
+      </ul>
+    </nav> <br> <br>
+
+    <section class = "queries">
+      <h2> Queries </h2>
+      <p> To contact me, fill out the form below: </p>
+
+      <form action = "http://127.0.0.1:8080/myAction" method = "get" id="myform">
+        <select name="title"> <!--https://www.w3schools.com/html/html_form_elements.asp -->
+          <option value="Miss">Miss</option>
+          <option value="Mister">Mister</option>
+          <option value="Ms">Ms</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Mr">Mr</option>
+          <option value="Sir">Sir</option>
+          <option value="Dr">Dr</option>
+        </select> <br>
+        Name:<br>
+        <input type="text" name="name">
+        <br>
+        Contact email:<br>
+        <input type="email" name="email"><br>
+        Query:<br>
+        <input type="text" name="query"><br>
+        Comments:<br>
+        <textarea rows="5" cols = "60" name = "comments">Write something here</textarea>
+        <br><br>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+
+    <nav class = "web-links">
+      <h2> Sponsor websites and information </h2>
+      <ul>
+        <p>
+          Institution information: <br>
+          <li> <a href = "http://www.cs.cf.ac.uk" target="_blank"> COMSC </a>. </li> <br>
+          <li> <a href = "https://www.cardiff.ac.uk/" target="_blank"> Cardiff university </a> </li> <br>
+          <li> <a href = "https://www.cardiff.ac.uk/study/undergraduate/courses/2018/applied-software-engineering-bsc" target="_blank"> Applied software engineering course </a> </li> <br>
+        </p>
+      </ul>
+      <p>
+        Please e-mail me if you have any further requirements. <br>
+        I will aim to respond within 48 hours.<br>
+        <a href = "mailto:SmithHL2@cardiff.ac.uk" target = "blank"> E-mail address </a>
+      </p>
+    </nav>
+  </body>
+
+  <footer class = "footer">
+    <script type="text/javascript" src="http://100widgets.com/js_data.php?id=255"></script> <br> <br> <br>
+    <!-- http://100widgets.com/others/255-shasocial-networking-buttons-after-the-text.html -->
+    <p> © 2017    ilex.laurel.smith@gmail.com </p>
+    <img src = "http://russellgroup.ac.uk/media/5002/cardiff.png?anchor=center&mode=crop&width=288&rnd=130809473120000000" alt = "Cardiff logo" id = "Cardiff_logo">
+  </footer>
+
+</html>
+```
+
+# videos
+```
+<html>
+  <head>
+    <title> Project | Video tutorials </title>
+    <link rel = "stylesheet" type = "text/css" href = "Profile_styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+      *{
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .links li{
+        padding: 0px 20px 0px 20px;
+        display:block;
+        float: left;
+        list-style: none;
+      }
+      .links > ul >li:nth-child(1) {
+        padding: 0 60px 0 10px;
+      }
+
+      .content{
+        clear: both;
+      }
+
+      .footer{
+        margin: 10px;
+        padding: 5px;
+        width:40%;
+        text-align: left;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body class = "main-body">
+
+    <h1> Video tutorials </h1>
+
+    <nav class = "links">
+     <ul>
+       <li><a href = "home.html" class = "highlight">Home</a></li>&nbsp; &nbsp; <!--target="_blank" opens lnk into a new tab-->
+       <li><a href = "profile.html" class = "highlight">Profile</a></li>&nbsp; &nbsp;
+       <li><a href = "contact.html" class = "highlight">Contacts</a></li>&nbsp; &nbsp;
+       <li><a href = "video.html" class = "highlight">Videos</a></li>&nbsp;
+      </ul>
+    </nav> <br> <br>
+
+    <table>
+    <thead>
+      <tr>
+        <th> Video </th>
+        <th> Summary </th>
+        <th> Source </th>
+      </tr>
+    </thead>
+    <tr>
+      <td><a href = "https://www.youtube.com/watch?v=3NjQ9b3pgIg" target="_blank"> How to choose a password</a> <br></td>
+      <td> A video effectively explaining whwo to create a password <br>
+      that can survive a brute force attack. </td>
+      <td> Computerphile </td>
+    </tr>
+    <tr>
+      <td><a href = "https://www.youtube.com/watch?v=XETZoRYdtkw" target="_blank"> How computer memory works</a></td>
+      <td> How logic gates work to create a system where information can be stored.</td>
+      <td> Computerphile </td>
+    </tr>
+    <tr>
+      <td><a href = "https://www.youtube.com/watch?v=BsSmBPmPeYQ" target="_blank"> Deep Dream</a></td>
+      <td> Explaining how Google's Deep Dream works</td>
+      <td> Computerphile </td>
+    </tr>
+    <tr>
+      <td><a href = "https://www.youtube.com/watch?v=l42lr8AlrHk" target="_blank"> Deep Learning</a></td>
+      <td> Deep learning is used by several large companies such as Google and Facebook <br>
+      This video explains what deep learning is.</td>
+      <td> Computerphile </td>
+    </tr>
+    </table>
+    <br>
+
+    <div>
+      <h2> Youtube tutorial </h2> <br>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
+    </div> <br>
+
+    <div>
+      <h2> mp4 tutorial </h2>
+      <video class = "video_small" controls>
+        <source src="Elements.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div> <br> <br>
+
+
+  </body>
+
+  <footer class = "footer">
+    <script type="text/javascript" src="http://100widgets.com/js_data.php?id=255"></script> <br> <br> <br>
+    <!-- http://100widgets.com/others/255-shasocial-networking-buttons-after-the-text.html -->
+    <p> © 2017    ilex.laurel.smith@gmail.com </p>
+    <img src = "http://russellgroup.ac.uk/media/5002/cardiff.png?anchor=center&mode=crop&width=288&rnd=130809473120000000" alt = "Cardiff logo" id = "Cardiff_logo">
+  </footer>
+
+</html>
+```
+
+# CSS
+```
+h1{
+  color: black;
+  text-align: center;
+  background-color: rgb(165, 219, 133);
+}
+h2{
+  color: grey;
+}
+.main-body{
+  background-color: rgb(200, 255, 167);
+  color: rgb(91, 99, 87);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.github-widget{
+  background-color: rgb(231, 231, 231);
+  width: 100% !important;
+}
+
+nav.links{
+  background-color: rgb(163, 196, 143);
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+a.highlight:hover{
+  color: rgb(255, 255, 255);
+}
+
+table {
+  table-layout: fixed;
+  width: 700px;
+  border: 1px solid green;
+}
+
+/* pseudo element */
+th::first-line{
+  font-size: 20pt;
+}
+
+td:nth-of-type(even){
+  background-color:lightgrey;
+}
+
+td {
+  border: 1px solid blue;
+}
+
+img.comic {
+  width: 700px;
+}
+
+img.img-text {
+  width: 500px;
+}
+
+img.me{
+  width: 50%;
+}
+
+
+#Cardiff_logo {
+  width: 50;
+  height: 50px;
+}
+
+#AOD{
+  align: "middle";
+   width: "1px";
+   height: "1px";
+}
+
+video{
+  width: 600px;
+  height: 600px;
+}
+
+/* Cascading CSS */
+video.video_small{
+  width: 500px;
+  height: 400px;
+}
+```
