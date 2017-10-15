@@ -16,12 +16,12 @@ responsive drop down tab above display, change sizing to specific models
 
 # Types of positioning
 
-1) **Static**
+1) **Static** - Default go with the flow
 
-2) **Relative**
+2) **Relative** - Relative to where it should be
 
-3) **Absolute**
+3) **Absolute** - Out of flow, Relative to parent
 
-4) **Fixed**
+4) **Fixed** - Out of flow, relative to screen
 
-5) **Sticky**
+5) **Sticky** - Experimental
