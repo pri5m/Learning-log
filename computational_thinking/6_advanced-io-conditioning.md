@@ -36,3 +36,17 @@ print(words)
 ['this', 'is', 'a', 'test', 'input']
 python words = many_values.split(',') print (words)
 What will it print?
+
+
+# Supressing stdout
+
+The input function prints whatever is inputted to the concole.
+This can be unwanted.
+Can you think such a senario?
+In [3]: import getpass
+user = input("Username:")
+passwd = getpass.getpass("Password for " + user + ": ")
+print("Got", user, passwd)
+Username:alex
+Password for alex: ········
+Got alex mypassword
