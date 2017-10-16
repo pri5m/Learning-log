@@ -137,3 +137,14 @@ successive call.
 Python’s default arguments are evaluated once when the function is defined, not each time the
 function is called. This means that if you use a mutable default argument and mutate it, you will
 and have mutated that object for all future calls to the function as well.
+
+# Reading/Writting at files
+
+Function open() takes arguments as input: 1. filename 2. a string: w for write, r for read, a append
+and r+ for read-write mode
+In [ ]: f = open('workfile.txt', 'r')
+print(f.read())
+f.close()
+In [ ]: f = open('workfile.txt', 'w')
+f.write('\nThis is line 4')
+f.close()
