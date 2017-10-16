@@ -122,3 +122,18 @@ my_power result = 2187
 Out[16]:
 2187
 ```
+
+In [5]: def list_from_nowhere(l = []):
+l.append(3)
+return l
+In [ ]: print(list_from_nowhere())
+In [6]: print(list_from_nowhere())
+[3]
+What if we call it again?
+In [7]: print(list_from_nowhere())
+[3, 3]
+A new list is created once when the function is defined, and the same list is used in each
+successive call.
+Python’s default arguments are evaluated once when the function is defined, not each time the
+function is called. This means that if you use a mutable default argument and mutate it, you will
+and have mutated that object for all future calls to the function as well.
