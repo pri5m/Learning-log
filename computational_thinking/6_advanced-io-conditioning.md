@@ -57,7 +57,7 @@ print("Got", user, passwd)
 **Output**
 ```
 Username:alex
-Password for alex: ········
+Password for alex: ........
 Got alex mypassword
 ```
 
