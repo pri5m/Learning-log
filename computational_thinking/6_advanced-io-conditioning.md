@@ -25,3 +25,14 @@ The arguements are: ['allarguements.py', 'hey', 'awesome', 'coolio']
 PS C:\Users\c1712480\Documents\Semester_1\Computational_thinking\Work\My_code>
 
 ```
+Getting single values using the input() function. But what if we want to process different parts of
+the user’s input? We could use some of the String built in functions like : S.split()
+In [1]: many_values = input('> ')
+print (many_values)
+> this is a test input
+this is a test input
+In [2]: words = many_values.split(' ')
+print(words)
+['this', 'is', 'a', 'test', 'input']
+python words = many_values.split(',') print (words)
+What will it print?
