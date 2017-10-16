@@ -202,3 +202,22 @@ FileNotFoundError Traceback (most recent call last)
 4 f.close()
 FileNotFoundError: [Errno 2] No such file or directory: 'anewfile.txt'
 ```
+Most of the times, we dont want the program to terminate because of an error.
+Instead we want to handle exceptions
+
+In python this is done using try statements:
+ try ... except ... finally
+```
+#import sys
+filename = 'anewfile.txt'
+try:
+f = open(filename, 'r')
+print(f.read())
+f.close()
+except:
+#e = sys.exc_info()[0]
+#print(e)
+print("File does not exist")
+We all know you cannot divide by zero!
+In [ ]: x = 10/0
+```
