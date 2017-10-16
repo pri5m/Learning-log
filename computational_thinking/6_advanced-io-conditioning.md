@@ -241,3 +241,33 @@ except:
 <class 'FileNotFoundError'>
 File does not exist
 ```
+
+# Exercise
+```
+num1 = int(input("Type in a number: "))
+num2 = int(input("Type in another number: "))
+
+def division (num1, num2):
+    try:
+        return num1 / num2
+
+    except:
+        e = sys.exc_info()[0]
+        print(e)
+        return 0
+
+print (division(num1, num2))
+```
+
+**Output**
+```
+Type in a number: 3
+Type in another number: 0
+<class 'ZeroDivisionError'>
+0
+
+
+Type in a number: 10
+Type in another number: 5
+2.0
+```
