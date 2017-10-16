@@ -208,16 +208,36 @@ Instead we want to handle exceptions
 In python this is done using try statements:
  try ... except ... finally
 ```
-#import sys
 filename = 'anewfile.txt'
 try:
-f = open(filename, 'r')
-print(f.read())
-f.close()
+    f = open(filename, 'r')
+    print(f.read())
+    f.close()
 except:
-#e = sys.exc_info()[0]
-#print(e)
-print("File does not exist")
-We all know you cannot divide by zero!
-In [ ]: x = 10/0
+    print("File does not exist")
+```
+
+**Output**
+```
+File does not exist
+```
+
+**With exceptions**
+```
+import sys
+filename = 'anewfile.txt'
+try:
+    f = open(filename, 'r')
+    print(f.read())
+    f.close()
+except:
+    e = sys.exc_info()[0]
+    print(e)
+    print("File does not exist")
+```
+
+**Output** -gives an exact error this time
+```
+<class 'FileNotFoundError'>
+File does not exist
 ```
