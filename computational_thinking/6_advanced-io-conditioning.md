@@ -156,6 +156,7 @@ Runtime errors- errors that only find out when you run the code. Will tell once 
 Whenever a runtime error occurs an exception object is created. The program stops running at
 this point. Traceback is printed at the concole, with the last message being the expecption.
 
+**Example 1**
 ```
 my_input = "a"
 
@@ -180,4 +181,24 @@ TypeError Traceback (most recent call last)
 5 print("Let's print this")
 6
 TypeError: 'str' object cannot be interpreted as an integer
+```
+
+** Example 2**
+```
+: filename = 'anewfile.txt'
+f = open(filename, 'r')
+print(f.read())
+f.close()
+```
+
+**Output**
+```
+FileNotFoundError Traceback (most recent call last)
+6
+<ipython-input-9-1dbe0ef8780f> in <module>()
+1 filename = 'anewfile.txt'
+----> 2 f = open(filename, 'r')
+3 print(f.read())
+4 f.close()
+FileNotFoundError: [Errno 2] No such file or directory: 'anewfile.txt'
 ```
