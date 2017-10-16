@@ -148,3 +148,36 @@ f.close()
 In [ ]: f = open('workfile.txt', 'w')
 f.write('\nThis is line 4')
 f.close()
+
+# Exceptions
+
+Runtime errors- errors that only find out when you run the code. Will tell once code is executed.
+
+Whenever a runtime error occurs an exception object is created. The program stops running at
+this point. Traceback is printed at the concole, with the last message being the expecption.
+
+```
+my_input = "a"
+
+def print_as_many_times(user_input):
+    for i in range(user_input):
+        print("Let's print this")
+        
+print_as_many_times(my_input)
+```
+
+**Output**
+```
+TypeError Traceback (most recent call last)
+<ipython-input-8-27f17c59e48b> in <module>()
+5 print("Let's print this")
+6
+----> 7 print_as_many_times(my_input)
+<ipython-input-8-27f17c59e48b> in print_as_many_times(user_input)
+2
+3 def print_as_many_times(user_input):
+----> 4 for i in range(user_input):
+5 print("Let's print this")
+6
+TypeError: 'str' object cannot be interpreted as an integer
+```
