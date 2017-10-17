@@ -304,3 +304,33 @@ https://www.netmarketshare.com/browser-marketshare.aspx?qprid=2&qpcustomd=0&qpcu
   </body>
 </html>
 ```
+
+# JS Form Validation:
+
+• onsubmit states whether the form will be sent or not
+
+– true or false.
+
+• return validate()
+
+• Is the return value from the validate function. 
+```
+<form onsubmit ="return validate()” name = "myForm">
+Description (max length 10 words) <br>
+<input type = 'text' name="ta"> <br>
+<input type = 'submit'>
+</form>
+```
+```
+function validate(){
+var pass = true;
+var text = (document.forms[myForm][ta].value);
+var words = text.split(" ");
+console.log(words);
+if (words.length>10){
+alert('too long');
+pass = false;
+}
+return pass;
+}
+```
