@@ -334,3 +334,29 @@ pass = false;
 return pass;
 }
 ```
+**Example**
+```
+<html>
+  <body>
+    <!-- will also need action and method to send it anywhere -->
+    <form onsubmit ="return validate()" name = "myForm">
+        Description (max length 20 charachters) <br>
+        <input type = 'text' name="ta"><br>
+        <input type = 'submit'>
+    </form>
+    <script>
+      // document.getElementById('submit1').addEventListener('click', validate, true);
+      function validate(){
+        var pass = true;
+        var text = (document.forms["myForm"]["ta"].value);
+        console.log(text);
+        if (text.length>10){
+          alert('too long');
+          pass = false;
+        }
+        return pass;
+      }
+    </script>
+  </body>
+</html>
+```
