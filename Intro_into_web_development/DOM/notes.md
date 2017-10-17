@@ -206,8 +206,11 @@ Use:
 
 • mouseout
 
+- dblclick  : double click
+
 ```
 document.getElementById('head1').addEventListener('click', f1);
 document.getElementById('head2').addEventListener('mouseover', f2);
 document.getElementById('head3').addEventListener('mouseout', f3);
+document.getElementById('head3').addEventListener('dblclick', f3);
 ```
