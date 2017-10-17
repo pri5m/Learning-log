@@ -214,3 +214,22 @@ document.getElementById('head2').addEventListener('mouseover', f2);
 document.getElementById('head3').addEventListener('mouseout', f3);
 document.getElementById('head3').addEventListener('dblclick', f3);
 ```
+# Events: bubbling
+
+• When an event is triggered on an element, the event bubbles up the DOM.
+
+• If listeners are attached to parent elements, they will be executed.
+
+• The event can be stopped: *e.stopPropagation();*
+
+```
+<ul id='ul'>
+<li>one</li>
+<ul id='ul_ul'>
+<li id='ul_ul_li'>one.one</li>
+<li>one.two</li>
+<li>one.three</li>
+</ul>
+<li>two</li>
+</ul>
+```
