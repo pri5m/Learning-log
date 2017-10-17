@@ -3,7 +3,7 @@
 # Pre reading
 [CSS tricks DOM](https://css-tricks.com/dom/)
 
-[MDN0 Intro to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+[MDN Intro to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
 # Videos
 [DOM](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4470037-dt-content-rid-7970398_2/xid-7970398_2)
