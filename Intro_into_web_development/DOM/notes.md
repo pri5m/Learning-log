@@ -109,3 +109,24 @@ document.getElementById('myDiv').appendChild(newP);
   </body>
 </html>
 ```
+
+# Accessing form data 2 ways
+
+**We already have an idea about IDs:**
+• document.getElementById("data")
+• We can get the value by using .value;
+document.getElementById("data").value
+• 222
+
+var x = document.getElementById("data").value
+<form>
+Comments:
+<input type="text" id ="data" >
+  
+**Better way:**
+• forms["myForm"]["data"]
+<form name = "myForm">
+Comments:
+<input type="text" name ="data" >
+</form>
+var x = document. forms["myForm"]["data"].value
