@@ -55,21 +55,29 @@ Can put it in the head and then call at the bottom of the body, this will also w
 
 # What commands have we used so far?
 • document.body.childNodes is an array of nodes
+
 • document.body.firstChild is the first child
 • document.body.lastChild is the last child
+
 • document.getElementById('header'); returns the first
+
 • [someElement].innerHTML = “…” sets the html of a given element
 --------------------------------------------------------------------------
 # Similar Commands:
 • document.getElementByClassName('myClass'); returns the first
+
 • document.getElementsByClassName('myClass'); returns array of elements
+
 • document.querySelector(".myclass"); uses css queries, returns the first
-• document.querySelectorAll(".myclass"); uses css queries, returns array 
+
+• document.querySelectorAll(".myclass"); uses css queries, returns array
+
 # New commands: Creation of new content
 • document.createElement(" div "); returns an element
+
 • document.createTextNode(" some text "); returns a text node
-• [someElement].appendChild(newElement); adds newElement to
-end of someElement
+
+• [someElement].appendChild(newElement); adds newElement to end of someElement
 
 # DOM manipulation
 
