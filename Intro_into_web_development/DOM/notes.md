@@ -70,3 +70,25 @@ Can put it in the head and then call at the bottom of the body, this will also w
 • document.createTextNode(" some text "); returns a text node
 • [someElement].appendChild(newElement); adds newElement to
 end of someElement
+
+# DOM manipulation
+
+```
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <h1 id="header1">Im marvulus wiv speling. </h1>
+    <h1 id="header2">And OK at JS </h1>
+
+    <script>
+      setTimeout(function callback() {
+        document.getElementById('header1').innerHTML = "I'm marvellous at spelling.";
+      }, 3000);
+
+      setTimeout(function callback() {
+        document.getElementById('header2').innerHTML = "And great with JS";
+      }, 5);
+    </script>
+  </body>
+</html>
+```
