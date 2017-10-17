@@ -79,6 +79,15 @@ Can put it in the head and then call at the bottom of the body, this will also w
 
 • [someElement].appendChild(newElement); adds newElement to end of someElement
 
+```
+// create a p element <p></p>
+var newP = document.createElement("p");
+// add a text node to our new element <p>HelloWorld</p>
+newP.appendChild(document.createTextNode("HelloWorld"));
+// add the new element to an existing element in the DOM
+document.getElementById('myDiv').appendChild(newP);
+```
+
 # DOM manipulation
 
 ```
