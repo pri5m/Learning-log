@@ -153,23 +153,25 @@ var x = document. forms["myForm"]["data"].value
   <body>
     <h1>Article</h1>
 
-    <button onclick="nextLine()">Next Line</button>
+    <button onclick="nextLine()">Next Line</button>    //Linking the html to the function
     <article id="newsArticle"></article>
 
     <script>
-      var lines = ['line1', 'line2', 'line3', 'line4'];
-      var count = 0;
+      var lines = ['line1', 'line2', 'line3', 'line4'];  //Hard coded list of words
+      var count = 0;    //Counter to keep track of how many items of the list have been called. Set to 0 here
 
-      function nextLine() {
-        if (count < lines.length){
-          var p = document.createElement('p');
-          p.appendChild(document.createTextNode(lines[count]));
-          document.getElementById('newsArticle').appendChild(p);
+      function nextLine() {    //Function that displays an element from thhe list when the button is pressed
+        if (count < lines.length){   //check so that the code only executes if the line length is greater than 0
+          var p = document.createElement('p');    // A variable (p) that creates an element called p
+          p.appendChild(document.createTextNode(lines[count]));    
+                //Adds a child element to p. P createsa a text node from the list according to the line count, which is increasing each                   time the button is pressed, displaying the next element in the list each time
+          document.getElementById('newsArticle').appendChild(p);  
+          // Puts the variable 'p' into the newsArticle, which displays after the button is pressed
         }
         else {
-            return;
+            return;   // If there are no more elements to display because the count < lines.length statement is no longer true, then                              nothing will be executed
         }
-        count = count + 1;
+        count = count + 1;    // increases the count increment by one everything the button is pressed
 
       }
       // don't forget to link the html to the js function
