@@ -57,6 +57,7 @@ Can put it in the head and then call at the bottom of the body, this will also w
 • document.body.childNodes is an array of nodes
 
 • document.body.firstChild is the first child
+
 • document.body.lastChild is the last child
 
 • document.getElementById('header'); returns the first
@@ -73,6 +74,7 @@ Can put it in the head and then call at the bottom of the body, this will also w
 • document.querySelectorAll(".myclass"); uses css queries, returns array
 
 # New commands: Creation of new content
+
 • document.createElement(" div "); returns an element
 
 • document.createTextNode(" some text "); returns a text node
@@ -130,3 +132,39 @@ Comments:
 <input type="text" name ="data" >
 </form>
 var x = document. forms["myForm"]["data"].value
+
+# Ex1 Line Reader
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>lineReader</title>
+  </head>
+  <body>
+    <h1>Article</h1>
+
+    <button onclick="nextLine()">Next Line</button>
+    <article id="newsArticle"></article>
+
+    <script>
+      var lines = ['line1', 'line2', 'line3', 'line4'];
+      var count = 0;
+
+      function nextLine() {
+        if (count < lines.length){
+          var p = document.createElement('p');
+          p.appendChild(document.createTextNode(lines[count]));
+          document.getElementById('newsArticle').appendChild(p);
+        }
+        else {
+            return;
+        }
+        count = count + 1;
+
+      }
+      // don't forget to link the html to the js function
+    </script>
+  </body>
+</html>
+```
+Prints out elements from the hard coded list one at a time when the button is pressed
