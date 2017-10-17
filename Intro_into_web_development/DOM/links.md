@@ -20,7 +20,7 @@
 [Video- Philip Roberts: What the heck is the event loop anyway? | JSConf EU 2014](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 Javascript
 
-**the call stack**
+**The call stack**
 
 one thread == one call stack == one thing at a time
 
@@ -44,6 +44,16 @@ One thing at a time, except not really
 
 Once the webapi is done with the processing, it pushes it to the task queue where it is held, ready to be used in the stack. It will be moved when the stack is ready, by the event loop
 
-The event loops job is to look at the stack and to look at the task queue. If the stack is empty, it takes the first thig in the task queue and puses it to the stack, which then runs it
+The event loops job is to look at the stack and to look at the task queue. If the stack is empty, it takes the first thig in the task queue and pushes it to the stack, which then runs it.
+
+```
+console.log('Hi);
+
+setTimeout(function cb() {
+    console.log('there');
+}, 0);
+
+console.log('JSConfEU');
+```
 
 [Loupe](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
