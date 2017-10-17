@@ -55,5 +55,12 @@ setTimeout(function cb() {
 
 console.log('JSConfEU');
 ```
+Why set the time to zero? The webapi sends it straight to the task queue, where it has to wait until the event loop call it to be used in the stack. The main files are going to continue to run, while the item that had the time set to zero, has to wait until the stack has been cleared, running that item last. Defers the execution of the code until the rest of the stack has cleared.
+
+setTimeout(...) is NOT a set time of execution, but a minimum time of execution. Just like when setTimeout is 0. It doesn't run the code imediately, but next.
+
+Asynchronous- Allows render to take place in between each event loop, making it more useable, makes it more fluid.
+
+The callbck queue can become backed up and make it run code slowly. Can be ways to stop this if the user stops scrolling down the browser, rendering what has already loaded, and then to continue to retrieve the rest of the web page.
 
 [Loupe](http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
