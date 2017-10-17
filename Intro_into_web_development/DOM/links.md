@@ -5,6 +5,11 @@
 
 [MDN0 Intro to the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
+# Videos
+[DOM](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4470037-dt-content-rid-7970398_2/xid-7970398_2)
+
+[Events](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4470037-dt-content-rid-7970399_2/xid-7970399_2)
+
 # Slides
 
 [Slides link](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4470030-dt-content-rid-7970382_2/courses/1718-CM6112/DOM.pdf)
