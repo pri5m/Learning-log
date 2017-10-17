@@ -233,3 +233,74 @@ document.getElementById('head3').addEventListener('dblclick', f3);
 <li>two</li>
 </ul>
 ```
+
+# Events: capturing/trickling
+
+For bubbling:
+
+• [El].addEventListener('click', f1);
+
+• Events can also trickle down.
+
+For trickling:
+
+• addEventListener('click', f1, true);
+
+```
+<ul id='ul'>
+<li>one</li>
+<ul id='ul_ul'>
+<li id='ul_ul_li'>one.one</li>
+<li>one.two</li>
+<li>one.three</li>
+</ul>
+<li>two</li>
+</ul>
+```
+
+# Validation
+
+Can use HTML5 Form validation:
+• Attributes like:
+•     Required
+•     Pattern
+• Email element.
+https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
+
+• Automatic form validation not in all browsers (IE9)
+
+https://www.netmarketshare.com/browser-marketshare.aspx?qprid=2&qpcustomd=0&qpcustom=
+
+• Can use JS for Validation
+
+• Make it more specific
+
+```
+<html>
+  <body>
+    <form>
+      <p> using the builtin html5 patern attributes: match to regexp.
+        red or blue? <input type ='textbox' required pattern="red|blue"> </input><br>
+        6 digit no. <input type ='textbox' required pattern="[0-9]{6}"> </input><br>
+      email <input type ='email' required> </input><br>
+      <input type='submit'value='non scripted submit'>
+    </form>
+
+    <form>
+      name <input id = 'name' type ='textbox'> </input><br>
+      <input type='submit'value='scripted submit' onclick="validate()">
+    </form>
+
+    <script>
+      function validate(){
+        var fail = true;
+        var name = document.getElementById('name').value;
+        if (name.length>10){
+          alert('too long');
+        }
+        // Deal with form submission.
+      }
+    </script>
+  </body>
+</html>
+```
