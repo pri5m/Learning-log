@@ -161,10 +161,10 @@ var x = document. forms["myForm"]["data"].value
       var count = 0;    //Counter to keep track of how many items of the list have been called. Set to 0 here
 
       function nextLine() {    //Function that displays an element from thhe list when the button is pressed
-        if (count < lines.length){   //check so that the code only executes if the line length is greater than 0
+        if (count < lines.length){  //check so that the code only executes if the count is less than the length of the array, if not                                            then it stops
           var p = document.createElement('p');    // A variable (p) that creates an element called p
           p.appendChild(document.createTextNode(lines[count]));    
-                //Adds a child element to p. P createsa a text node from the list according to the line count, which is increasing each                   time the button is pressed, displaying the next element in the list each time
+                //Adds a child element to p. p creates a text node from the list according to the line count, which is increasing each                   time the button is pressed, displaying the next element in the list each time
           document.getElementById('newsArticle').appendChild(p);  
           // Puts the variable 'p' into the newsArticle, which displays after the button is pressed
         }
