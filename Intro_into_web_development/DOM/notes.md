@@ -180,3 +180,34 @@ var x = document. forms["myForm"]["data"].value
 </html>
 ```
 Prints out elements from the hard coded list one at a time when the button is pressed
+
+# Events
+• onclick="f1(event)"
+
+• function f1(e){…}
+
+• Sets Window as the context for ‘this’.
+
+• [Element].onclick = f2;
+
+• function f2(e){…}
+
+• Sets ‘this’ context at the calling element. 
+
+# Event listeners: more versatile way to add event listener
+Use:
+• [element].addEventListener( <listenerType>, function);
+  
+• Different Listener types:
+
+• click
+
+• mouseover
+
+• mouseout
+
+```
+document.getElementById('head1').addEventListener('click', f1);
+document.getElementById('head2').addEventListener('mouseover', f2);
+document.getElementById('head3').addEventListener('mouseout', f3);
+```
