@@ -8,3 +8,6 @@
 110110 = 54
 
 011100 = 28
+
+*will be in test, converting numbers to binary, and binary to numbers*
+
