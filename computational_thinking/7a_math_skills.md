@@ -20,3 +20,11 @@ a-f | 10-15
 base 16
 
 1E3= 483
+
+# practice
+
+11011101 - binary = 221
+
+3 3 5 - oct = 221
+
+0 d d - hex = 221
