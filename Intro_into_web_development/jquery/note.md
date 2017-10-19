@@ -21,3 +21,7 @@ Selecting something, preforming an action on it
 $(selector)
 
 Object vs Core methods
+
+- $().method
+
+- $.method
