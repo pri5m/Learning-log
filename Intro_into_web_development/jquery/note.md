@@ -116,3 +116,89 @@ $(document).ready(function(){
   $("input[name$='2']").toggle();
 });
 ```
+# Events
+
+- .on - add event listener to selection, prefferend method, click, keyup, mousemove
+
+- .off - remove event listners
+
+```
+$(document).ready(function(){
+  //  click on click1 and it will dissapear
+  $("#click1").on("click", function(){
+    $(this).hide();
+  });
+
+  //  keydown is content editable so type in it.
+  $("#keydown").on("keydown", function(){
+    $(this).stop(true);
+    $(this).fadeTo(0,0);
+    $(this).fadeTo(3000, 1);
+  });
+
+  // Remove handler:
+  $("#keydown").off("keydown");
+
+  //MouseMove handler
+  $("#mouseMove").on("mousemove", function(){
+    $(this).stop(true);
+    $(this).fadeTo(0, 0);
+    $(this).fadeTo(500, 1);
+  });
+
+// Exercise: look up.....
+//  the resize event. repeat the fading on
+//  the whole page when the window is resized.
+
+  $(window).on('resize', function(){
+      $("body").stop(true)
+      $("body").fadeTo(0, 0);
+      $("body").fadeTo(1000, 1);
+  });
+
+// extras
+
+//  delegates
+  // http://api.jquery.com/on/#direct-and-delegated-events
+  // this adds the handlers when the script is called.
+    $("#list li").on("click", function(){
+      $(this).css("border","2px solid red");
+    });
+
+// adds an extra list item to the id list
+    $("button[name='button']").on('click',function(){
+      $("#list").append("<li>extra</li>");
+    });
+
+});
+```
+
+# Delegated events
+
+Adds handler to every li in #list at
+the time of execution.
+
+Handler is bound to #list:
+Function is called with the li as
+‘this’
+```
+$(document).ready(function(){
+$("#list li").on("click“, function(){
+$(this).css("border","2px solid red");
+});
+});
+```
+
+```
+//Delagated
+$(document).ready(function(){
+$("#list").on("click", "li" function(){
+$(this).css("border","2px solid red");
+});
+});
+$(document).ready(function(){
+$("#list li").on("click“, function(){
+$(this).css("border","2px solid red");
+});
+});
+```
