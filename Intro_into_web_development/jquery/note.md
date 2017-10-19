@@ -255,3 +255,15 @@ $(document).ready(function(){
 
 });
 ```
+
+# Reading the docs
+
+•What is the difference between:
+ •.stop()
+ 
+ •.stop(bool)
+ 
+ •.stop(bool,bool)
+ 
+ •.finish()
+ 
