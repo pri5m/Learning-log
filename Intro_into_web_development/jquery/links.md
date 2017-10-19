@@ -26,3 +26,9 @@ In my opinion then, the answer depends on what you're attempting to achieve. If,
 # Slide
 
 [lesson slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4472343-dt-content-rid-7997280_2/courses/1718-CM6112/jQuery.pdf)
+
+[api jquery](http://api.jquery.com/)
+
+[learn jquery](https://learn.jquery.com/)
+
+[Codecademy- learn jquery](https://www.codecademy.com/learn/learn-jquery)
