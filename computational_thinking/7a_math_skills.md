@@ -1,3 +1,4 @@
+[Lesson slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4472857-dt-content-rid-8002551_2/courses/1718-CM6114/7a_Math_Binary_InClass.pdf)
 
 # binary
 
