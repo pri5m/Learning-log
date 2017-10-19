@@ -35,3 +35,44 @@ Object vs Core methods
 - Class selector $(".class")
 
 - ID selector
+
+```
+// Add the ready function rem the closing braces at the bottom.
+$(document).ready(function(){
+
+// selectors
+  // select wild card
+  //$("*").remove();
+  // select element name
+  $("section").append(" section text ");
+  // select by ID
+  $("#appearID").append(" ID Text ");
+  // Using a time out
+  setTimeout(function(){
+    $("#appearID").append(" ID Text 2 ");
+  }, 2000);
+
+
+
+
+// Some Actions
+  // hide and remove
+  $(".hideClass").hide();
+  $(".removeClass").remove();
+
+  // show --- note the hide is still in the DOM but the remove is no longer there.
+  $(".hideClass").hide();
+  $(".removeClass").remove();
+
+
+//  Exercise:
+//  1) add "Some Extra Text" to .appearClass
+  $(".appearClass").append("Some extra text");
+//  2) look up fadeTo():
+      $(".appearClass").fadeTo(2000, 0.1);
+      $(".appearClass").fadeTo(2000, 1);
+//    make .appearClass fade to 0.1 opacity then fade back in.
+//    hint: ignore the event stuff
+//      and follow format of previous actions.
+});
+```
