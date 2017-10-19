@@ -19,6 +19,10 @@ As the comments are quick to point out (and I agree with 100%) the statements ab
 
 In my opinion then, the answer depends on what you're attempting to achieve. If, as I presumed based on your reference to performance benefits, you're after the best possible speed out of your application, then using jQuery introduces overhead every time you call $(). If you're going for readability, consistency, cross browser compatibility, etc, then there are certainly reasons to favor jQuery over 'native' JavaScript.
 
+# Video
+
+[jquery intro](https://learningcentral.cf.ac.uk/webapps/blackboard/execute/displayIndividualContent?mode=view&content_id=_4472348_1&course_id=_381767_1)
+
 # Slide
 
 [lesson slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4472343-dt-content-rid-7997280_2/courses/1718-CM6112/jQuery.pdf)
