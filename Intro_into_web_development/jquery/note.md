@@ -202,3 +202,13 @@ $(this).css("border","2px solid red");
 });
 });
 ```
+**Delegated events: The point.**
+
+• If you select elements ( e.g. all anchors tag elements in a parent) and
+attach a handler to them, then only those elements present at the
+time will have that handler.
+
+• If you select a parent element and bind the handler to that using the
+delegate technique, then all elements in the parent will utilize the
+handler. Including newly created elements. 
+
