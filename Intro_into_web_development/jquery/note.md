@@ -25,3 +25,13 @@ Object vs Core methods
 - $().method
 
 - $.method
+
+# Accessing the DOM: Elements
+
+- All elements$("*")
+
+- Element Selector $("element")
+
+- Class selector $(".class")
+
+- ID selector
