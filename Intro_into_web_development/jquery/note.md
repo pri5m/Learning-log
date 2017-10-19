@@ -76,3 +76,19 @@ $(document).ready(function(){
 //      and follow format of previous actions.
 });
 ```
+# Accessing the DOM: Attributes
+
+- Equals =
+
+- Not equals !=
+
+• Starts with: ^
+
+• Ends with: $
+
+
+```
+$(document).ready(function(){
+$("input[name$='3']").hide("text");
+});
+```
