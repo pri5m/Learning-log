@@ -244,5 +244,14 @@ $(document).ready(function(){
     $("#slideDown2").slideDown(5000);
   });
 
+// Can combine the two
+
+  //$("#moveRight").click(function(){
+    //$("#moveLeft").animate({
+      //right: "-=100px",
+    //}, 2000);
+    //$("#slideDown2").slideDown(5000);
+  //});
+
 });
 ```
