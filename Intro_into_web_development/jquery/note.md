@@ -92,3 +92,27 @@ $(document).ready(function(){
 $("input[name$='3']").hide("text");
 });
 ```
+```
+// Add the ready function rem the closing braces at the bottom.
+$(document).ready(function(){
+
+//  Accessing by attribute
+  // by attribute property
+  $("input[name='userName']").toggle();
+  // starts with
+  $("input[name^= 'add']").hide();
+  // ends with
+  $("input[name$='3']").toggle();
+  // modify add atributes
+  $("input[name$='1']").attr("value", "Enter Address");
+  $("input[name$='1']").toggle();
+    // look at the dev tools Elements to verify this
+  // use atribute value
+  console.log($("input[name$='1']").attr("value"));
+
+
+// Exercise
+// bring all inputs back again
+  $("input[name$='2']").toggle();
+});
+```
