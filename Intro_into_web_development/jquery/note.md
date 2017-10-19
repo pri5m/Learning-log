@@ -212,3 +212,37 @@ time will have that handler.
 delegate technique, then all elements in the parent will utilize the
 handler. Including newly created elements. 
 
+# Animation
+
+```
+$(document).ready(function(){
+
+//  type along
+  $("#fadeOut").fadeOut();
+  $("#fadeOut").fadeIn();
+  $("#fadeOut").fadeTo(2000, .1)
+
+  $("#slideDown").slideDown(5000);
+
+  $("#moveLeft").click(function(){
+    $("#moveLeft").animate({
+        left: "-=100px",
+    }, 2000);
+  });
+
+// Exercise:
+// 1)  make the "move left" text move right
+//     when the move "right text" is clicked
+  $("#moveRight").click(function(){
+    $("#moveLeft").animate({
+      right: "-=100px",
+    }, 2000);
+  });
+// 2)  Also on the "move right" click, make slideDown2
+//     slide down over 2 Seconds
+  $("#moveRight").click(function(){
+    $("#slideDown2").slideDown(5000);
+  });
+
+});
+```
