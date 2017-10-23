@@ -1,3 +1,8 @@
+# Introduction: What is a Front End Framework?
+
+• Existing 'code' with conventions to follow that allows for faster and (sometimes) easier web development
+
+• Usually a collection of CSS and JS files, with some sample HTML layouts.
 
 # Why use it?
 
