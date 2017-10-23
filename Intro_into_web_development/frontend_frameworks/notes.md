@@ -8,7 +8,7 @@
 
 • Made, used and maintained by Twitter
 
-• reputable
+ - > reputable
 
 • Easier development
 
@@ -25,5 +25,7 @@
 • Bandwidth limitations
 
 • Anything else?
+
+# Bootstap
 
 [Bootstrap getting started](https://getbootstrap.com/docs/3.3/getting-started/)
