@@ -31,3 +31,17 @@
 [Bootstrap getting started](https://getbootstrap.com/docs/3.3/getting-started/)
 
 [Smaller bootstrap- skeleton](http://getskeleton.com/)
+
+# Container
+
+• Required to wrap content and the Grid system.
+
+• Not nestable!
+
+• .container
+
+-> responsive - fixed width
+
+• .container-fluid
+
+-> Full width. 
