@@ -31,3 +31,41 @@ Stories will need to prioritised
 
 There are techniques for estimating effort for implementing stories
 
+# Managing Dependencies in Software Development
+
+Fit dependencies arise because all the activities performed by team
+members are contributing to the development of the same software
+product
+
+Flow dependencies arise because artefacts produced in one activity of
+the development process are used by team members in a subsequent
+activity
+
+Shared dependencies arise due the problem of allocating resources
+(e.g. people, machines, money) to activities when these resources are
+constrained
+
+# Advantages of Version Control
+
+**Prevent problems with Simultaneous Update**
+
+◦ Two (or more) programmers each take a copy of the same component and make a
+change
+
+◦ Last copy submitted overwrites changes made previously
+
+**Control Changes to Code**
+
+◦ Roll back changes if there is a problem
+
+◦ Need to check changes do not conflict with others who might share or use the code
+
+**Keep Variants Consistent**
+
+◦ To support different platforms or operating systems
+
+**Keeping team members aware of relevant changes**
+
+◦ Keep change history through meaningful comments
+
+◦ See differences between versions
