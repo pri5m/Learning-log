@@ -86,3 +86,35 @@ There are situations where you may have to step in and tell Git what to do
 Git will tell you that you have “unmerged paths” in git status
 
 Work with the other developer to make sure you sort out the conflict.
+
+# Version Control Best Practices
+
+Commit Early Commit Often
+
+◦ Split a feature’s implementation into small logical chunks and commit early and often
+
+◦ Produce separate commits for each new piece of functionality or bug fix.
+
+◦ Easier for other developers to understand the changes
+
+◦ Easier to roll back if something went wrong
+
+Don’t Commit Half-done Work 
+
+◦ Only commit working code
+
+◦ Test code in your working directory before you commit
+
+◦ Commit source code but not generated files
+
+◦ Pull then Push to commit to your remote directory
+
+Use a Descriptive Commit Message 
+
+◦ It is more important to say why the change was needed
+
+Work with the Most Up-to-date Code 
+
+◦ Share your changes with others frequently
+
+◦ Incorporate others’ changes frequently
