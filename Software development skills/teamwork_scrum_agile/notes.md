@@ -69,3 +69,20 @@ change
 ◦ Keep change history through meaningful comments
 
 ◦ See differences between versions
+
+# Dealing with Merge Conflicts
+
+Git usually will figure out how to integrate new changes – particularly if
+you pull just before you push to the remote directory
+
+There are situations where you may have to step in and tell Git what to do
+
+◦ If two people change the same lines in a shared file
+
+◦ If one person deletes a file while the other decides to modify the same file
+
+◦ If two people add two separate files with the same name
+
+Git will tell you that you have “unmerged paths” in git status
+
+Work with the other developer to make sure you sort out the conflict.
