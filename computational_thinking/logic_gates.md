@@ -25,3 +25,24 @@ I.e. a bit relates to an individual setting.
 
 1101 - sensor on, led on, power save off, Bluetooth connection on 1001 - sensor on, led off,
 power save off, Bluetooth connection on
+
+# converting hex colours into rgb
+```python
+my_hex_colour = 0x9A011D
+g = my_hex_colour & 0x00FF00
+r = my_hex_colour & 0xFF0000
+b = my_hex_colour & 0x0000FF
+
+red = r >> 16
+green = g >> 8
+blue = b
+
+print( int(red))
+print( int(green))
+print( int(blue))
+```
+```
+154
+1
+29
+```
