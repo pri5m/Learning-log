@@ -27,3 +27,18 @@ Avatar
 **Keys are on the right and values are on the left**
 
 eg. "Title"- key   "Avatar"- value
+```
+movies = {
+    "Title":"Avatar",
+    "Year":"2009",
+    "Genre":"Fantasy",
+    "Director":"James Cameron"
+}
+
+print(movies.values())
+print(movies.keys())
+
+#output
+dict_values(['Fantasy', '2009', 'Avatar', 'James Cameron'])
+dict_keys(['Genre', 'Year', 'Title', 'Director'])
+```
