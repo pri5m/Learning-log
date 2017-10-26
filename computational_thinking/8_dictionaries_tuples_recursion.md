@@ -172,3 +172,18 @@ number_and_power(3)
 #Output
 (3, 27)
 ```
+```
+def histogram(s):  #s-string
+    d = dict()  # Creates an empty dictionary
+    for c in s:  #c- character, for the character in the string
+        if c not in d:  # If the character is not already contained in the dictionary:
+            d[c] = 1  # The character becomes a key with that particular name and is assigned a value of 1
+        else:
+            d[c] += 1  # If the character is already in the list, then increase it increases value by 1, increment
+    return d
+
+histogram("Zoumpoulaki")
+
+#Output
+{'Z': 1, 'a': 1, 'i': 1, 'k': 1, 'l': 1, 'm': 1, 'o': 2, 'p': 1, 'u': 2}
+```
