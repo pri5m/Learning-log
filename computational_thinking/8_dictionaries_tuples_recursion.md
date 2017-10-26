@@ -7,3 +7,18 @@ print(type(empty_dict))
 <class 'dict'>
 ```
 
+```
+movie = {
+    "Title":"Avatar",
+    "Year":"2009",
+    "Genre":"Fantasy",
+    "Director":"James Cameron"
+}
+
+print(movie)
+print(movie["Title"])
+
+# Output
+{'Director': 'James Cameron', 'Title': 'Avatar', 'Genre': 'Fantasy', 'Year': '2009'}
+Avatar
+```
