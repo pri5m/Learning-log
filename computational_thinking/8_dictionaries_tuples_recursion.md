@@ -73,3 +73,25 @@ Fantasy
 Avatar
 James Cameron
 ```
+
+Using the methods you found, write a function that has a dictionary as an argument and loops
+through the values to return the first value that is of type int
+```
+movies = {
+        "Title":"Avatar",
+        "Year": 2009,
+        "Genre":"Fantasy",
+        "Director":"James Cameron"
+    }
+
+def intvalue(adict):
+    for a in movies.values():
+        if type(a) == int:
+            print(a)
+            return a
+        
+intvalue(movies)
+
+# Output
+2009
+```
