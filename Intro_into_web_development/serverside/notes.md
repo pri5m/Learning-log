@@ -17,6 +17,29 @@
 
 **Ctrl shift r** Hard reset- gets a new page no matter what
 
+**Routes**
+
+• Seen routes before in the browser urls
+
+  • x.x.x.x:5000/Home.html
+  
+  • x.x.x.x:5000/IMC/Home.html
+  
+  
+• Routes lead to execution of code
+
+  • Go to the file system and retrieve page.
+  
+• Routes could request data
+
+  • Or an Action
+  
+• APIs
+
+  • application program interface
+
+**Annotation:** Calls framework code to set up the function myHello as the function to be called when the server receives a request for /hello
+
 # Command window
 ```
 C:\Users\c1712480\OneDrive - Cardiff University>Semester_1
