@@ -95,3 +95,14 @@ intvalue(movies)
 # Output
 2009
 ```
+
+```
+for i, k in enumerate(movies):
+    print(i, k)
+    
+#output
+0 Genre
+1 Year
+2 Title
+3 Director
+```
