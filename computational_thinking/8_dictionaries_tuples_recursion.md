@@ -157,3 +157,18 @@ print(new_tuple[1])
 a
 In [ ]:
 ```
+What are tuples good for?
+
+Functions can return one single value.
+
+Using tuples we can group as many values as we want.
+
+```
+def number_and_power(x):
+    return x, x**x
+
+number_and_power(3)
+
+#Output
+(3, 27)
+```
