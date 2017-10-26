@@ -9,3 +9,5 @@
 # Slides
 
 [slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4478397-dt-content-rid-8093921_2/courses/1718-CM6112/ClientServer.pdf)
+
+[TCP/IP Protocol Fundamentals Explained with a Diagram](http://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/)
