@@ -117,3 +117,23 @@ popitem() - This works much like pop on a list, removing the last item in the di
 the key and the value.
 
 Find out how to use del.
+
+```
+movies = {
+        "Title":"Avatar",
+        "Year": 2009,
+        "Genre":"Fantasy",
+        "Director":"James Cameron"
+    }
+
+print(movies)
+movies.pop("Title") # Returns the value from the key
+print(movies)
+movies.popitem() # Returns the last item from the dictionary
+print(movies)
+
+# Output
+{'Genre': 'Fantasy', 'Year': 2009, 'Title': 'Avatar', 'Director': 'James Cameron'}
+{'Genre': 'Fantasy', 'Year': 2009, 'Director': 'James Cameron'}
+{'Year': 2009, 'Director': 'James Cameron'}
+```
