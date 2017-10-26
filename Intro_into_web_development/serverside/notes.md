@@ -103,4 +103,24 @@ Successfully installed Jinja2-2.9.6 MarkupSafe-1.0 Werkzeug-0.12.2 click-6.7 fla
 26/10/2017  14:53    <DIR>          webDev
                6 File(s)          3,151 bytes
                4 Dir(s)  135,270,387,712 bytes free
+(webDev) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro to web development\Servers>py 1_StaticFlaskServer.py
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 726-386-281
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+(webDev) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro to web development\Servers>set FLASK_APP = 1_StatickFlaskServer.py
+
+(webDev) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro to web development\Servers>flask run --host=0.0.0.0
+Usage: flask run [OPTIONS]
+
+Error: Could not locate Flask application. You did not provide the FLASK_APP environment variable.
+
+For more information see http://flask.pocoo.org/docs/latest/quickstart/
+
+(webDev) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro to web development\Servers>set FLASK_APP=1_StaticFlaskServer.py
+
+(webDev) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro to web development\Servers>flask run --host=0.0.0.0
+ * Serving Flask app "1_StaticFlaskServer"
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ```
