@@ -106,3 +106,14 @@ for i, k in enumerate(movies):
 2 Title
 3 Director
 ```
+# Removing items
+
+Much like lists, we can pop elements from a dict, but the way this is done is slightly different:
+
+pop() - One must provide the key of the item to be removed and the value is returned. An
+error is given if nothing was found
+
+popitem() - This works much like pop on a list, removing the last item in the dict and providing
+the key and the value.
+
+Find out how to use del.
