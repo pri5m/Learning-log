@@ -137,3 +137,23 @@ print(movies)
 {'Genre': 'Fantasy', 'Year': 2009, 'Director': 'James Cameron'}
 {'Year': 2009, 'Director': 'James Cameron'}
 ```
+# Tuples
+
+Immutable lists. Tuples support the same sequence operations as strings
+
+Can access them like lists:
+```
+my_tuple = 1, 2
+print(my_tuple)
+print(type(my_tuple))
+new_tuple = 3, "a", 6
+print(new_tuple)
+print(new_tuple[1])
+
+#Output
+(1, 2)
+<class 'tuple'>
+(3, 'a', 6)
+a
+In [ ]:
+```
