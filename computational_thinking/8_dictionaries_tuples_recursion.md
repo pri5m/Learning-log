@@ -22,3 +22,8 @@ print(movie["Title"])
 {'Director': 'James Cameron', 'Title': 'Avatar', 'Genre': 'Fantasy', 'Year': '2009'}
 Avatar
 ```
+**Note**- Don't forget the comma at the end of the line
+
+**Keys are on the right and values are on the left**
+
+eg. "Title"- key   "Avatar"- value
