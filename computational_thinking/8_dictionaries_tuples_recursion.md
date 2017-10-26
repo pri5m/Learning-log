@@ -42,3 +42,34 @@ print(movies.keys())
 dict_values(['Fantasy', '2009', 'Avatar', 'James Cameron'])
 dict_keys(['Genre', 'Year', 'Title', 'Director'])
 ```
+
+```
+movies = {
+    "Title":"Avatar",
+    "Year":"2009",
+    "Genre":"Fantasy",
+    "Director":"James Cameron"
+}
+
+for key in movies:
+    print(key)
+for key,val in movies.items():
+    print("{} => {}". format(key, val))
+
+for key in movies:
+    if len(key) > 4:
+        print(movies.get(key))
+        
+#output
+Genre
+Year
+Title
+Director
+Genre => Fantasy
+Year => 2009
+Title => Avatar
+Director => James Cameron
+Fantasy
+Avatar
+James Cameron
+```
