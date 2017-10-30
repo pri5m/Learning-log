@@ -211,3 +211,64 @@ if tmp == []:
 else:
     print(tmp)
 ```
+# Searching dictionaries
+```
+students = {
+    1234: "Gary",
+    4567: "Jen"
+}
+
+print("1. {}". format(1234 in students))
+print(1234 in students.keys())
+print("Jen" in students)
+print("Gary" in students.values())
+print("Gary" in students.items())
+print((1234, "Gary") in students.items)
+```
+
+# Recursion
+
+An iterative function is a function that loops to repeat a block of code.
+
+A recursive function is a function that calls itself (until a condition is met).
+
+
+What will this print?
+```
+def countdown(n):
+    if n <= 0:
+        print('Blastoff!')
+    else:
+    print(n)
+    return countdown(n-1)
+    
+countdown(3)
+```
+**What is Happening Here?**
+
+Python sees our call to the function and executes it.
+
+Recursion Level
+
+• n = 3 Is n <=0 ? No
+
+print(3)
+
+Return countdown(2)
+
+• n = 2 Is n <=0 ? No
+
+print(2)
+
+Return countdown(1)
+
+• n=1 Is n <=0 ? No
+
+print(1)
+
+Return countdown(0)
+
+• Is n <=0 ? Yes
+
+print("Blast off")
+
