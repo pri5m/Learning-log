@@ -187,3 +187,27 @@ histogram("Zoumpoulaki")
 #Output
 {'Z': 1, 'a': 1, 'i': 1, 'k': 1, 'l': 1, 'm': 1, 'o': 2, 'p': 1, 'u': 2}
 ```
+
+# Dictionaries and tuples ex
+```
+student = {
+    "Name": "Holly",
+    "Surname": "Smith",
+    "marks": (23, 93, 82),
+    "year_of_study": 1
+}
+
+sum = 0
+tmp = []
+
+for m in student["marks"]:
+    if m > 40:
+        sum = sum + m
+    else:
+        tmp.append(m)
+        
+if tmp == []:
+    print(sum / len(student["marks"]))
+else:
+    print(tmp)
+```
