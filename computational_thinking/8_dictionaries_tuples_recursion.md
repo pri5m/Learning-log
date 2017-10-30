@@ -272,3 +272,24 @@ Return countdown(0)
 
 print("Blast off")
 
+# Factorials
+Iterative
+```
+def facto_iterative(num):
+    mult = 1
+    for i in range(1, num + 1):
+        mult = mult*i     
+    return mult
+
+facto_iterative(3)
+```
+
+Recursive
+```
+def recursive_factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * recursive_factorial(n-1)
+```
+
