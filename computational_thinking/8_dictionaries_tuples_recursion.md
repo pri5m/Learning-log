@@ -293,3 +293,34 @@ def recursive_factorial(n):
         return n * recursive_factorial(n-1)
 ```
 
+# Recursion vs. Iteration
+
+You have seen both, which is better/faster/more optimal?
+Have you ever heard of stack overflow? What does it mean?
+
+While recursive approaches are typically shorter and easier to read. However, it also results in
+slower code because of all the funtion calls it results in, as well as the risk of a stack overflow
+when too many calls are made.
+
+Typically, math-based apparoaches will use recursion and most software engineering code will
+use iteration. Basically, most algorithms will use recursion so you need to understand how it
+works.
+
+# When Should You Use It?
+
+Recursion is often seen as some mythical beast but the breakdown is quite simple.
+However, most (not all) languages are not tuned for recursion (unfortunately python is one of
+them) and, in performance terms, iteration is often vastly quicker.
+
+*Will be in the exam- know exactly what it is evaluating*
+
+# Why the Difference?
+
+To understand this, we need to understand a little bit about how programs are run.
+Two key things are the **stack** and the **heap**
+
+Stack is used for static memory allocation and Heapfor dynamic memory allocation.
+
+
+**timeit**- Times how long it takes to execute a section of code
+
