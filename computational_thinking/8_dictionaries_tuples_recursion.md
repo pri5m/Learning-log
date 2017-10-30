@@ -313,6 +313,8 @@ However, most (not all) languages are not tuned for recursion (unfortunately pyt
 them) and, in performance terms, iteration is often vastly quicker.
 
 *Will be in the exam- know exactly what it is evaluating*
+
+**timeit**- Times how long it takes to execute a section of code
 ```
 import timeit
 def facto_iterative(num):
@@ -344,6 +346,10 @@ Two key things are the **stack** and the **heap**
 
 Stack is used for static memory allocation and Heapfor dynamic memory allocation.
 
+# Heap
 
-**timeit**- Times how long it takes to execute a section of code
-
+The heap is the space for dynamic allocation of objects. The more objects created, the greater
+the heap. Although, this is dynamic and can grow as the application grows.
+Python also takes care of this for us, by using a garbage collector. This tracks allocations of
+objects and cleans them up when they are no longer used. We can force things to be cleared by
+using: del my_var
