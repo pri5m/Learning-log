@@ -313,6 +313,29 @@ However, most (not all) languages are not tuned for recursion (unfortunately pyt
 them) and, in performance terms, iteration is often vastly quicker.
 
 *Will be in the exam- know exactly what it is evaluating*
+```
+import timeit
+def facto_iterative(num):
+    mult = 1
+    for i in range(1, num + 1):
+        mult = mult*i     
+    return mult
+
+print(timeit.timeit('facto_iterative(30)', globals = globals(), number = 10000))
+```
+0.03228391052846291
+```
+import timeit
+
+def recursive_factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * recursive_factorial(n-1)
+
+print(timeit.timeit('recursive_factorial(30)', globals = globals(), number = 10000))
+```
+0.06384399873132907
 
 # Why the Difference?
 
