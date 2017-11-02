@@ -24,7 +24,7 @@ Avatar
 ```
 **Note**- Don't forget the comma at the end of the line
 
-**Keys are on the right and values are on the left**
+**Keys are on the left and values are on the right**
 
 eg. "Title"- key   "Avatar"- value
 ```
