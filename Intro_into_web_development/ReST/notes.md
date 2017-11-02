@@ -7,12 +7,14 @@ Sushi takeaway
 
 - **Put**  /cust/{custNo}/delivery   -Post inforamtion about the status of the delivery
 
+For all customers just drop the id
+
 What actions could we preform?
 
-- get  /cust/id
+- **get**  /cust/id
 
-- post   /cust
+- **post**   /cust
 
-- put    /cust/id
+- **put**    /cust/id
 
-- delete   /cust/id
+- **delete**   /cust/id
