@@ -254,3 +254,123 @@ getting directory.
 127.0.0.1 - - [06/Nov/2017 14:33:09] "[37mGET /Directory HTTP/1.1[0m" 200 -
 
 ```
+
+# Exercise
+**AjaxServer.py**
+```
+import os
+import json
+from flask import Flask, redirect, request,render_template, jsonify
+
+app = Flask(__name__)
+
+ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+directory = {'Ian':'0000','Chris':'1111','Wendy':'2222'}
+
+app = Flask(__name__)
+@app.route("/Hello", methods=['GET'])
+def returnHello():
+    if request.method == 'GET':
+        print("Executing Hello")
+        return "Hello world"
+
+@app.route("/Directory", methods=['GET'])
+def returnDir():
+    if request.method == 'GET':
+        print("getting directory.")
+        return json.dumps(directory);
+
+
+# Exercise 1:
+@app.route("/Length", methods=['GET'])
+def dirLength():
+    if request.method == 'GET':
+        print("getting length")
+        return str(len(directory))
+
+# ----------------------------------------------------------------
+# You could put this into the /Directory route to be better
+# but this seperates the code for simplicity of the session.
+@app.route("/AddContact", methods=['POST'])
+def addContact():
+    print('processing Data')
+    message ='already there'
+    if request.method == 'POST':
+        name = request.form['name']
+        num = request.form['num']
+        if not(name in directory):
+            message = 'ok'
+            directory[name] =  num
+        print(directory)
+    return message
+
+# this is the route for ex2
+@app.route("/DeleteContact", methods=['DELETE'])
+def delContact():
+    print('processing Data')
+    message = 'Not here anymore'
+    if request.method == 'DELETE':
+        name = request.form['name']
+        if (name in directory):
+            #del directory[name]
+            message = 'Deleted'
+            directory.pop(name)
+        print(directory)
+    return message
+
+
+@app.route("/More", methods=['GET'])
+def more():
+    if request.method == 'GET':
+        return
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+**4_AjaxDel.html
+html```
+<!DOCTYPE html>
+<!-- comment -->
+<html>
+  <head>
+    <title> Del entry </title>
+  </head>
+
+  <body >
+    <h3> Delete a contact</h3>
+
+<!-- Ex2: create a form that provides the name to be deleted -->
+    <form id='myForm' action='/DeleteContact' method='delete' onsubmit="return delName()">
+      name:<input type = "text" name = "name"><br>
+      <button type = "submit"> submit </button>
+    </form>
+
+    <span id='txt'></span>
+    <h3><a href=/static/1_Directory.html>Back to directory</h3>
+
+    <script>
+// Ex 2 submit the form to /DeleteContact and render the result in <span id="txt">
+    function delName() {
+      var name = document.forms["myForm"]["name"].value;
+      parameters = 'name='+name;
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("DELETE", '/DeleteContact', true); // true is asynchronous
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.onreadystatechange = function() {
+        if (xhttp.readyState === 4 && xhttp.status === 200) {
+          console.log(xhttp.responseText);
+          document.getElementById("txt").innerHTML = xhttp.responseText;
+        } else {
+        //  console.error(xhttp.statusText);
+        }
+      };
+      xhttp.send(parameters);
+      return false;
+    }
+    </script>
+
+  </body>
+</html>
+```
