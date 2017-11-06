@@ -188,3 +188,69 @@ summary.py
   </body>
 </html>
 ```
+
+# console log
+```
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>virtualEnv ajaxserver
+Using base prefix 'c:\\python35'
+New python executable in C:\Users\c1712480\ONEDRI~1\SEMEST~1\INTRO_~1\ajax\STUDEN~2\STUDEN~1\static\AJAXSE~1\Scripts\python.exe
+Installing setuptools, pip, wheel...done.
+
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>pip install flask
+Requirement already satisfied: flask in c:\python35\lib\site-packages
+Requirement already satisfied: click>=2.0 in c:\python35\lib\site-packages (from flask)
+Requirement already satisfied: Werkzeug>=0.7 in c:\python35\lib\site-packages (from flask)
+Requirement already satisfied: Jinja2>=2.4 in c:\python35\lib\site-packages (from flask)
+Requirement already satisfied: itsdangerous>=0.21 in c:\python35\lib\site-packages (from flask)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\python35\lib\site-packages (from Jinja2>=2.4->flask)
+
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>activate
+'activate' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>ajaxserver\scripts/activate
+'ajaxserver\scripts' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>ajaxserver\activate
+'ajaxserver\activate' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>ajaxserver\Scripts\activate
+
+(AJAXSE~1) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2AB5-E52C
+
+ Directory of C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static
+
+06/11/2017  14:26    <DIR>          .
+06/11/2017  14:26    <DIR>          ..
+04/11/2017  14:48               628 0_formAdd.html
+06/11/2017  09:04             1,175 1_Directory.html
+06/11/2017  14:25               606 2_Summary.html
+05/11/2017  19:29             1,636 3-2_AjaxAdd.html
+05/11/2017  19:29             1,285 3_AjaxAdd.html
+06/11/2017  09:25               421 4_AjaxDel.html
+05/11/2017  20:05               721 4_SummaryJQ.html
+06/11/2017  09:29               478 5_footer.html
+02/11/2016  17:54             6,989 6_More.html
+06/11/2017  14:26    <DIR>          ajaxserver
+05/11/2017  20:16                97 footer.html
+05/11/2017  20:34               551 thankyou.html
+              11 File(s)         14,587 bytes
+               3 Dir(s)  134,308,298,752 bytes free
+
+(AJAXSE~1) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode\static>cd ..\
+
+(AJAXSE~1) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode>set FLASK_APP=AjaxServer.py
+
+(AJAXSE~1) C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\ajax\StudentCode(3)\StudentCode>flask run
+ * Serving Flask app "AjaxServer"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [06/Nov/2017 14:32:07] "[33mGET / HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Nov/2017 14:32:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+getting directory.
+127.0.0.1 - - [06/Nov/2017 14:33:09] "[37mGET /Directory HTTP/1.1[0m" 200 -
+
+```
