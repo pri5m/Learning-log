@@ -149,3 +149,22 @@ print(my_list)
 [1, 4, 5, 1, 1, 3, 2]
 [1, 1, 1, 2, 3, 4, 5]
 ```
+
+# Insertion Sort
+
+Insertion sort is similar to sorting playing cards by hand. Imagine a deck of cards facing down on your right hand. The left hand is empty. We remove one card at a time from the talbe and insert it at the right position on the left hand. To find the right position you compare it with the cards already on the left hand --from righ to left
+
+At all times the cards on the left hand are sorted and they are the top cards from the pile. [Cormen,2009]
+```
+insertionsort(A):
+    FOR j <- 2 to length(A)
+        key = A[j]
+        #insert A[j] into sorted list A[1 ... j -1 ]
+        i = j -1
+        WHILE j > 0 AND A[j-1] > key
+            l[j+1] = l[j]
+            j -= 1                       
+        l[j+1] = key  
+    end FOR
+end insertionsort
+```
