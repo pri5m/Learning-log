@@ -168,3 +168,8 @@ insertionsort(A):
     end FOR
 end insertionsort
 ```
+# Mergesort
+
+Merge sort is a sorting algorithm that works by splitting an array into subarrays, sorting the individual sub arrays and joining it back up into a single, sorted array.
+
+This is known as a *divide* and *conquer* algorithm.
