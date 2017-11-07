@@ -168,8 +168,34 @@ insertionsort(A):
     end FOR
 end insertionsort
 ```
-# Mergesort
+# Merge sort
 
 Merge sort is a sorting algorithm that works by splitting an array into subarrays, sorting the individual sub arrays and joining it back up into a single, sorted array.
 
 This is known as a *divide* and *conquer* algorithm.
+```
+x = [1,4,5,1,1,3,2]
+
+def merge_sort(x):
+    result = []
+    if len(x) < 2:
+        return x
+    mid = int(len(x)/2) # calculate mid point
+    y = merge_sort(x[:mid]) #split up to mid point and sort
+    z = merge_sort(x[mid:]) #get the rest of the mid point and sort
+    i = 0
+    j = 0
+    while i < len(y) and j < len(z): # loop through both lists
+        if y[i] > z[j]: #if left is more than right, add to result and increment index
+            result.append(z[j])
+            j += 1
+        else: #if right is more than left, add to result and increment right index
+            result.append(y[i])
+            i += 1
+    result += y[i:] #we can assume this is sorted, so we add the rest of the lists based on the index
+    result += z[j:]
+    return result
+
+print(x)
+print(merge_sort(x))
+```
