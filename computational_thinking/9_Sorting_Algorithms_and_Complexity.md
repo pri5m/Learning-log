@@ -199,3 +199,33 @@ def merge_sort(x):
 print(x)
 print(merge_sort(x))
 ```
+
+Cuts it in half by finding the mid point and in half again and again and then puts it back together.
+
+[5.11. The Merge Sort](http://interactivepython.org/courselib/static/pythonds/SortSearch/TheMergeSort.html)
+
+- It breaks the first list element by element.
+
+# Sorting
+
+Understandably, we do not write our own sorting implementations each time we need to sort some data.
+
+Python has sorting methods built into its standard library.
+
+And it is pretty good!
+
+# TimSort
+Timsort (now used in Python, Java and Android) is a combination of the Merge Sort and Insertion Sort. In simple terms, it runs like this:
+
+1) The input list is split into smaller lists
+
+2) Insertion Sort sorts the smaller lists
+
+3) Merge Sort then combines the sorted lists
+
+HOWEVER, when the list is smaller than a set size (the minrun) then it ignores the above method and just uses Insertion Sort.
+
+This is what makes it so fast, it is known as an *Adaptive Sort*.
+
+[Sorting algorithums gifs](https://imgur.com/gallery/voutF)
+
