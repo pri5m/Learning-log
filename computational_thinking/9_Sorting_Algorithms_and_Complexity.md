@@ -231,6 +231,8 @@ This is what makes it so fast, it is known as an *Adaptive Sort*.
 
 *Will have to describe a sorting algorithum in psuedo cade and in o complexity for the exam*
 
+[Rosseta code sorting algorithums](https://rosettacode.org/wiki/Category:Sorting_Algorithms)
+
 # Quicksort
 Psuedo
 ```
@@ -246,8 +248,12 @@ procedure quickSort(left, right)
    end if		
 end procedure
 ```
+The run-time of Quicksort ranges from O(n log n) with the best pivots, to  O(n2)  with the worst pivots, where   n   is the number of elements in the array.
+
+Quicksort has a reputation as the fastest sort.
 
 # Heapsort
+
 Psuedo
 ```
 function heapSort(a, count) is
@@ -268,3 +274,24 @@ function heapSort(a, count) is
       siftDown(a, 0, end)
 ```
 **o complex**:   O(*n*log*n*)    #O(n logn)
+
+# Counting sort
+
+Psuedo
+```
+function countingSort(array, min, max):
+    count: array of (max - min + 1) elements
+    initialize count with 0
+    for each number in array do
+        count[number - min] := count[number - min] + 1
+    done
+    z := 0
+    for i from min to max do
+        while ( count[i - min] > 0 ) do
+            array[z] := i
+            z := z+1
+            count[i - min] := count[i - min] - 1
+        done
+    done
+```
+The min and max can be computed apart, or be known a priori.
