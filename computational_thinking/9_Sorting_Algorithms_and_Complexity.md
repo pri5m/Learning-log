@@ -229,3 +229,4 @@ This is what makes it so fast, it is known as an *Adaptive Sort*.
 
 [Sorting algorithums gifs](https://imgur.com/gallery/voutF)
 
+*Will have to describe a sorting algorithum in psuedo cade and in o complexity for the exam*
