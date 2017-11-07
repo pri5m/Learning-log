@@ -230,3 +230,41 @@ This is what makes it so fast, it is known as an *Adaptive Sort*.
 [Sorting algorithums gifs](https://imgur.com/gallery/voutF)
 
 *Will have to describe a sorting algorithum in psuedo cade and in o complexity for the exam*
+
+# Quicksort
+Psuedo
+```
+procedure quickSort(left, right)
+
+   if right-left <= 0
+      return
+   else     
+      pivot = A[right]
+      partition = partitionFunc(left, right, pivot)
+      quickSort(left,partition-1)
+      quickSort(partition+1,right)    
+   end if		
+end procedure
+```
+
+# Heapsort
+Psuedo
+```
+function heapSort(a, count) is
+   input: an unordered array a of length count
+ 
+   (first place a in max-heap order)
+   heapify(a, count)
+ 
+   end := count - 1
+   while end > 0 do
+      (swap the root(maximum value) of the heap with the
+       last element of the heap)
+      swap(a[end], a[0])
+      (decrement the size of the heap so that the previous
+       max value will stay in its proper place)
+      end := end - 1
+      (put the heap back in max-heap order)
+      siftDown(a, 0, end)
+```
+**o complex**:   O(*n*log*n*)    #O(n logn)
