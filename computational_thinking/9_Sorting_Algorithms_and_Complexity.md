@@ -83,4 +83,44 @@ Now the run time depends on the size of N but it loops through N within N? This 
 
 O(n^2)represents an algorithm whose performance is directly proportional to the square of the size of the input data set. This is common with algorithms that involve nested iterations over the data set. Deeper nested iterations will result in O(n^3),O(n^k)
 
+# The sorting problem
 
+Input: A sequence of n numbers  [a1,a2,...,an][a1,a2,...,an] 
+
+Output: A permutation(reordering)  [a′1,a′2,...,a′n][a1′,a2′,...,an′]  of the input sequence so that  [a′1<=a′2...<=a′n][a1′<=a2′...<=an′]
+
+# Popular sorting algorithms
+- Bubble
+
+- Insertion
+
+- Selection
+
+- Merge sort
+
+- Quick sort
+
+# Bubble sort
+
+The bubble sort algorithm got its name from the way bubbles rises to the surface.
+The largest bubble will reach the surface first.
+The second largest bubble will reach the surface next.
+e.t.c.
+
+It makes multiple passes through a list. It compares adjacent items and swaps them if they are out of order.
+
+**Psuedo code**
+
+```
+bubbleSort( A ):
+    swapped = True
+    WHILE swapped 
+        swapped = False 
+        FOR j<- 0 to length(A) -1
+            IF A[i] > A [A+1] then
+                swap (A[i], A[A+1])
+                swapped = True
+            end IF
+        end FOR
+end bubblesort
+```
