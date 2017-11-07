@@ -124,3 +124,28 @@ bubbleSort( A ):
         end FOR
 end bubblesort
 ```
+**My actual code**
+
+```
+my_list = [1,4,5,1,1,3,2]
+
+def bubbleSort(my_list):
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(0, len(my_list)-1):
+            if my_list[i] > my_list [i +1]:
+                my_list[i], my_list[i+1]= my_list[i+1], my_list[i]
+                swapped = True
+    return None
+
+print(my_list)
+bubbleSort(my_list)
+print(my_list)
+```
+
+**Output**
+```
+[1, 4, 5, 1, 1, 3, 2]
+[1, 1, 1, 2, 3, 4, 5]
+```
