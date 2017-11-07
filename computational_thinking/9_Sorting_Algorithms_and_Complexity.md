@@ -44,3 +44,43 @@ We usually are looking to find "the largest, smallest, fastest, cheapest" soluti
 For example you might be looking to get the maximum grade on an assigment while spending less than 5 hours on doing it. 
 The first part is called the objective function that we are looking to maximise (or minimise) and the second part is the set of constraints, which can be empty.
 
+# Theoritical analysis
+
+**How do we evaluate algorithms?**
+
+- time complexity (speed)
+
+- space complexity (storage)
+
+The order of growth of the running time of an algorithm:
+
+- provides a metric of the efficiency of the algorithm
+
+- allows to compare the perfomance across different algorithms
+
+Many notations exist to describe this.
+They describe worst-case running time as a function of the size of input.
+
+# O-Notations
+
+O(X) --> 'of the order X'
+
+Argorithm's time or space requirments grows proportionaly to X
+```
+for x in range(n):
+    print(x)
+```
+
+Now the operations depend on the size of N, so we call this O(n)
+
+**What about this?**
+```
+for x in range(n):
+    for y in range(n):
+        print(x)
+```
+Now the run time depends on the size of N but it loops through N within N? This makes the complexity O(n^2) or O(n*n)
+
+O(n^2)represents an algorithm whose performance is directly proportional to the square of the size of the input data set. This is common with algorithms that involve nested iterations over the data set. Deeper nested iterations will result in O(n^3),O(n^k)
+
+
