@@ -23,3 +23,24 @@ In general an algorithm is used as a tool to solve computational problems. The p
 
 A correct algorithm will produce the correct output for each input. Some times incorect algorithms are acceptable if the error rate is "acceptable".
 
+# What types of problems do algorithms solve?
+**Routing problems.**
+- information packages select routes between any nodes on a computer network?
+
+- What is the optimal set of routes for a fleet of vehicles to traverse in order to deliver to a given set of customers?
+
+- shortest route?
+
+**Search problems**
+
+- find pages where information resides
+
+**Cryptography e.t.c.**
+
+# What types of problems do algorithms solve?
+
+**Optimisation problems:**
+We usually are looking to find "the largest, smallest, fastest, cheapest" solution while a set of constraints are applied. 
+For example you might be looking to get the maximum grade on an assigment while spending less than 5 hours on doing it. 
+The first part is called the objective function that we are looking to maximise (or minimise) and the second part is the set of constraints, which can be empty.
+
