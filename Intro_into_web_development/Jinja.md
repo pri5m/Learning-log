@@ -44,10 +44,12 @@ templating engine
 • Template files must be in the template directory.
 
  [Rendering Templates](http://flask.pocoo.org/docs/0.11/quickstart/#rendering-templates)
-
+```
  from flask import Flask, request, render_template
 ...
 @app.route("/Basic", methods=['GET'])
 def returnFirst():
 if request.method == 'GET':
 **return render_template('0_Basic.html', data='Hello World')***
+```
+
