@@ -59,3 +59,14 @@ Output
 3
 3
 ```
+This is bad practice:
+```
+class Test:
+    a = 0
+    def __init__(self, x):
+        self.a = x
+
+one = Test(2)
+print(Test.a)
+print(one.a)
+```
