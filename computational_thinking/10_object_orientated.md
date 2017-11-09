@@ -1,3 +1,5 @@
+[Lesson PDF](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4489777-dt-content-rid-8266455_2/courses/1718-CM6114/10_OOPython-Students.pdf)
+
 [Classes- pydoc](https://docs.python.org/3/tutorial/classes.html)
 
 The instantiation operation (“calling” a class object) creates an empty object. Many classes like to
