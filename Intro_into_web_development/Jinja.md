@@ -113,7 +113,50 @@ html
 {% endfor %}
 </ul>
 ```
+# Inheritance
 
+[Template Inheritance](http://flask.pocoo.org/docs/0.11/patterns/templateinheritance/#template-inheritance)
+• A base file can be extended.
+
+    • {%extends ‘base.html'%}
+    
+• Blocks can be overriden
+
+    • {% block myBlock%} Bla Bla Bla {%endblock%}
+    
+• Or Called…
+
+       • {{ super() }} 
+
+Parent
+```
+<!doctype html>
+<html>
+<head>
+  <title>Inheritance</title>
+</head>
+<body>
+  <header>
+    cool header stuff...........
+  </header>
+
+  {% block myBlock%}This is the parent content{%endblock%}
+
+  <footer>
+    even cooler footer stuff..............
+  </footer>
+</body>
+</html>
+```
+Child
+```
+{%extends '4_inheritance.html'%}
+
+{% block myBlock%}
+{{ super() }}
+<!-- Hi This is the child content -->
+{%endblock%}
+```
 Command prompt
 ```
 C:\Users\c1712480\OneDrive - Cardiff University\Semester_1\Intro_webdev\framework\StudentCode>frameworkserver\Scripts\activate
