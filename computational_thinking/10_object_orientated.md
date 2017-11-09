@@ -74,3 +74,18 @@ one = Test(2)
 print(Test.a)
 print(one.a)
 ```
+
+**Exercise**
+
+There is a class for applying a routing algorithm trying to find the fastest route between destinations?
+What would the following be (in terms of "class", "instance", "method", "variable")
+
+• city - class
+
+• destination_1 - instance
+
+• distance - variable
+
+• visited - attribute
+
+There are multipe answers to the question- might not even do it in an object orientated way.
