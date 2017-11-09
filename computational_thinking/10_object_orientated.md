@@ -59,6 +59,10 @@ Output
 3
 3
 ```
+Define a class, which have a class variable and have a same instance variable.
+Write a method to return (NOT PRINT) the instance variable.
+Create instances of the class and print out both.
+
 This is bad practice:
 ```
 class Test:
