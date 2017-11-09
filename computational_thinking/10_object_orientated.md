@@ -89,3 +89,6 @@ What would the following be (in terms of "class", "instance", "method", "variabl
 • visited - attribute
 
 There are multipe answers to the question- might not even do it in an object orientated way.
+
+[Pydoc- Objects, values and types](https://docs.python.org/3/reference/datamodel.html#object.str)
+
