@@ -71,3 +71,43 @@ messages = {'title':'HelloWorld',
 'message':‘more'}
 return render_template('1_json.html', data = messages)
 ```
+# Loops: lists
+py
+```
+days = ['mon','tues','wed','thurs','fri']
+return render_template('2_loops.html', days = days)
+```
+html
+```
+<ul>
+{%for day in days %}
+<li>{{day}}</li>
+{% endfor %}
+</ul>
+```
+
+# Loops: Dictionaries
+
+• data.items()
+
+• Single var vs two vars
+
+• De-reference into key, value
+
+Python
+```
+data = {'title':'HelloWorld',
+'name':'Ian',
+'message':'hi!',
+'days': ['mon','tues','wed','thurs','fri']
+}
+return render_template('3_dictionary.html', data = data)
+```
+html
+```
+<ul>
+{%for key,value in data.items() %}
+<li>{{value}},{{key}}</li>
+{% endfor %}
+</ul>
+```
