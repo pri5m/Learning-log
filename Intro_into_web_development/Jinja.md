@@ -1,3 +1,5 @@
+[Lesson slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4489868-dt-content-rid-8268540_2/courses/1718-CM6112/jinja.pdf)
+
 # What is templating?
 • A tool that constructs
 html pages.
