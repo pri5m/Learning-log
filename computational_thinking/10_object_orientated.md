@@ -38,3 +38,24 @@ class Person:
 ```
 In java we would call such variables *static.*
 
+```
+class Person:
+    personCount = 0
+    
+    def __init__(self):
+        Person.personCount += 1
+    
+print(Person.personCount)
+p = Person()
+p1 = Person()
+p2 = Person()
+print(Person.personCount)
+print(p2.personCount)
+```
+
+Output
+```
+0
+3
+3
+```
