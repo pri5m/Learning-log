@@ -116,6 +116,7 @@ html
 # Inheritance
 
 [Template Inheritance](http://flask.pocoo.org/docs/0.11/patterns/templateinheritance/#template-inheritance)
+
 • A base file can be extended.
 
     • {%extends ‘base.html'%}
