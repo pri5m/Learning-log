@@ -53,3 +53,21 @@ if request.method == 'GET':
 **return render_template('0_Basic.html', data='Hello World')***
 ```
 
+# Dictionaries
+• We can access data from
+dictionaries
+
+```
+<h1>
+{{ data.title }}
+</h1>
+<p> Hi this is a message from
+{{data.name}}.</p>
+<p>{{data.message}}</p>
+```
+```
+messages = {'title':'HelloWorld',
+'name':'Ian',
+'message':‘more'}
+return render_template('1_json.html', data = messages)
+```
