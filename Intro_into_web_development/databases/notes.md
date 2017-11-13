@@ -15,3 +15,13 @@ VALUES ('Ian','Cooper','888888', 1);
 • Good for light to medium use websites. 
 
 Can create tables in the browser or in atom
+
+The quote marks only matters in the VALUES section, but make sure that the rest of the code has consistent quotes- it just doesn't matter what type: `, ', "
+
+```
+CREATE TABLE IF NOT EXISTS 'Orders' (
+  `orderID` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  `customerID` INTEGER NOT NULL,
+  `jobID` INTEGER NOT NULL,  # use comma even on the last line
+)
+```
