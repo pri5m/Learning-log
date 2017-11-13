@@ -1,4 +1,6 @@
 [TSP.ibpn](https://learningcentral.cf.ac.uk/webapps/streamViewer/streamViewer?cmd=view&streamName=alerts&globalNavigation=false#)
+
+[Exam example ibpn](https://learningcentral.cf.ac.uk/webapps/streamViewer/streamViewer?cmd=view&streamName=alerts&globalNavigation=false#)
 ```
 def mystery(a, result=None):
     if result is None:
