@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS 'Orders' (
 );  #Don't forget the semi colon here
 ```
 
-garage.sql
+# garage.sql
 ```
 DROP TABLE IF EXISTS 'Customers';
 DROP TABLE IF EXISTS 'Jobs';
