@@ -23,5 +23,5 @@ CREATE TABLE IF NOT EXISTS 'Orders' (
   `orderID` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
   `customerID` INTEGER NOT NULL,
   `jobID` INTEGER NOT NULL,  # use comma even on the last line
-)
+);  #Don't forget the semi colon here
 ```
