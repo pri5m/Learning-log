@@ -24,3 +24,8 @@ result = [1,2]
     result = [1,2,1,2,4]
     return [1,2,1,2,4]
 ```
+# Travelling salesman problem
+
+Permutaions- all possible orderings of a list
+
+best_route_index = alldistance.index(min(alldistances))
