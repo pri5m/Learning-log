@@ -1,3 +1,4 @@
+[TSP.ibpn](https://learningcentral.cf.ac.uk/webapps/streamViewer/streamViewer?cmd=view&streamName=alerts&globalNavigation=false#)
 ```
 def mystery(a, result=None):
     if result is None:
@@ -29,3 +30,6 @@ result = [1,2]
 Permutaions- all possible orderings of a list
 
 best_route_index = alldistance.index(min(alldistances))
+
+A **greedy algorithm** is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each stage with the hope of finding a global optimum.
+
