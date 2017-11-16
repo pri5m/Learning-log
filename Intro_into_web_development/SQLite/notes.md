@@ -54,6 +54,8 @@ Revision from templating: Tabularising the SQL data
 # Injection:
 
 Of course you could just create the SQL as a string and run it as a script
+
+Used in hacking
 ```
 query = "INSERT INTO Customers
 ('firstName', 'surname', 'termLocation', 'homeLocation')
@@ -62,7 +64,7 @@ VALUES ('%s','%s','%s','%s')"
 cur.executescript(query)
 ```
 
-StudentServer.py
+# StudentServer.py
 ```
 import os
 from flask import Flask, redirect, request, render_template
