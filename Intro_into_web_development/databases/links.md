@@ -1,3 +1,5 @@
+DatabasesScreenshots.doc
+
 [Session plan](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4489924-dt-content-rid-8269096_2/courses/1718-CM6112/SessionPlanDB.pdf)
 
 # Pre reading
