@@ -1,3 +1,5 @@
+[Llesson pdf](https://learningcentral.cf.ac.uk/webapps/blackboard/execute/content/file?cmd=view&content_id=_4496588_1&course_id=_381769_1&launch_in_new=true)
+
 # Interview Q1
 ```
 def mystery1(x,l=[]):
