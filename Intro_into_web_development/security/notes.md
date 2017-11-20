@@ -53,3 +53,86 @@ data
 
 • Restart server – session should remain – check expiry
 
+# Cookies: Client-side processing - set
+
+• document.cookie
+
+• Most of this is about
+setting the date.
+
+```
+function setCookie(cname, cvalue, exdays) {
+var d = new Date();
+d.setTime(d.getTime() + (exdays*24*60*60*1000));
+var expires = "expires="+ d.toUTCString();
+document.cookie = cname + "=" +
+cvalue + ";" + expires + ";path=/";
+}
+```
+
+```
+Basically creating a string - “cname=cvalue;expires=XXXX;path=/”
+```
+```
+function loadBasket(){
+var shopping = document.getElementById('shopping').value;
+console.log(shopping);
+setCookie('basket', shopping, 1);
+}
+```
+eg
+```
+<script>
+    function loadBasket(){
+      var shopping = document.getElementById('shopping').value;
+      console.log(shopping);
+      setCookie('basket', shopping, 1);
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        alert('I accept that this site will set cookies')
+        var d = new Date();
+        // d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        d.setTime(d.getTime() + (exdays*20*1000)); //20 seconds
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+  </script>
+```
+
+# Cookies: Client-side processing - read
+• Handling of the cookie
+string in java script.
+
+• Split by ‘;’ into
+key/values
+
+• Search for the required
+sub string,
+
+• Remove leading spaces
+
+• Extract and return
+value
+
+
+• The reason is there
+may be more than one
+cookie.
+```
+function readCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for (var i = 0; i < ca.length; i++) {
+var c = ca[i];
+while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+if (c.indexOf(nameEQ) == 0) {
+return c.substring(nameEQ.length, c.length);
+}
+}
+return null;
+}
+```
+```
+username=ian; basket=oil,filter,bolt,washer
+```
