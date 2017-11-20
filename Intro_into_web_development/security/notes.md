@@ -1,3 +1,14 @@
+# What are sessions?
+
+• “A continuous series of sittings / meetings / activities …”
+
+• In Web Development –
+
+• A period, during which conversation data can be persistently accessed
+between the server and the client.
+
+• When the session is over, the data is removed. 
+
 # Cookies: Server-side processing
 
 **European cookie law**
