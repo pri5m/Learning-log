@@ -104,3 +104,6 @@ return mystery2(16,0)+8
 return mystery2(0)
 2+0+8 =10
 ```
+# pygame
+
+pip install pygame
