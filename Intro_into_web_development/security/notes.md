@@ -27,5 +27,18 @@ return resp
 …
 username = request.cookies.get('username')
 ```
+# Cookies: Client side storage.
 
+• Look at the cookies
+
+• Chrome>settings>advances Settings> content settings>all cookies and site
+data
+
+• Cookies are related to a domain!
+
+• Cookies are created on client or the server and added to the header
+
+• Look at the request and response headers.
+
+• Restart server – session should remain – check expiry
 
