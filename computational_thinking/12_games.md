@@ -50,6 +50,8 @@ l = ["a","b",0,1]
 ```
 
 # Practice Q2
+
+*pulled from exam*
 ```
 def mystery2(a,b):
   if b == 0:
@@ -61,6 +63,7 @@ def mystery2(a,b):
 
 mystery2(2,5)
 ```
+Answer
 ```
 a = 2
 b = 5
@@ -76,4 +79,28 @@ b = 2
 if b!= 0
 if b%2 == 0
   return mystery(4+4, int(2/2))
+
+a = 8
+b = 1
+
+if b!=0
+if b%2 !=0
+else
+  return mystery2(8+8, int(1/2)) + 8
+  
+a = 16
+b = 0
+
+b == 0
+  return 0
+
+2 + 0 + 8 + 0 = 10
+```
+**What to write in the exam**
+```
+return mystery2(4,2)+2
+return mystery2(8,1)
+return mystery2(16,0)+8
+return mystery2(0)
+2+0+8 =10
 ```
