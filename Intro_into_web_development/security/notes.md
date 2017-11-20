@@ -183,3 +183,24 @@ session['username'] = request.form['username']
 username = escape(session['username'])
 …
 ```
+# Basic Restricted Access: There is no security in this yet!!!
+
+In the login function
+```
+if (uName =="Ian"):
+    session['usertype'] = 'Admin'
+else:
+    session['usertype'] = 'Customer'
+```
+
+In the /Admin route
+```
+@app.route("/Admin")def admin():
+ username = request.cookies.get('username')
+ usertype = "null" if 'usertype' in session:
+  usertype = escape(session['usertype'])
+ if usertype == "Admin":
+    return render_template('Admin.html', msg = '', username = username)
+ else:
+    return render_template('Customer.html', msg = 'no access ', username = username)
+```
