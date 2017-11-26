@@ -27,4 +27,26 @@ The HTML DOM is a standard object model and programming interface for HTML. It d
 
 In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
 
+# Video notes
 
+- Representation of  HTML (and similar languaages)
+
+- Allows interaction with HTMl
+
+- Organises the nodes (elements) of an HTMl page in a tree structure
+
+**Document**
+
+- We can access the DOM in JavaScript through the document object
+
+- Also gives us access to page properties
+
+- Can call methods on document to access page elements (nodes)
+
+**index.html**
+```
+<script>
+  var nav = document.getElementById("main_nav");
+  console.log(nav);
+</script>
+```
