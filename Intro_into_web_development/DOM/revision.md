@@ -64,20 +64,20 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
 </script>
 ```
 
-
+**Example 2**
 ```
 <script>
-  var body = document.getElementByTagName("body")[0] # [0] is used to get the first element in the array
+  var body = document.getElementByTagName("body")[0]  # [0] is used to get the first element in the array
   
-  var img = document.createElement("img");
-  img.src = "url";
+  var img = document.createElement("img");    # Creates an <img> tag
+  img.src = "url";   # Adds a url to the <img> tag
   
-  body.appendChild(img);
+  body.appendChild(img);  # Appends the image to the body
   
-  var text = document.createTextNode("here is a paragraph");
-  var para = document.createElement("p");
+  var text = document.createTextNode("here is a paragraph");   # Creates a sting of text
+  var para = document.createElement("p");  # Creates a <p> tag
   
-  para.appendChild(text);
-  body.appendChild(para);
+  para.appendChild(text); # Appends the text sting to the <p> element
+  body.appendChild(para); # Appends the <p> element containing the text string to the body
 </script>
 ```
