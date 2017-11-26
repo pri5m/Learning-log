@@ -47,7 +47,7 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
 ```
 <script>
   # Selecting by Id
-  var nav = document.getElementById("main_nav");  # Select by Id. Returns a single element(cos id)
+  var nav = document.getElementById("main_nav");  # Select by Id. Returns a single element(cos id). Selects the first elemt with that id (if more than one id of the same name, which there shouln't be as it should use a class insted)
   console.log(nav); #print out to the command line
   
   # Selecting by class
@@ -57,9 +57,27 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
   }
   
  # Selecting by tag name eg.<p>
- var p = document.getElementByTagName("p");
+ var p = document.getElementByTagName("p");  #Selects everything with the <p> tag
  for(var i = 0; i < p.length; i++) {
     console.log(p[i]);
  }
+</script>
+```
+
+
+```
+<script>
+  var body = document.getElementByTagName("body")[0] # [0] is used to get the first element in the array
+  
+  var img = document.createElement("img");
+  img.src = "url";
+  
+  body.appendChild(img);
+  
+  var text = document.createTextNode("here is a paragraph");
+  var para = document.createElement("p");
+  
+  para.appendChild(text);
+  body.appendChild(para);
 </script>
 ```
