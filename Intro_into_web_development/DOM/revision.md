@@ -46,7 +46,20 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
 **index.html**
 ```
 <script>
-  var nav = document.getElementById("main_nav");
-  console.log(nav);
+  # Selecting by Id
+  var nav = document.getElementById("main_nav");  # Select by Id. Returns a single element(cos id)
+  console.log(nav); #print out to the command line
+  
+  # Selecting by class
+  var centred = document.getElementByClassName("centre"); # Selects everything with the class "centre". getElements- returns an array as more than one element might have the same class
+  for(var i = 0; i < centred.length; i++){
+      console.log(centred[i]);
+  }
+  
+ # Selecting by tag name eg.<p>
+ var p = document.getElementByTagName("p");
+ for(var i = 0; i < p.length; i++) {
+    console.log(p[i]);
+ }
 </script>
 ```
