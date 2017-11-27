@@ -122,7 +122,7 @@ def mystery(a, b):
   
 mystery([2,4,5,7],[1,2,4,9])
 ```
-
+**Answer**
 ```
 a = [2,4,5,7]
 b = [1,2,4,9]
@@ -142,3 +142,42 @@ return [1] + [2] + [2] + [4] + [4] + [5] + [7] + mystery([], [9])
 return [1] + [2] + [2] + [4] + [4] + [5] + [7] + [9]
 [1,2,2,4,4,5,7,9]
 ```
+# question 4
+```
+def mystery2(w):
+  for i in w:
+    if i == 'a':
+      pass
+      print("print hello")
+     else:
+      print(i)
+
+mystery2("a test")
+```
+**Answer**
+
+```
+print hello
+t
+e
+s
+t
+```
+
+# question 5
+
+```
+def mystery3(w):
+ctr = 0
+for n in w:
+  pritn(n)
+  if isinstance(n, tuple):
+    break
+  ctr += 1
+ return(ctr)
+ 
+mystery3([10,30,44(1,20),40,(2)])
+```
+Position of the first tuple in a list
+
+Output - 3
