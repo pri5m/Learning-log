@@ -81,3 +81,40 @@ In other words: The HTML DOM is a standard for how to get, change, add, or delet
   body.appendChild(para); # Appends the <p> element containing the text string to the body
 </script>
 ```
+# Events
+
+- When 'things' happen (see below) on out web pages, the browser generates events
+
+- Can respond to events using JavaScript
+
+element.addEventListener(type, listener, [capture]);
+
+**Event types**
+
+Examples of some type of events:
+
+- Mouse Events (mousedown, mouseup, click, dbclick, mouseover)
+
+- Touch Events (touchstart, touchend)
+
+- Keyboard Events (keydown, keyup, keypress)
+
+- Form Events (focus, change, submit)
+
+- Window Events (scroll, resize)
+
+```
+var header = document.getElementById("my_header");
+header.addEventListener('click', output_element);
+```
+
+Events travel thought the DOM in three phases:
+```
+element.addEventListener(type, listener, [capture]);
+```
+- Capture- event moves down the DOM tree. Any eventListeners registered with 'useCapture=true' are called
+
+- Target- event reaches the target
+
+- Bubbling- events move back up the DOM tree. Any eventListeners registered with 'useCapture=false' are called
+
