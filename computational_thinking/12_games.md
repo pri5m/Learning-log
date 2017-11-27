@@ -109,3 +109,36 @@ return mystery2(0)
 # pygame
 
 pip install pygame
+
+# Practice q 3
+
+```
+def mystery(a, b):
+  if a and b :
+    if a[0] > b[0]:
+      a, b = b, a
+    return [a[0]] + mystery(a[1:], b)
+  return a + b
+  
+mystery([2,4,5,7],[1,2,4,9])
+```
+
+```
+a = [2,4,5,7]
+b = [1,2,4,9]
+
+a[0]>b[0]
+2>1
+a = [1,2,4,9]
+b = [2,4,5,7]
+
+return [1] + mystery([2,4,9], [2,4,5,7])
+return [1] + [2] + mystery([4,9], [2,4,5,7])
+return [1] + [2] + [2] + mystery([4,5,7], [4,9])
+return [1] + [2] + [2] + [4] + mystery([5,7], [4,9])
+return [1] + [2] + [2] + [4] + [4] + mystery([9], [5,7])
+return [1] + [2] + [2] + [4] + [4] + [5] + mystery([7], [9])
+return [1] + [2] + [2] + [4] + [4] + [5] + [7] + mystery([], [9])
+return [1] + [2] + [2] + [4] + [4] + [5] + [7] + [9]
+[1,2,2,4,4,5,7,9]
+```
