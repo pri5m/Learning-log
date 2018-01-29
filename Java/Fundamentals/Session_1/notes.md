@@ -1,7 +1,7 @@
 
 [Slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4534176-dt-content-rid-9331524_2/courses/1718-CM6121/IntroJava%281%29.pdf)
 
-- What is java?
+**What is java?**
 
 
 • Compiled	/	interpreted
@@ -59,3 +59,31 @@ When the object is no longer in use it is deleted by the garbage collector
 A Key Difference: Duck Typing.
 
 The biggest difference between the two languages is that Java is a statically typed and Python is a dynamically typed. Python is strongly but dynamically typed. This means names in code are bound to strongly typed objects at runtime.
+
+**Message.java**
+```java
+public class Message {
+  private String message; //class var/field
+
+  public Message(String aMessage){
+    this.message=aMessage
+  }
+  public void printMessage(){
+    System.out.println(message);
+  }
+}
+```
+
+**FirstExercise.java**
+```java
+public class FirstExercise{
+  //'public'- Access modifier, 'FirstExercise'- Same name as the file
+  public static void main (String args[]){
+    Message hw = new Meassage("Hi Hol");
+    //Message- the object, hw- the var that contains the object message
+    //'new'- Operator makes a message object and the object in the var hw
+    hw.printMessage();
+    // Use of method printMessage on the instance of the class message
+  }
+}
+```
