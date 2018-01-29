@@ -87,3 +87,12 @@ public class FirstExercise{
   }
 }
 ```
+To run:
+
+• javac FirstExercise.java
+
+• java	FirstExercise
+
+```
+Hi Hol
+```
