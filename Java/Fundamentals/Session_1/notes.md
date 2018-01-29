@@ -125,3 +125,27 @@ Hello world
 I'm writing my first Java program
 It's fun (ish)
 ```
+
+**Types: primative**
+
+*Integer	types*
+
+• byte:	8	bit	
+
+• short:	16	bit
+
+• int:	32	bit
+
+• long:	64	bit
+
+*Real	types*
+
+• float:	32	bit
+
+• double:	64	bit
+
+*Other*
+
+• char:	16-bit	Unicode	character
+
+• boolean:	true and false
