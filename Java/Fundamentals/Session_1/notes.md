@@ -185,3 +185,48 @@ public class ThirdExercise{
   }
 }
 ```
+**Equality.java**
+```java
+public class Equality {
+  public static void main(String []args){
+    Integer a = new Integer( 57 );
+    Integer b = new Integer( 57 );
+    Integer c = a;
+    int d= 2;
+
+
+    System.out.println( "(a == b) = " + (a == b) );
+    System.out.println( "(a.equals(b)) = " + (a.equals(b)) );
+    System.out.println( );
+    System.out.println( "(a == c) = " + (a == c) );
+    System.out.println( "(a.equals(c)) = " + (a.equals(c)) );
+    System.out.println( );
+    System.out.println( "(b == c) = " + (b == c) );
+    System.out.println( "(b.equals(c)) = " + (b.equals(c)) );
+    System.out.println( );
+    System.out.println( "(d == c) = " + (d == c) );
+    System.out.println( "(a == d) = " + (a == d) );
+    System.out.println(Integer.rotateLeft(d,100));
+    System.out.println(c.byteValue());
+    System.out.println(Integer.toString(-2,2));
+  }
+}
+```
+
+**Output**
+```
+(a == b) = false
+(a.equals(b)) = true
+
+(a == c) = true
+(a.equals(c)) = true
+
+(b == c) = false
+(b.equals(c)) = true
+
+(d == c) = false
+(a == d) = false
+32
+57
+-10
+```
