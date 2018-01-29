@@ -62,13 +62,14 @@ The biggest difference between the two languages is that Java is a statically ty
 
 **Message.java**
 ```java
-public class Message {
-  private String message; //class var/field
+public class Message {//The beginning of a class
 
-  public Message(String aMessage){
+  private String message; //field object
+
+  public Message(String aMessage){ //this is the constructor
     this.message=aMessage
   }
-  public void printMessage(){
+  public void printMessage(){ //Method object
     System.out.println(message);
   }
 }
@@ -89,10 +90,38 @@ public class FirstExercise{
 ```
 To run:
 
+Command prompt
+
 • javac FirstExercise.java
 
 • java	FirstExercise
 
 ```
 Hi Hol
+```
+
+Both files are compiled when one is complied the other is automatically compiled with 'main' in it.
+
+Compile the file with 'main'in it first and the others will auto compile if in the same directory.
+
+**SecondExercise.java**
+```java
+public class SecondExercise{
+  public static void main(String[] args){
+    Message mess1 = new Message("Hello world");
+    Message mess2 = new Message("I'm writing my first Java program");
+    Message mess3 = new Message("It's fun (ish)");
+    mess1.printMessage();
+    mess2.printMessage();
+    mess3.printMessage();
+  }
+}
+
+```
+
+**Output**
+```
+Hello world
+I'm writing my first Java program
+It's fun (ish)
 ```
