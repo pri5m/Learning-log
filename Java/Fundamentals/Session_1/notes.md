@@ -149,3 +149,39 @@ It's fun (ish)
 • char:	16-bit	Unicode	character
 
 • boolean:	true and false
+
+**Cat.java**
+```java
+public class Cat{
+  private String name;
+  private String food;
+
+  public Cat(String aName, String someFood){
+    this.name = aName;
+    this.food = someFood;
+  }
+
+  public void eat(){
+    System.out.println(food+" is tasty!");
+  }
+  public void sayHello(){
+    System.out.println("My name is "+name+" Mmmrrrooowww");
+  }
+}
+
+```
+
+**ThirdExercise.java**
+```java
+public class ThirdExercise{
+
+  public static void main (String args[]){
+    Cat felix = new Cat("Felix", "Tuna");
+    felix.eat();
+    felix.sayHello();
+    Cat tom = new Cat("Tom", "Milk");
+    tom.eat();
+    tom.sayHello();
+  }
+}
+```
