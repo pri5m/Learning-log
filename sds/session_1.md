@@ -27,10 +27,29 @@ Shell, things going on that can only be accessed by external methods
 
 Encapsulation hides the details of the implementation of an object
 
-They remove what is unnecessary and hide internal workings
+- They remove what is unnecessary and hide internal workings
 
 **Decomposition and collaboration**
 
 Abstraction and encapdrive the decomposition
 
 Once broken down, the solution requires the parts to work together (collaborate)
+
+eg. a thermometer collaborates with a heating controller to provide the behaviour of a thermostat
+
+**Cohesion**
+
+The amount by which elements of  component belong together
+
+Would you combine a thermostat with a doorbell?
+
+- Better " to do one thing and to do it well"- The UNIX philosophy
+
+Design is often (not always) about trade-offs
+
+Make your trade offs informed
+
+- If you have to commit early, make them reversable
+
+[Homework-Dan North](https://www.infoq.com/presentations/Decisions-Decisions)
+
