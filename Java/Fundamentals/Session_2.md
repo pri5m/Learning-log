@@ -138,3 +138,33 @@ public class Exercise1{
 }
 
 ```
+
+# Switch statement
+
+**SwitchCat.java**
+
+```java
+import java.util.Scanner;
+
+public class SwitchCat{
+  public static void main(String[] args){
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a num between 1 and 4");
+    int id = scanner.nextInt();
+    String name;
+    switch (id){
+      case 1: name = "Tom";
+        break;
+      case 2: name = "Tibbles";
+        break;
+      case 3: name = "Felix";
+        break;
+      case 4: name = "Floofs";
+        break;
+      default: name = "Fuzzy";
+        break;
+    }
+  System.out.println(name);
+  }
+}
+```
