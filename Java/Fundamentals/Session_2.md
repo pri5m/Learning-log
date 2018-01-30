@@ -1,3 +1,4 @@
+30/1/18
 
 [slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4536022-dt-content-rid-9366132_2/courses/1718-CM6121/ObjectOrientedJava_2.pdf)
 
@@ -14,3 +15,52 @@
 • Name	of	the	constructor	is	always	the	same	as	the	name	of	the	class	
 (Case	sensitive)
 
+**ifelse**
+```
+If	(condition){	
+do	this	stuff
+}	else	{	
+do	this	other	stuff
+}
+```
+
+
+```java
+import java.util.Scanner;
+public class IfElse{
+	public static void main (String args[]){
+		System.out.println("What language do you want ?");
+		Scanner in = new Scanner(System.in);
+		String language = in.nextLine();
+		if (language.equalsIgnoreCase("english")){
+			System.out.println("This is an english version");
+		}else{
+			System.out.println("This is not an english version");
+		}
+	}
+}
+```
+
+```
+if	(condition	1)	{
+….
+}	else	if	(condition	2)	{
+…..
+}	else	if	(condition	3)	{
+….
+}	else	{
+…..
+}
+```
+
+```java
+System.out.println("type	yes	or	something	else");
+String	input	=	scanner.nextLine();
+if	(input.equals("yes")	)		{
+System.out.println("oh	yes");
+}	else	if	(input.equals("no")	){
+System.out.println("oh	no");
+}	else{
+System.out.println("what???!?!?!?");
+}	
+```
