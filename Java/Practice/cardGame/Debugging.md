@@ -18,3 +18,13 @@ Scanner playOrNo= new Scanner(System.in);
 ```
 
 Needed to have two var names, playOrNo and playOrNoString. playOrNo is used for the scanner and is then converted into a string where it needs to have a different var name, in this case playOrNoString
+
+**'playOrNo is never closed**
+
+```java
+Scanner playOrNo= new Scanner(System.in);
+		System.out.println("Do you want to play 'between the two red queens'? Yes/No");
+		String playOrNoString = playOrNo.nextLine();
+		playOrNo.close();
+```
+The scanner has to be closed after it has beeen used with .close()
