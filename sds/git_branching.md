@@ -38,13 +38,13 @@ Can combine a switch so use the iso code for a country so a feature only appears
 
 **Branching**
 
-$ git branch (name of branch)
+- $ git branch (name of branch)
 
-$ git checkout (nameofbranch)     Switch brances
+- $ git checkout (nameofbranch)     Switch brances
 
-$ git commit -a -m "change"       Commit on a branch
+- $ git commit -a -m "change"       Commit on a branch
 
-$ git checkout master      Go back to "master"
+- $ git checkout master      Go back to "master"
 
 **Branching is cheap in Git**
 
