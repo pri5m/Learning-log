@@ -41,7 +41,7 @@ Whne develop branch is stable, Merge develop into master. Tag master with a rele
 
 Any merge to master creates a produciton release
 
-*Supporting*
+*Supporting branches*
 
 - Feature branches
 
@@ -95,3 +95,38 @@ Must merge back into: develop and master
 
 Branch naming convention: hot-fix*
 
+**Pros and cons**
+
+Overkill- no need fro two eternal branches. Everything can be done on master
+
+Impact on choice
+
+- Team size
+
+- Timezones
+
+- Size and scale of project
+
+- Dev ops (speed- its fast, slowly becoming the norm)
+
+- Culture (risk adverse- no risks)
+
+- Development techniques
+
+- Type of deployment
+
+- Frequency of deployment
+
+# GitHub flow
+
+No develop branch, only master
+
+```
+For teams that have to do formal releases on a
+longer term interval (a few weeks to a few
+months between releases), and be able to do
+hot-fixes and maintenance branches and other
+things that arise from shipping so
+infrequently, git-flow makes sense and I would
+highly advocate it’s use.
+```
