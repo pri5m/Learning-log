@@ -1,6 +1,6 @@
 [Slides 1](https://gitlab.cs.cf.ac.uk/CM6122/lectures/activities_i/blob/master/activities_i_what_and_how.pdf)
 
-# Activities
+# Slides 1
 
 *Generally speaking*
 
@@ -219,3 +219,10 @@ Intent filters
   <data android:scheme="tel"/>
 </intent-filter>
 ```
+## Pending intents
+
+- A pending intent is an object that wraps around an intent which allows it to be executed by some other process (eg. another application)
+
+- Pending intents are registered and maintained with the system (ie. they can exist beyond your application's lifecycle)
+
+- Use cases for Pending intents typically surround doing something after some trigger. For example, perform an action when the user taps on a notification
