@@ -164,3 +164,58 @@ To do this, enter the following inside the activity's tag in the application man
   </intent-filter>
 </activity>
 ```
+[Sending the user to another app](https://developer.android.com/training/basics/intents/sending.html)
+# Slides 2
+
+[Slides 2](https://gitlab.cs.cf.ac.uk/CM6122/lectures/activities_ii/blob/master/activities_ii_intents_and_filters.pdf)
+
+## Intents
+
+- An intent is a message object that instructs Android to perform a specified action
+
+- In this case they are used to start an activity, however the concept is also used for other app components such as Services
+
+- The intent may also carry additional information about what kind of app shsoulld recieve (it does not refer to an explicit app), as well as data that the new Activity can retrieve and then so something with
+
+[Intent and intent fillers](https://developer.android.com/guide/components/intents-filters.html)
+
+[Intent reference](https://developer.android.com/reference/android/content/Intent.html)
+
+**Two broad tupes of intent**
+
+Explicit intent (typically intra-app)
+
+- You can instruct Android to either open a specific activity
+
+```
+//Assumes that this is being called within an activity
+Intent i = new Intent(this, ReceptiveActivity.class);
+startActivity(i);
+```
+
+Implicit intent (typically inter-app)
+
+- Or find an appropriate activity (which should be another application) to handle it
+
+```
+//Intent.ACTION_DIAL is an Intent API constant
+Intent i = new Intent(Iintent.ACTION_DIAL);
+i.setData(Uri.parse("tel:123123123"));
+startActivity(i);
+```
+
+**How does an Activity declare that they can handle an Intent?**
+
+Intent filters
+
+- An intent filter is a rule that is addedd as part of an activity's declaration in the App manifest.  Android will only match the activity to an intent if the parameters of the intent match the filter.
+
+- *important note*, for an activity to show as an option for an implicit intent, the intent filter must include a category tag containing a name attribute with the value android.intent.category.DEFAULT
+
+```
+<intent-filter>
+  <action android:name="android.intent.action.DIAL"/>
+  <category android:name"android.intent.category.DEFAULT"/>
+  <data android:scheme="tel"/>
+</intent-filter>
+```
