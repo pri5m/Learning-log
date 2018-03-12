@@ -1,6 +1,6 @@
 [Slides 1](https://gitlab.cs.cf.ac.uk/CM6122/lectures/activities_i/blob/master/activities_i_what_and_how.pdf)
 
-#Activities
+# Activities
 
 *Generally speaking*
 
@@ -18,7 +18,7 @@
 
 - Although activities work together to form a cohesive user experience in an app, each activity is only loosely bound to the other activities; there are usually minimal dependencies among the activities in an app. In fact, activities often start up activities belonging to other apps. For example, a browser app might launch the Share activity of a social-media app.
 
-#Managing the activity lifecycle
+# Managing the activity lifecycle
 
 Over the course of its lifetime, an activity goes through a number of states. You use a series of callbacks to handle transitions between states. The following sections introduce these callbacks.
 
@@ -60,3 +60,13 @@ The system invokes this callback before an activity is destroyed.
 This callback is the final one that the activity receives. onDestroy() is usually implemented to ensure that all of an activity’s resources are released when the activity, or the process containing it, is destroyed.
 
 This section provides only an introduction to this topic. For a more detailed treatment of the activity lifecycle and its callbacks, see The Activity Lifecycle.
+
+**An activity has essentially four states:**
+
+- If an activity is in the foreground of the screen (at the top of the stack), it is active or running.
+
+- If an activity has lost focus but is still visible (that is, a new non-full-sized or transparent activity has focus on top of your activity), it is paused. A paused activity is completely alive (it maintains all state and member information and remains attached to the window manager), but can be killed by the system in extreme low memory situations.
+
+- If an activity is completely obscured by another activity, it is stopped. It still retains all state and member information, however, it is no longer visible to the user so its window is hidden and it will often be killed by the system when memory is needed elsewhere.
+
+- If an activity is paused or stopped, the system can drop the activity from memory by either asking it to finish, or simply killing its process. When it is displayed again to the user, it must be completely restarted and restored to its previous state.
