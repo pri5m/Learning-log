@@ -61,7 +61,7 @@ This callback is the final one that the activity receives. onDestroy() is usuall
 
 This section provides only an introduction to this topic. For a more detailed treatment of the activity lifecycle and its callbacks, see The Activity Lifecycle.
 
-**An activity has essentially four states:**
+## An activity has essentially four states:
 
 - If an activity is in the foreground of the screen (at the top of the stack), it is active or running.
 
@@ -70,3 +70,97 @@ This section provides only an introduction to this topic. For a more detailed tr
 - If an activity is completely obscured by another activity, it is stopped. It still retains all state and member information, however, it is no longer visible to the user so its window is hidden and it will often be killed by the system when memory is needed elsewhere.
 
 - If an activity is paused or stopped, the system can drop the activity from memory by either asking it to finish, or simply killing its process. When it is displayed again to the user, it must be completely restarted and restored to its previous state.
+
+## There are three key loops you may be interested in monitoring within your activity:
+
+- The entire lifetime of an activity happens between the first call to onCreate(Bundle) through to a single final call to onDestroy(). An activity will do all setup of "global" state in onCreate(), and release all remaining resources in onDestroy(). For example, if it has a thread running in the background to download data from the network, it may create that thread in onCreate() and then stop the thread in onDestroy().
+
+- The visible lifetime of an activity happens between a call to onStart() until a corresponding call to onStop(). During this time the user can see the activity on-screen, though it may not be in the foreground and interacting with the user. Between these two methods you can maintain resources that are needed to show the activity to the user. For example, you can register a BroadcastReceiver in onStart() to monitor for changes that impact your UI, and unregister it in onStop() when the user no longer sees what you are displaying. The onStart() and onStop() methods can be called multiple times, as the activity becomes visible and hidden to the user.
+
+- The foreground lifetime of an activity happens between a call to onResume() until a corresponding call to onPause(). During this time the activity is in front of all other activities and interacting with the user. An activity can frequently go between the resumed and paused states -- for example when the device goes to sleep, when an activity result is delivered, when a new intent is delivered -- so the code in these methods should be fairly lightweight.
+
+[Activity reference](https://developer.android.com/reference/android/app/Activity.html)
+
+[AppCompatActivity](https://developer.android.com/reference/android/support/v7/app/AppCompatActivity.html)   Base class for activities that use the support library action bar features.
+
+## Creating activities
+
+Android studio does the basics but all necessary parts need to be done manually
+
+**Automated tasks**
+
+1. Creating the activity class file (*.java)
+
+2. Creating the layout resource associated with the activity (*.xml)
+
+3. Declairing the existance of the activity in the Application manifest
+
+## YourActivity.java
+
+```
+...//package name, imports ect.
+public class MainActivity extends AppCompatActivity
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+    super.onCreate(savedInstanceState)
+    ...
+  }
+}
+```
+
+- There is no 'main' method, insted we use the onCreate method
+
+- Inside Android's activity class (ie. the superclass) there ia an onCreate method (among many others) which we do not edit directly. We are "overriding" this so that our onCreate method is ran instead. Our activity will use all other methods in the superclass (not shown) that we do not override
+
+## UI
+```
+...//package name, imports ect.
+public class MainActivity extends AppCompatActivity
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main);
+    ...
+  }
+}
+```
+
+- UI created as resource layouts files can be attatchedd to an activity through a process called inflation
+
+## Declaring in the app manifest
+
+- Creating a .java file just creates an activity that is part of your source code
+
+- In order to use it, you must define that it exists by adding it to your application manifest
+
+- *Remember*, the application manifest is an XML file with a hierarchal structure
+
+- Example, to decaler an activity called MainActivity (in "MainActivity.java")
+
+```
+<application...>
+...
+  <activity
+  android:name=".MainActivity">
+  </activity>
+...
+</application> ...
+```
+
+## How can activities be launched?
+
+As stated each app should have a designated "main" activity that is launched when its icon is tapped (ie.on the home screen or launcher)
+
+To do this, enter the following inside the activity's tag in the application manifest
+
+```
+<activity android:name=".MainActivity">
+  <intent-filter>
+    <action android:name-"android.intent.action.MAIN" />
+    
+    <category android:name="android.intent.category.LAUNCHER" />
+  </intent-filter>
+</activity>
+```
