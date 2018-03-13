@@ -1,4 +1,3 @@
-
 c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (maste                             r)
 $ git init
 Initialized empty Git repository in C:/Users/c1712480/AndroidStudioProjects/CP/WelshPharmacy/.git/
@@ -133,4 +132,28 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 
 c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (master)
+$ ^C
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ ls
+app/    build.gradle  gradle.properties  gradlew.bat       settings.gradle
+build/  gradle/       gradlew*           local.properties  WelshPharmacy.iml
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git push -u origin development
+Enter passphrase for key '/c/Users/c1712480/.ssh/id_rsa':
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: To create a merge request for development, visit:
+remote:   https://gitlab.cs.cf.ac.uk/c1714546/Welsh-Pharmacy-Team4/merge_requests/new?merge_request%5Bsource_branch%5D=development
+remote:
+To gitlab.cs.cf.ac.uk:c1714546/Welsh-Pharmacy-Team4.git
+ * [new branch]      development -> development
+Branch development set up to track remote branch development from origin.
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
 $
