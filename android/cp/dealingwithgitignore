@@ -1,0 +1,83 @@
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git status
+On branch development
+Your branch is up-to-date with 'origin/development'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .idea/misc.xml
+        modified:   .idea/modules.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git rm .idea/misc.xml
+error: the following file has local modifications:
+    .idea/misc.xml
+(use --cached to keep the file, or -f to force removal)
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git rm .idea/misc.xml -f
+rm '.idea/misc.xml'
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git status
+On branch development
+Your branch is up-to-date with 'origin/development'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    .idea/misc.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .idea/modules.xml
+
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git rm .idea/modules.xml -f
+rm '.idea/modules.xml'
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git status
+On branch development
+Your branch is up-to-date with 'origin/development'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    .idea/misc.xml
+        deleted:    .idea/modules.xml
+
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git commit -m 'removed ignored files from git'
+[development 99a5b1a] removed ignored files from git
+ 2 files changed, 44 deletions(-)
+ delete mode 100644 .idea/misc.xml
+ delete mode 100644 .idea/modules.xml
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$ git status
+On branch development
+Your branch is ahead of 'origin/development' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+c1712480@NSA107D1A0AE75B MINGW64 ~/AndroidStudioProjects/CP/WelshPharmacy (development)
+$
