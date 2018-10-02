@@ -20,14 +20,6 @@
 
 **Data Instance/state** Data in a db at a particular moment in time. Changes often.
 
-**Logical data independence** A software application must not break when a change occurs in a conceptual schema (e.g. new attributes added).
-
-**Physical data independence** – neither a software application(s) nor a conceptual schema must be affected by changes at the physical level (i.e. new indexes, new access paths) because physical data organisation and access methods are not parts of application logic and code.
-
-+
-
-**Functional independence** – change in implementation (method used to execute a certain function) must not affect software applications.
-
 ## Users
 
 - Database admins
@@ -40,10 +32,75 @@
 
 - End users
 
- ## three-Schema Architecture
+ ## Three-Schema Architecture
  
 **External Schema/View** - individual user's view of the DB (shows relevant data, while hiding the other). Each application has its own host language (e.g. Java, PHP) and may have DBMS language embedded within the host language.
 
 **Conceptual Schema/View** - a single integrated definition of the data within an enterprise which is unbiased toward any single application of data and is independent of how the data is physically stored or accessed. A database administrator is responsible for the maintenance of the conceptual schema. A formal definition of the logical structure of the database, often represented as an Entity-Relationship diagram.
 
 **Internal Schema/View** – represents the actual storage of a database and defines records, indexes, files and other physical attributes. For every conceptual table there may be several actual storage files. The schema for the external and internal levels is kept by the database in its Data Dictionary, also know as the **Catalogue** or **System Tables**.
+
+## Data independence
+
+**Logical data independence** A software application must not break when a change occurs in a conceptual schema (e.g. new attributes added).
+
+**Physical data independence** – neither a software application(s) nor a conceptual schema must be affected by changes at the physical level (i.e. new indexes, new access paths) because physical data organisation and access methods are not parts of application logic and code.
+
++
+
+**Functional independence** – change in implementation (method used to execute a certain function) must not affect software applications.
+
+## Advantages of DB Design and DBSM
+
+- Conceptual Modelling
+
+- Data Independence (Logical and Physical)
+
+- Functional Independence
+
+- Managing Redundancy, Inconsistency and Conflicts
+
+- Data Integrity
+
+- Data Normalisation and De-normalisation
+
+- Performance Improvement (efficient data processing)
+
+- Backup and Recovery
+
+- Security
+
+## Classification of DBSM
+
+➢By purpose (operational, analytical) 
+
+➢By data model (flat file, network, hierarchical, relational, non-relational) 
+
+➢By data organisation (row-oriented and column-oriented) 
+
+➢By number of sites (centralised and distributed) 
+
+➢Licensing (open source and commercial) 
+
+➢Number of users (multiuser and single user)
+
+## Types of db by purpose
+
+Operational – collects, modifies and maintains data on a day-to-day basis in real-time. Deals with dynamic data that changes constantly as updates are made and always reflects up-to-date information.
+
+Analytical – stores and tracks historical data, and time-dependent data.  Deals with static data which rarely changes, but new data may be added regularly. Typically read-only database.
+
+## Type s of db by data model
+
+➢ Flat File Model (1960s) data stored in a single file (e.g. Excel file). Very good for small data, but has many disadvantages with large databases 
+
+➢ Hierarchical Model (1970 - 1980s) data organised in a hierarchical tree-like structure where each child record has only one parent, but each parent record can have one or more child records (e.g. Windows Registry) 
+
+➢ Network Model (1970 - 1980s) data are represented by collections of records, and relationships among data are represented by links, it allows each record to have multiple parent and child records, forming a generalized graph structure (e.g. CODASYL)
+
+➢ Relational Model (1990s - )  the conceptual basis of relational databases. It was proposed by E.F. Codd in 1970, it is a method of structuring data using relations, which are grid-like mathematical structures consisting of columns and rows (e.g. tables). Since 1990s, it is the most popular data model around the world for data storage and processing. 
+
+➢ Object-Oriented Model (1980s -1990s )  data is represented in the form of objects as used in objectoriented programming. In an object-oriented DBMS, the database model is integrated with the programming language,  while in relational DBMS there is a clearer division between the database model and the application. 
+
+➢ NoSQL (non-relational) Models – (2000s-)  encompasses a broad range of different database technologies that were developed in response to the needs on modern (web)-applications which process large amount of structured, semi-structured, unstructured data and store them on clusters of distributed computers. There are different types of NoSQL databases: aggregateoriented (document, column family and key-value oriented) and graph model.
+
