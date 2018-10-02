@@ -69,3 +69,19 @@ RELATION is a two-dimensional table that has the following characteristics: ➢E
 
 ➢There are no identical rows in the relation
 
+## Primary key
+
+An attribute or a minimum set of attributes that uniquely identifies a row within a relation.
+
+Use a field as a primary key only if:
+
+➢The field uniquely identifies the row 
+
+➢The field contains unique values 
+
+➢The field does not contain unknown values 
+
+➢The values of the field cannot be optional 
+
+➢The value of the field cannot be modified
+
