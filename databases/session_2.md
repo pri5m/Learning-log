@@ -85,3 +85,44 @@ Use a field as a primary key only if:
 
 ➢The value of the field cannot be modified
 
+## Candidate key
+
+A candidate key is a minimal set of attributes necessary to identify a row (a minimal superkey).
+
+A candidate Key has a potential to become a Primary Key, but it was not chosen to become the Primary Key.
+
+A primary Key is a candidate key, which was chosen to become a primary key.
+
+A simple key is the key that consists of a single column (attribute).
+
+## Composite key
+
+A key that is composed of two or more columns (attributes).
+
+
+## Surrogate key
+
+➢Surrogate key is a unique, numeric value 
+
+➢It is added to the row to serve as a primary key 
+
+➢It has no meaning in the context of the Entity represented by the relation 
+
+➢It is often used to replace a composite key 
+
+➢It is typically hidden in front-end applications
+
+## InnoDB
+
+We will be using this engine
+
+➢To maintain data integrity, InnoDB supports FOREIGN KEY constraints. With foreign keys, inserts, updates, and deletes are checked to ensure they do not result in inconsistencies across different tables. 
+
+## Foreign key
+
+The relationships between the tables are modelled by assigning Foreign Keys.
+
+Foreign Key is a primary key from one table which is embedded into another table in order to indicate a relationship between the instances of the Entities from these two tables.
+
+The key is called a Foreign Key in a table which receives it and it is called a Primary Key in the table it originates from.
+
