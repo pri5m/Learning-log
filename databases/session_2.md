@@ -126,3 +126,23 @@ Foreign Key is a primary key from one table which is embedded into another table
 
 The key is called a Foreign Key in a table which receives it and it is called a Primary Key in the table it originates from.
 
+## Data integrity
+
+**Data integrity** – is ensured by integrity rules which may be semantical and syntactical. Integrity rules may be stored in a DBMS or implemented at the application level. 
+
+Semantical rules address the issues with the meaning of concepts (e.g. ID is not unique), while syntactical rules address the issues with the representation form (e.g. a date is a DATE, rather than a STRING).
+
+## Integrity constraints
+
+To ensure data integrity relational model introduces a number of constraints.
+
+The major types of integrity constraint are:
+
+❖ Domain constraint 
+
+❖ Entity integrity constraint 
+
+❖ Referential integrity constraint
+
+## Domain constraint
+
