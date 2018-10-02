@@ -146,3 +146,13 @@ The major types of integrity constraint are:
 
 ## Domain constraint
 
+A domain is the set of all unique values permitted for an attribute. 
+
+E.g. a domain of day-of-week is Monday, Tuesday ... Sunday.
+
+This in effect is defining rules for a particular attribute. If it is determined that an attribute is a date then it should be implemented in the database to prevent invalid dates being entered.
+
+A classic example:
+
+The data from a legacy system is loaded into a newly designed database. In the new system, column that holds dates has data type ‘DATE’. In the old system, the dates were held as character strings (1 May 2016). During the data migration, the dates from the old system are rejected by the new system as invalid values.
+
