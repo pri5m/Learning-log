@@ -20,7 +20,7 @@
 
 - Relation (Table)
 
--Entity
+- Entity
 
 - Tuple (Row or Record)
 
@@ -156,3 +156,61 @@ A classic example:
 
 The data from a legacy system is loaded into a newly designed database. In the new system, column that holds dates has data type ‘DATE’. In the old system, the dates were held as character strings (1 May 2016). During the data migration, the dates from the old system are rejected by the new system as invalid values.
 
+## Entity integrity
+
+This is a basic constraint in the relational model.
+
+➢ Every relation must have a primary key. 
+
+➢ The primary key for a row is unique (it does not match the value of any other row in the table) 
+
+➢ The primary key is not NULL, no component of the primary key may be set to NULL.
+
+An RDBMS enforces Entity Integrity by not allowing operations such as INSERT and UPDATE to produce an invalid primary key. Any operation that creates a duplicate primary key or one containing NULL is rejected.
+
+## Referential integrity
+
+All values of a given foreign key must match values of the corresponding primary key (or be Null)
+
+```
+Lecturers (PK_lecturerID, lecturerName, lecturerSurname) 
+Modules (PK_moduleCode,  moduleTitle,  FK_lecturerID)
+```
+
+Every value appearing in the FK_lecturerID column of table Modules must either be a NULL or a value that matches a value appearing in the PK_lecturerID column of table Modules. Modules is the referencing relation (child) and Lecturers is the referenced relation (parent).
+
+*When a row in a table references a corresponding record in another table, the corresponding record MUST exist!*
+
+## Referential integrity enforcement
+
+RDBMSs enforce referential integrity in order to preserve the integrity of data.
+
+Statements  INSERT and UPDATE CANNOT create a non-null foreign key unless a corresponding primary key exists.
+
+Any operation that produces a non-null foreign key value without a matching primary key value is REJECTED. 
+
+Statements  INSERT and DELETE CANNOT remove or change a primary key while a referencing foreign keys exist.
+
+**In MySQL**
+
+When an UPDATE or DELETE operation affects a key value in the parent table that has matching rows in the child table, the result depends on the referential action specified using ON UPDATE and ON DELETE subclauses of the FOREIGN KEY clause. 
+
+```
+[CONSTRAINT [symbol]] 
+FOREIGN KEY [index_name] (index_col_name, ...) 
+REFERENCES tbl_name (index_col_name,...) 
+[ON DELETE reference_option] 
+[ON UPDATE reference_option] 
+
+reference_option: RESTRICT | CASCADE | SET NULL | NO ACTION
+```
+
+MySQL InnoDB supports four options: 
+
+➢ **CASCADE**: Delete or update the row from the parent table, and automatically delete or update the matching rows in the child table. Both ON DELETE CASCADE and ON UPDATE CASCADE are supported. 
+
+➢ **SET NULL**: Delete or update the row from the parent table, and set the foreign key column or columns in the child table to NULL. 
+
+➢ **RESTRICT**: Rejects the delete or update operation for the parent table. Specifying RESTRICT (or NO ACTION) is the same as omitting the ON DELETE or ON UPDATE clause. 
+
+➢ **NO ACTION**: A keyword from standard SQL. In MySQL, equivalent to RESTRICT. The MySQL Server rejects the delete or update operation for the parent table if there is a related foreign key value in the referenced table. 
