@@ -5,3 +5,5 @@ mysql -h csmysql.cs.cf.ac.uk -u [your username] -p
 mysql -h 127.0.0.1 -u root -p  
 
 Password is: comsc
+
+To quit use ``` quit```
