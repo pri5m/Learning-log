@@ -271,3 +271,25 @@ CREATE TABLE employees (employeeNum int NOT NULL AUTO_INCREMENT,
                         FOREIGN KEY (employeeDepartmentID) REFERENCES departments(departmentID)
                         );
 ```
+The Tutors and Students tables show tutors who are assigned to students.
+
+Q1: Does the table Tutors conform with entity integrity? 
+```
+Yes As 1. Every relation has a primary key 2. The primary key is unique 3. The primary key is not null
+```
+
+Q2: Does the table Tutors conform with entity integrity? 
+
+```
+No. The third row has a primary key which is NULL
+```
+
+Q3: Do the tables Tutors and Students conform with referential integrity? 
+
+```
+No. The foregin key id in the student table does not match up with the primary key Id in the tutor table. Archie has a FK tutor Id of 15 but there are only 12, 14, and 56 as primary keys in the tutor table
+```
+
+In each question, clearly answer YES or NO, and then explain your opinion and, where appropriate, show where the integrity is lacking
+
+
