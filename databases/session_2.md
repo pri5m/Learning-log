@@ -218,3 +218,56 @@ MySQL InnoDB supports four options:
 # Homework
 
 When launching a downloaded sql file in the workspace, you auto create a connection to the MySQL DBMS. A connection to the DBMS is also made when using command line SQL. There is no 'off' and 'on'. The only limitation is how many connections can be supported at any one given time.
+
+(a) Create an SQL table customers that stores customer ID, name, and address information with customer ID being the primary key for the table.
+
+(b) Create table departments that stores department ID and name, with department ID being the primary key.
+
+(c) Create an SQL table called employees that stores employee number, employee name, department, and salary information. The primary key for the employees table should be the employee number. Create a foreign key on the employees table that references the departments table based on the department_id field. Table employees must be updates accordingly if an update or delete statements are executed on departments table. 
+
+```SQL
+SHOW DATABASES;
+
+CREATE SCHEMA IF NOT EXISTS practice;
+
+USE practice;
+ 
+SHOW TABLES;
+
+DROP TABLE IF EXISTS customers;
+
+CREATE TABLE customers (customerID int NOT NULL AUTO_INCREMENT,
+						customerName varchar(25) NOT NULL, 
+						customerAddress varchar(100),
+                        PRIMARY KEY (customerID)
+                        );
+SHOW TABLES;
+
+-- Describes the structure and components of the customers table
+DESCRIBE customers;
+
+-- Provide all of the data for all of the columns
+INSERT INTO customers VALUES ('1', 'Sally', '123 Happy RD');
+
+-- Provide some of the data for some of the columns
+INSERT INTO customers (customerID, customerName) VALUES('2', 'David');
+
+SELECT * FROM customers;
+
+DROP TABLE IF EXISTS departments;
+
+CREATE TABLE departments (departmentID int NOT NULL AUTO_INCREMENT, 
+						  departmentName varchar(25) NOT NULL,
+                          PRIMARY KEY(departmentID)
+                          );
+                          
+DROP TABLE IF EXISTS employees;
+
+CREATE TABLE employees (employeeNum int NOT NULL AUTO_INCREMENT,
+						employeeName varchar(25) NOT NULL,
+                        employeeDepartmentID int NULL, -- The department might not have been assigned to the employee yet
+                        employeeAnnualSalary int NOT NULL,
+                        PRIMARY KEY(employeeNum),
+                        FOREIGN KEY (employeeDepartmentID) REFERENCES departments(departmentID)
+                        );
+```
