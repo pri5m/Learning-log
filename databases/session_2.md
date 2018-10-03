@@ -214,3 +214,7 @@ MySQL InnoDB supports four options:
 ➢ **RESTRICT**: Rejects the delete or update operation for the parent table. Specifying RESTRICT (or NO ACTION) is the same as omitting the ON DELETE or ON UPDATE clause. 
 
 ➢ **NO ACTION**: A keyword from standard SQL. In MySQL, equivalent to RESTRICT. The MySQL Server rejects the delete or update operation for the parent table if there is a related foreign key value in the referenced table. 
+
+# Homework
+
+When launching a downloaded sql file in the workspace, you auto create a connection to the MySQL DBMS. A connection to the DBMS is also made when using command line SQL. There is no 'off' and 'on'. The only limitation is how many connections can be supported at any one given time.
