@@ -217,6 +217,52 @@ MySQL InnoDB supports four options:
 
 # Homework
 
+## EX 1
+
+➢Define a relation and list its properties?
+
+```
+A two-dimentional table that has specific characteristics (See notes for characteristics)
+```
+
+➢The properties of a relation indicate that the sequence of the rows and of the columns is unimportant. How can a particular row and column be located?
+
+```
+SELECT columnName FROM tables;
+```
+
+➢Define the terms primary key, candidate key and foreign key. Explain the differences between them.
+
+```
+A Candidate Key can be any column or a combination of columns that can qualify as unique key in database. There can be multiple Candidate Keys in one table. Each Candidate Key can qualify as Primary Key.
+
+A Primary Key is a column or a combination of columns that uniquely identify a record. Only one Candidate Key can be Primary Key. Primary keys are almost always the first column in a table.
+
+A foreign key is used within a table to link the row to the attributes of another table
+```
+
+➢Explain the purpose of NULLs in a database and clarify why it is not quite correct to talk of a “null value”.
+
+```
+NULL is used as a placeholder for missing or unknow values.
+Null is the absence of a value so 'null value' doesn't make sense.
+```
+
+➢How are separate tables in a relational database notionally connected together?
+
+```
+Foreign keys. There are 3 types of relationships: one-to-one, one-to-many and many-to-many
+```
+
+➢Explain the concept of referential integrity and its importance in relational database practice.
+
+```
+It ensures that references between data are indeed valid and intact.
+http://www.odbms.org/wp-content/uploads/2005/11/007.02-Blaha-Referential-Integrity-Is-Important-For-Databases-November-2005.pdf
+```
+
+## EX 2
+
 When launching a downloaded sql file in the workspace, you auto create a connection to the MySQL DBMS. A connection to the DBMS is also made when using command line SQL. There is no 'off' and 'on'. The only limitation is how many connections can be supported at any one given time.
 
 (a) Create an SQL table customers that stores customer ID, name, and address information with customer ID being the primary key for the table.
@@ -271,6 +317,9 @@ CREATE TABLE employees (employeeNum int NOT NULL AUTO_INCREMENT,
                         FOREIGN KEY (employeeDepartmentID) REFERENCES departments(departmentID)
                         );
 ```
+
+## EX 3
+
 The Tutors and Students tables show tutors who are assigned to students.
 
 Q1: Does the table Tutors conform with entity integrity? 
