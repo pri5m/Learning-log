@@ -143,12 +143,14 @@ Identify transitive dependency in the relation below:
 ```
 students (studentID, studentName, accommodationName, accommodationPrice)
 ```
-Answer: 
+Answer: PK: studentID,
 
 ```
 modules (modulesCode, acYear, moduleTitle, lectureID, lectureName)
 ```
+Answer: PK: modulesCode, 
 
 ```
 flight(flightNumber, flightDate, pilotID, pilotName, departureTime, arrivalTime, actual_departureTime, actual_arrivalTime)
 ```
+Answer:
