@@ -72,3 +72,16 @@ e.g. ```X→Y```, means X functionally determines Y, where X a determinant.
 
 **REMEMBER:** A relation must represent one and only one Entity of the Universe of Discourse!
 
+### Normalisation process
+
+1. Remove repeating groups
+
+2. Remove partial dependencies
+
+3. Remove transitive dependencies
+
+4. Make sure every determinant is a candidate key
+
+5. Remove Multi-Valued dependencies
+
+6. Remove Join dependencies
