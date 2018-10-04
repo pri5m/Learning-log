@@ -1,5 +1,8 @@
 # Database normalisation
 
+[https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766717-dt-content-rid-11793831_2/courses/1819-CM6211/Week%203%20-%20Session%204%20-%20Database%20Normalisation.pdf](SLides)
+
+
 ## Refactoring your database
 
 ➢Table must represent only one subject of the Universe of Discourse
@@ -72,7 +75,7 @@ e.g. ```X→Y```, means X functionally determines Y, where X a determinant.
 
 **REMEMBER:** A relation must represent one and only one Entity of the Universe of Discourse!
 
-### Normalisation process
+## Normalisation process
 
 1. Remove repeating groups
 
@@ -85,3 +88,29 @@ e.g. ```X→Y```, means X functionally determines Y, where X a determinant.
 5. Remove Multi-Valued dependencies
 
 6. Remove Join dependencies
+
+### First Normal form (1NF)
+
+The requirement a relation should satisfy to be in 1NF:
+
+- No multivalued attributes (Remember the properties of a relation: Every cell must contain a single value!)
+
+By definition, ALL relations are in 1NF
+
+### Second normal form (2NF)
+
+The requirements a relation should satisfy to be in 2NF:
+
+- No multivalued attributes, i.e. it MUST BE in 1NF
+(Remember: Every cell must contain a single value!)
+
+AND
+
+- No partial dependencies (every non-key attribute must be fully
+functionally dependent on the ENTIRE primary key)
+
+### Partial dependency
+
+Partial dependency is a dependency of non-key attributes on a part of the primary key.
+Partial dependency may ONLY happen when you have a composite primary key.
+
