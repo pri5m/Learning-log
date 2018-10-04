@@ -1,5 +1,7 @@
 # Database normalisation
 
+04/10/18
+
 [Session slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766717-dt-content-rid-11793831_2/courses/1819-CM6211/Week%203%20-%20Session%204%20-%20Database%20Normalisation.pdf)
 
 ## Refactoring your database
@@ -114,3 +116,39 @@ Partial dependency is a dependency of non-key attributes on a part of the primar
 
 Partial dependency may ONLY happen when you have a composite primary key.
 
+### Third normalised from (3NF)
+
+The requirements that a relation should satisfy to be in 3NF:
+- No multivalued attributes, i.e. it MUST BE in 1NF
+(Remember: Every cell must contain a single value!)
+
+AND
+
+- No partial dependencies (every non-key attribute must be fully functionally
+dependent on the ENTIRE primary key), i.e. it MUST BE in 2NF
+
+AND
+
+- No transitive dependencies (no functional dependencies on non-primary-key
+attributes)
+
+### Transitive dependency
+
+Transitive dependency is a dependency of non-key attributes on another non-key attribute.
+
+It is called transitive because the primary key determines an attribute, and this attribute in its
+turn determines the third attribute.
+
+Identify transitive dependency in the relation below:
+```
+students (studentID, studentName, accommodationName, accommodationPrice)
+```
+Answer: 
+
+```
+modules (modulesCode, acYear, moduleTitle, lectureID, lectureName)
+```
+
+```
+flight(flightNumber, flightDate, pilotID, pilotName, departureTime, arrivalTime, actual_departureTime, actual_arrivalTime)
+```
