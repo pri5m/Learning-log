@@ -139,18 +139,44 @@ Transitive dependency is a dependency of non-key attributes on another non-key a
 It is called transitive because the primary key determines an attribute, and this attribute in its
 turn determines the third attribute.
 
+## Exercise
+
+FD: full dependency
+
+TD: Transit dependency
 Identify transitive dependency in the relation below:
 ```
 students (studentID, studentName, accommodationName, accommodationPrice)
 ```
-Answer: PK: studentID,
+Answer: 
+
+PK: studentID, Full dependency studentId -> studentName, studentId -> accommadationName. 
+
+TD: accommadationName -> accommodationPrice
 
 ```
 modules (modulesCode, acYear, moduleTitle, lectureID, lectureName)
 ```
-Answer: PK: modulesCode, 
+Answer: 
+
+Composite PK: modulesCOde, acYear
+
+FD: Composite PK -> lecturerID
+
+PartialD: moduleCode -> moduleTitle
+
+TD: lecturerID -> lecturerName
 
 ```
 flight(flightNumber, flightDate, pilotID, pilotName, departureTime, arrivalTime, actual_departureTime, actual_arrivalTime)
 ```
 Answer:
+
+Composite PK: flightNumber, flightDate
+
+FD: PK -> pilotId, PK -> departureTime, arrivalTime, actual_departureTime, actual_arrivalTime
+
+TD: pioltID -> pilotName
+
+PD: fligthNumber -> departureTime
+
