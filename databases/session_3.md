@@ -1,7 +1,6 @@
 # Database normalisation
 
-[https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766717-dt-content-rid-11793831_2/courses/1819-CM6211/Week%203%20-%20Session%204%20-%20Database%20Normalisation.pdf](SLides)
-
+[Session slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766717-dt-content-rid-11793831_2/courses/1819-CM6211/Week%203%20-%20Session%204%20-%20Database%20Normalisation.pdf)
 
 ## Refactoring your database
 
@@ -112,5 +111,6 @@ functionally dependent on the ENTIRE primary key)
 ### Partial dependency
 
 Partial dependency is a dependency of non-key attributes on a part of the primary key.
+
 Partial dependency may ONLY happen when you have a composite primary key.
 
