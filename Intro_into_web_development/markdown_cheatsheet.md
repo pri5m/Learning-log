@@ -41,7 +41,20 @@ Triple ``` for generic code or text. Can be found to the left of the number 1 on
 
 Use of the ``` ``` ``` followed by the name of the coding language will cause github to auto add coloring for that code snippet (optional)
 
+
+For example for SQL:
+
 ```SQL
 SELECT * FROM customers;
 ```
 
+Or for Python:
+```Python
+def fib(n):
+     a, b = 0, 1
+     while a < n:
+         print(a, end=' ')
+         a, b = b, a+b
+     print()
+ fib(1000)
+```
