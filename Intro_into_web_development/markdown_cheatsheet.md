@@ -58,3 +58,7 @@ def fib(n):
      print()
  fib(1000)
 ```
+
+# Note
+
+There are various markdowns used and supported by different software. This is the github markdown version. Atom and Intellij use slightly different variations. So bare that in mind when creating a README.md doc. To find out the formatting supported by other software, have a google. They are all pretty similar to each other but with slight differences.
