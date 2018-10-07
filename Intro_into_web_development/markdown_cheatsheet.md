@@ -12,7 +12,9 @@
 
 ###### Heading 6
 
-# Text formatting
+# Formatting
+
+### Line formatting
 
 Text line.
 Text line with no line gap between other line merges the lines
@@ -20,6 +22,8 @@ Text line with no line gap between other line merges the lines
 Text line.
 
 Text line with line above creates new paragraph.
+
+### Text formatting
 
 *A single star for italics*
 
@@ -29,3 +33,4 @@ Link description in square brackets[] and the link in round brackets ()
 
 [Link description](https://www.cardiff.ac.uk/study/undergraduate/courses/2018/applied-software-engineering-bsc)
 
+### Code formatting
