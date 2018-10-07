@@ -34,3 +34,14 @@ Link description in square brackets[] and the link in round brackets ()
 [Link description](https://www.cardiff.ac.uk/study/undergraduate/courses/2018/applied-software-engineering-bsc)
 
 ### Code formatting
+
+```
+Triple ``` for generic code or text. Can be found to the left of the number 1 on your keyboard
+```
+
+Use of the ``` ``` ``` followed by the name of the coding language will cause github to auto add coloring for that code snippet (optional)
+
+```SQL
+SELECT * FROM customers;
+```
+
