@@ -107,6 +107,49 @@ ForkJoinPool commonPool = ForkJoinPool.commonPool();
 System.out.println(commonPool.getParallelism());    // 3
 ```
 
+On my machine the common pool is initialized with a parallelism of 3 per default. This value can be decreased or increased by setting the following JVM parameter:
+```
+-Djava.util.concurrent.ForkJoinPool.common.parallelism=5
+```
+
+Collections support the method parallelStream() to create a parallel stream of elements. Alternatively you can call the intermediate method parallel() on a given stream to convert a sequential stream to a parallel counterpart.
+
+In order to understate the parallel execution behavior of a parallel stream the next example prints information about the current thread to sout:
+```
+Arrays.asList("a1", "a2", "b1", "c2", "c1")
+    .parallelStream()
+    .filter(s -> {
+        System.out.format("filter: %s [%s]\n",
+            s, Thread.currentThread().getName());
+        return true;
+    })
+    .map(s -> {
+        System.out.format("map: %s [%s]\n",
+            s, Thread.currentThread().getName());
+        return s.toUpperCase();
+    })
+    .forEach(s -> System.out.format("forEach: %s [%s]\n",
+        s, Thread.currentThread().getName()));
+        
+filter:  b1 [main]
+filter:  a2 [ForkJoinPool.commonPool-worker-1]
+map:     a2 [ForkJoinPool.commonPool-worker-1]
+filter:  c2 [ForkJoinPool.commonPool-worker-3]
+map:     c2 [ForkJoinPool.commonPool-worker-3]
+filter:  c1 [ForkJoinPool.commonPool-worker-2]
+map:     c1 [ForkJoinPool.commonPool-worker-2]
+forEach: C2 [ForkJoinPool.commonPool-worker-3]
+forEach: A2 [ForkJoinPool.commonPool-worker-1]
+map:     b1 [main]
+forEach: B1 [main]
+filter:  a1 [ForkJoinPool.commonPool-worker-3]
+map:     a1 [ForkJoinPool.commonPool-worker-3]
+forEach: A1 [ForkJoinPool.commonPool-worker-3]
+forEach: C1 [ForkJoinPool.commonPool-worker-2]
+```
+
+As you can see the parallel stream utilizes all available threads from the common ForkJoinPool for executing the stream operations. The output may differ in consecutive runs because the behavior which particular thread is actually used is non-deterministic.
+
 ## How are streams processed?
 
 ```
