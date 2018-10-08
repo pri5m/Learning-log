@@ -469,3 +469,30 @@ IntStream.range(1, 4)
     .flatMap(f -> f.bars.stream())
     .forEach(b -> System.out.println(b.name));
 ```
+
+### What about Reduce?
+
+The reduction operation combines all elements of the stream into a single result. Java 8 supports three different kind of reduce methods. The first one reduces a stream of elements to exactly one element of the stream. Let's see how we can use this method to determine the oldest person:
+```
+persons
+    .stream()
+    .reduce((p1, p2) -> p1.age > p2.age ? p1 : p2)
+    .ifPresent(System.out::println);    // Pamela
+```
+
+The reduce method accepts a BinaryOperator accumulator function. That's actually a BiFunction where both operands share the same type, in that case Person. BiFunctions are like Function but accept two arguments. The example function compares both persons ages in order to return the person with the maximum age.
+
+The second reduce method accepts both an identity value and a BinaryOperator accumulator. This method can be utilized to construct a new Person with the aggregated names and ages from all other persons in the stream:
+```
+Person result =
+    persons
+        .stream()
+        .reduce(new Person("", 0), (p1, p2) -> {
+            p1.age += p2.age;
+            p1.name += p2.name;
+            return p1;
+        });
+
+System.out.format("name=%s; age=%s", result.name, result.age);
+// name=MaxPeterPamelaDavid; age=76
+```
