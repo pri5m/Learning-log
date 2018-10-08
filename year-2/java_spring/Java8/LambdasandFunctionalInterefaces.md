@@ -126,7 +126,7 @@ public static void main(String args[]){
 }
 ```
 
-## How can lambda expressions be used as arguements
+## How can lambda expressions be used as arguements?
 
 One common use of lambdas is to pass them as arguments.
 
