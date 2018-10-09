@@ -158,3 +158,47 @@ total is the result of a transaction
 ➢ Add relationships that make sense:
 
 (transaction) contains (products)
+
+## Cardinality
+
+Cardinality - the number of occurrences in one entity which are associated (or linked) to the number
+of occurrences in another.
+
+Binary associations can be classified according to cardinality ratio:
+
+➢one-to-one (1:1)
+
+➢one-to-many (1:M)
+
+➢many-to-many (M:N)
+
+Note: *The term cardinality is used in two different contexts (1) data modelling and (2) database query optimisation. Here, we discuss the meaning
+of the term in data modelling context. In data query optimisation context it refers to the uniqueness of data values in a particular column. To add
+to the confusion, in the data modelling context, the term cardinality also used to refer to the number or tuples (rows) in a relation.*
+
+Binary associations can be classified according to optionality: mandatory or optional.
+
+Unary-  One in which a relationship exists between occurrences of the same entity set.
+
+### One to one
+
+One-to-One relationship - In this scenario both sides of the relationship have unique
+values for every row.
+
+### One to many
+
+One-to-Many relationship - In this scenario one side of the relationship will hold unique values for
+every row, but the other side of the relationship will hold duplicate values for any or all of the
+corresponding values in the first table
+
+### Many to many
+
+Many-to-Many relationship - In this scenario, both sides of the relationship will hold duplicated
+values, causing excessive calculations for every query run against it.
+
+RDBMSs can not directly represent M:M relationships, so before converting a data model to a physical
+schema you MUST convert the M:M into logically equivalent 2 one-to-many relationships.
+
+The middle table is called a linking table and is used to resolve the many to many problem. The table often consists of two columns and ID from the two tables being linked.
+
+### Recursive relationship
