@@ -32,6 +32,27 @@
 
 - End users
 
+## Data model
+
+**Data Model** is a collection of concepts for describing the structure of a database.
+
+Three types of data models:
+
+**Conceptual model** – represents the Universe of Discourse at a high-level of abstraction, at a level
+accessible to end-users and non-technical business experts. Specifies entities with a limited number of
+attributes. Usually fits on one page. Contains relationships between entities, but omits cardinality and
+nullability. It is independent of DBMS, data storage locations or technologies.
+Examples: Entity-Relationship diagram, UML class diagram.
+
+**Logical model** – still may be understood by end-users, it provides more details than a conceptual model,
+but less than a physical model (e.g. it hides storage details). It will contain relationships between entities
+that address cardinality and nullability. Data attributes will typically have datatypes with precisions and
+lengths assigned. Also independent of technologies.
+
+**Physical model** – a fully-attributed low-level data model that is dependent upon a specific technology
+(DBMS) and data storage location. It includes objects such as views, primary key constraints, foreign key
+constraints, indexes, security roles, stored procedures, etc.
+
  ## Three-Schema Architecture
  
 **External Schema/View** - individual user's view of the DB (shows relevant data, while hiding the other). Each application has its own host language (e.g. Java, PHP) and may have DBMS language embedded within the host language.
