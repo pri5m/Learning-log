@@ -128,3 +128,33 @@ used for identifying entities in an entity set is called an entity key.
 
 Relationships are associations between entities. The degree of a relationship is the number of entities
 associated in the relationship (unary, binary, ternary). 
+
+## ER Modelling process
+
+1. Identify nouns, nouns are candidate entities (classes in UML).
+
+2. Identify verbs, verbs are candidate relationships. Look for typical verbs such as “is,” which
+leads to investigation of the hierarchical structure, or “has” and other verbs, which lead to
+investigation of the relational structure.
+
+3. Identify adjectives and nouns describing other nouns, these are candidate attributes.
+
+4. Identify primary and foreign keys for all entities
+
+5. Identify cardinality and optionality for relationships
+
+6. In addition, document all business rules that cannot be represented in the ER diagram
+
+Additionally, you may
+
+➢Determine if some data can be described generically, and generic description can be an entity:
+
+milk, beans, bread are all products
+
+➢ Determine from which sources the data is derived:
+
+total is the result of a transaction
+
+➢ Add relationships that make sense:
+
+(transaction) contains (products)
