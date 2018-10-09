@@ -47,9 +47,9 @@ controller/HelloWorldDateTime.java
 @RestController
 public class HelloWorldDateTime {
 
-    @RequestMapping("/")
+    @RequestMapping("/test")
     public String index(){
-        return "Hello from Spring Boot";
+        return "Hello from Spring Boot. Today is : " + new SimpleDateFormat("dd/MM/yyyy").format(new Date());
     }
 }
 ```
