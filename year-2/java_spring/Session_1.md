@@ -53,3 +53,11 @@ public class HelloWorldDateTime {
     }
 }
 ```
+
+Class-level annotation: @RestController
+
+Registers that class with Spring Boot as a control bean
+
+Method-level annotation: @RequestMapping
+
+Tells Spring Boot to route web requests on the stated URL pattern to this method
