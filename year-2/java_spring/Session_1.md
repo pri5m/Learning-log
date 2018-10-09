@@ -28,3 +28,10 @@ Create a diary for technical descisiosn as well as the agile diary
 
 • Combine the module learning
 
+## To run
+
+Gradle -> application -> bootRun
+
+## Port already in use
+
+Close the other running tab and rebuild
