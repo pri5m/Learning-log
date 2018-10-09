@@ -38,3 +38,18 @@ Close the other running tab and rebuild
 
 If the problem persists then change the server port go to application.properties and change the port number
 ```server.port=9090```
+
+
+## Example
+
+controller/HelloWorldDateTime.java
+```
+@RestController
+public class HelloWorldDateTime {
+
+    @RequestMapping("/")
+    public String index(){
+        return "Hello from Spring Boot";
+    }
+}
+```
