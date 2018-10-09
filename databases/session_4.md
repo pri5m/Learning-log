@@ -202,3 +202,23 @@ schema you MUST convert the M:M into logically equivalent 2 one-to-many relation
 The middle table is called a linking table and is used to resolve the many to many problem. The table often consists of two columns and ID from the two tables being linked.
 
 ### Recursive relationship
+
+If the same entity participates in a relationship twice, then role names as used to distinguish
+between the meaning of each participant.
+
+## Identifying vs Non-Identifying Relationship
+
+Solid line:
+
+**Identifying relationship** - where a child entity's identity/existence relies solely on a parent entity.
+There is no child entity without a parent entity.
+
+For example, if you delete a student record, you most likely would like to delete all newsletter
+subscriptions of that student as well, because newsletter subscription without a student are
+pointless.
+
+Dashed line:
+
+**Non-identifying relationship** - the child entity may exist on its own without a parent entity.
+
+(e.g. books and authors, modules and lecturers)
