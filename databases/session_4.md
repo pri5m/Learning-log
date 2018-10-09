@@ -1,5 +1,7 @@
 # Database design
 
+[Session slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766718-dt-content-rid-11793828_2/courses/1819-CM6211/Week%202%20-%20Session%204%20-%20Database%20Design.pdf)
+
 ## Database Development Life Cycle
 
 ➢DBDLC is inherently associated with the system development life cycle
@@ -88,4 +90,23 @@ tables, functional dependency mapping and normalisation. This stage is DBMS depe
 (RDBMS) such as MySQL, Oracle, Microsoft SQL Server etc. No matter which method you use for implementation (automatically
 via a tool or manually), you have to prepare DDL statements for creating database objects in a language that your RDBMS
 understands. This stage is DBMS dependent.
+
+## Best practice for data modelling
+
+➢**Be especially careful with the scope of the project.** Three iterations in refining the model is
+normal; more iterations usually means the scope was not well defined, or the customer
+requested features that should be part of a different project.
+
+➢**Choose the appropriate methodology.** ER diagrams are an informal standard for documenting
+the database part of a project.
+
+➢**If you use a professional database-modelling tool, become familiar** with the tool before you
+start your design.
+
+➢**Start with a strict relational model, but then be prepared to make some compromises to
+satisfy business needs.** For example, you may have to denormalise some data to achieve
+satisfactory performance. Document such compromises thoroughly.
+
+➢**Check existing models as a starting point.** You can find free models in books and on the
+Internet for similar scenarios. Check existing models if you upgrade an application. 
 
