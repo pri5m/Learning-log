@@ -35,3 +35,5 @@ Gradle -> application -> bootRun
 ## Port already in use
 
 Close the other running tab and rebuild
+
+If the problem persists then change the server port go to application.properties and change the port number
