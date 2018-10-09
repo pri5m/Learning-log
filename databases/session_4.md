@@ -71,3 +71,21 @@ manuals, interviews with end users
 - Note downin a clear form
 
 - Create a description of requirements and constraints
+
+## Three design phases
+
+The three phases, schemas, and methods you use in a specific phase are as follows:
+
+**Conceptual phase** As a database designer, in this phase, you collect all business requirements and rules in cooperation with
+business domain experts. You create a conceptual schema by using the entity relationship (ER) method in this phase.
+Alternatively, you could use Unified Modelling Language (UML). This stage is DBMS independent.
+
+**Logical phase** During the logical phase, you represent data that is already grouped logically in entities by adding attributes and
+relationships between entities. ER diagrams document this relational design. Logical phase also includes mapping to entities to
+tables, functional dependency mapping and normalisation. This stage is DBMS dependent.
+
+**Physical phase** You implement the relational model physically, in a database on a relational database management system
+(RDBMS) such as MySQL, Oracle, Microsoft SQL Server etc. No matter which method you use for implementation (automatically
+via a tool or manually), you have to prepare DDL statements for creating database objects in a language that your RDBMS
+understands. This stage is DBMS dependent.
+
