@@ -61,3 +61,19 @@ Registers that class with Spring Boot as a control bean
 Method-level annotation: @RequestMapping
 
 Tells Spring Boot to route web requests on the stated URL pattern to this method
+
+## Request param annotation
+
+```
+
+    @RequestMapping("/")
+    public String index(
+            @RequestParam(value="name",defaultValue="World") String name){
+        return "Hello " + name + " from Spring Boot. Today is : " + new SimpleDateFormat("dd/MM/yyyy").format(new
+        Date());
+    }
+```
+http://localhost:8080/?name=Holly
+
+Output:
+```Hello Holly from Spring Boot. Today is : 09/10/2018```
