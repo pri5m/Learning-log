@@ -222,3 +222,8 @@ Dashed line:
 **Non-identifying relationship** - the child entity may exist on its own without a parent entity.
 
 (e.g. books and authors, modules and lecturers)
+
+## SQL workbench EER diagram
+
+[Docs](https://dev.mysql.com/doc/workbench/en/wb-creating-eer-diagram.html)
+
