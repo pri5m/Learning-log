@@ -110,3 +110,21 @@ satisfactory performance. Document such compromises thoroughly.
 ➢**Check existing models as a starting point.** You can find free models in books and on the
 Internet for similar scenarios. Check existing models if you upgrade an application. 
 
+## Three elements of Entity Relationship diagram
+
+➢**Entity**
+
+Entities are the objects of interest within the Universe of Discourse which you can distinctly identify.
+Entity vs Entity Instance; Strong Entity vs Weak Entity
+
+➢**Attribute**
+
+Each entity instance is described by a set of attributes that define its qualities, characteristics, or
+properties and the values of the attributes. For each attribute, there are a number of legal or
+permitted values. These sets of legal values are value sets or domains of that attribute. A attribute(s)
+used for identifying entities in an entity set is called an entity key.
+
+➢**Relationship**
+
+Relationships are associations between entities. The degree of a relationship is the number of entities
+associated in the relationship (unary, binary, ternary). 
