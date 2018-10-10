@@ -56,7 +56,7 @@ public class HelloWorldDateTime {
 
 Class-level annotation: @RestController
 
-Registers that class with Spring Boot as a control bean
+Registers that class with Spring Boot as a control bean. Body of the reponse from HTTP
 
 Method-level annotation: @RequestMapping
 
