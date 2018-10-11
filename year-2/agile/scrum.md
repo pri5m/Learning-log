@@ -51,3 +51,27 @@ Changes should be minor as you made the rigth descisions sooner
 - Increased motivation and urgency
 
 - Reduced cost and schedual growth
+
+## Definition of done?
+
+What constitutes as done
+
+- Developed
+
+- Tested
+
+- Used in production
+
+## Benefits of time boxing
+
+- Establishes a WIP limit
+
+- Forces prioritisation
+
+- Demonstrates progress
+
+- Avoids unnecessary perfectionism
+
+- Motivates closure
+
+- Improves predictability
