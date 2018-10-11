@@ -170,3 +170,84 @@ Testable- Story must include test criteria
 - Performace criteria are clear and testable
 
 - Demonstratable at sprint review meeting
+
+
+## Estimating
+
+Too much effort in estimating causes a diminishing accuracy in the estimated. Estimate descisions should be made quickly. Come to a rough agreement on the effort needed to be put into. 
+
+## Planning poker
+
+- Consensus based
+
+- Expert opinion
+
+- Intense discussion
+
+- Relative sizing
+
+- Accurate grouping/ binning
+
+- Leverage estimating history
+
+1. PO selects PBI and reads it to the dev team
+
+2. Dev team discusses and asks PO questions
+
+3. Devs each privately select a poker card
+
+4. Devs simultaneously share their poker cards
+
+5. If all cards same then consensus
+
+6. If not all same then discuss and repeat
+
+## Product owner responsibilities
+
+- Manage economics
+
+- Participate in planning
+
+- Groom the product backlog
+
+- Define acceptance criteria and verify met
+
+- Collaborate with development team
+
+- Collaborate with stakeholders
+
+- Domain skills...
+
+- People skills...
+
+- Descision making...
+
+- Accountability...
+
+- Is a visionary
+
+- Knows not everyhting can be anticipated
+
+- Has business and domain expertise
+
+- Has a good relationship with stakeholders
+
+- Is a negotiator/consensus builder
+
+- Is a good communicator
+
+- Is a powerful motivator
+
+- Is empowered to make descisions
+
+- Is willing to make hard decisions 
+
+- Is decisive
+
+- Takes an economic view of issues
+
+- Accepts responsibility for the product
+
+- Is commited and available
+
+- Acts like a scrum team member
