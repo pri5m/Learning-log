@@ -140,3 +140,33 @@ Estimable- Story must have estimated effort
 Small- Story must be acieveable in sprint
 
 Testable- Story must include test criteria
+
+### Technical improvement
+
+### Non fucntional requirements
+
+[Slides 2b](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4835308-dt-content-rid-11895876_2/courses/1819-CM6223/Agile%202b%20-%20Scrum.pdf)
+
+## D.E.E.P
+
+- Detailed Appropriately- PBI is well-defined
+
+- Emergent- PBI can be changed until in sprint
+
+- Estimated- PBI must have estimated effort
+
+- Prioritised- PBI near-term items in order. Can develop a release plan form the priorited backlog.
+
+## Definition of ready
+
+- Business value is clearly articulated
+
+- Details are sufficiently understood
+
+- Dependencies are identified- no blockers
+
+- Acceptance criteria are clear and testable
+
+- Performace criteria are clear and testable
+
+- Demonstratable at sprint review meeting
