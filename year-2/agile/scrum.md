@@ -300,3 +300,157 @@ Too much effort in estimating causes a diminishing accuracy in the estimated. Es
 
 - Long-lived
 
+[Scrum 2c](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4835309-dt-content-rid-11895877_2/courses/1819-CM6223/Agile%202c%20-%20Scrum.pdf)
+
+## Scrum of scrums
+
+A representative of each scrum team will get togther to talk about hwo their team is getting on
+
+## Planning inputs
+
+**Product backlog
+
+Prior to sprint planning, the topmost product backlog items have
+been groomed into a ready state
+
+**Team velocity 
+
+The team’s historical velocity is an indicator of how much work is
+practical for the team to complete in a sprint
+
+**Constraints 
+
+Business or technical constraints that could materially affect what
+the team can deliver are identified
+
+**Team capabilities
+
+Capabilities take into account which people are on the team, what
+skills each team member has, and how available each person will
+be in the upcoming sprint
+
+**Initial sprint goal
+
+This is the business goal the product owner would like to see
+accomplished during this sprint
+
+## Sprint capacity
+
+How much the team is capable of doing within a sprint.
+
+Sprint buffer
+
+Capacity to work
+
+Personal time off
+
+Other non sprint commitments
+
+Other sprint activities
+
+**Use daily scrum meeting rather than standup**
+
+## Technical practices
+
+• Test-driven development
+
+• Refactoring
+
+• Simple design
+
+• Pair programming
+
+• Continuous integration
+
+• Collective code ownership
+
+• Coding standard
+
+• Metaphor
+
+## Sprint review
+
+**Scrum team 
+
+The product owner, scrum master, and development team should
+all be present so that they can all hear the same feedback and be
+able to answer any questions regarding the sprint and the product
+increment
+
+**Internal stakeholders
+
+Business owners, executives, and managers should see the
+progress first-hand so that they can suggest course corrections.
+For internal product development, internal users, subject matter
+experts, and the operations manager of the business function to
+which the product relates should attend
+
+**Other internal teams
+
+Sales, marketing, support, legal, compliance, and other scrum and
+non-scrum development teams might want to attend sprint
+reviews to provide area-specific feedback or to sync their own
+groups work with the scrum team
+
+**External stakeholders
+
+External customers, users, and partners can provide valuable
+feedback to he scrum team and other attendees
+
+### review Prep
+
+• Determine who to invite
+
+• Schedule the activity
+
+• Confirm that the sprint work is done
+
+• Prepare for the demonstration
+
+• Determine who does what
+
+### Retrospective prep
+
+• Define the retrospective focus
+
+• Select the exercises
+
+• Gather objective data
+
+• Structure the retrospective
+
+
+1. What worked well this sprint that we want to
+continue doing
+
+2. What didn’t work well this sprint that we should
+stop doing
+
+3. What should we start doing or improve
+
+End up getting a shared perspective on how to improve the situation
+
+Could track develoer happiness over the sprint
+
+### Retrospective issues
+
+• Not doing the retrospective or low attendance
+
+• All fluff, no stuff
+
+• Ignoring the elephant in the room
+
+• Poor facilitator
+
+• Depressing and energy draining
+
+• Blame game
+
+• Complaint session
+
+• Replaces ad hoc process improvement
+
+• Too ambitious
+
+• No follow-through
+
