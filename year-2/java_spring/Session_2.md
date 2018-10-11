@@ -42,3 +42,97 @@ public class helloSlashNameReturnsGreetingAndName {
   }
 }
 ```
+
+```
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.web.servlet.MockMvc;
+
+import static org.hamcrest.Matchers.containsString;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
+@AutoConfigureMockMvc
+public class helloSlashNameReturnsGreetingAndName {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Test
+    public void getHello() throws Exception{
+        this.mockMvc.perform(
+                get("/hello/Slartibartfast")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString("Hello Slartibartfast")));
+    }
+}
+```
+
+# Forms
+
+resources/templates/name.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <title>Form</title>
+    </br>
+    <form action="/name" method="post">
+        <input type="text" name="name" id="name" value="Enter name"/>
+    </form>
+</body>
+</html>
+```
+
+dto/NameForm.java
+```java
+import lombok.Data;
+import javax.validation.constraints.NotBlank;
+
+@Data
+public class NameForm {
+
+    @NotBlank(message="Name  is  required")
+    private String Name;
+}
+```
+
+controllers/FormController.java
+```java
+import com.cm6213.dependencytest.dto.NameForm;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class FormController {
+
+    @RequestMapping(path="/name", method = RequestMethod.GET)
+    public Model getForm(Model model){
+        return model;
+    }
+
+    @RequestMapping(path="/name", method = RequestMethod.POST)
+    public String postName(@ModelAttribute NameForm in_form, Model model){
+        System.out.println("name equals" + in_form.getName());
+        return "redirect:/";
+    }
+}
+```
