@@ -23,7 +23,7 @@ F12 chrome
 
 Look at the status code and content-type
 
-```
+```java
 //Run it with JUnit
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
@@ -43,7 +43,7 @@ public class helloSlashNameReturnsGreetingAndName {
 }
 ```
 
-```
+```java
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
