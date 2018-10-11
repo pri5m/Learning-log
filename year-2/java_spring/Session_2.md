@@ -138,3 +138,16 @@ public class FormController {
     }
 }
 ```
+
+# MVC
+
+[Slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4835106-dt-content-rid-11854576_2/courses/1819-CM6213/Slides/Spring%20Boot/W2.6%20-%20Model-View-Controller.pdf)
+
+1 Controller interprets user action
+
+2 Select logic to call on model
+
+3 Model returns data + next view
+
+4 View renders using supplied data
+
