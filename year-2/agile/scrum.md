@@ -251,3 +251,52 @@ Too much effort in estimating causes a diminishing accuracy in the estimated. Es
 - Is commited and available
 
 - Acts like a scrum team member
+
+## Scrum masters
+
+- Coach
+
+- Servant leader
+
+- Process authority
+
+- Interference shield
+
+- Impediment remover
+
+- Change agent
+
+- Knowledgeable
+
+- Questioning
+
+- Patient
+
+- Collaborative
+
+- Protective
+
+- Transparant
+
+## Development team
+
+- Self-organising
+
+- Cross-functioning diverse and sufficient
+
+- T-Shaped skills
+
+- Musketeer attitude
+
+- High-bandwidth communication
+
+- Tansparent communication
+
+- Right-sized
+
+- Focused and committed
+
+- Works at a sustainable pace
+
+- Long-lived
+
