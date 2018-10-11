@@ -116,3 +116,27 @@ What constitutes as done
 - Platform
 
 - Language
+
+## User stories
+
+As a <user story> I want to <goal> so that <benefit>
+
+Acceptance criteria
+
+Can add conditions of satisfaction
+
+### I.N.V.E.S.T
+
+*In test*
+
+Independent- Story is self-contained
+
+Negotiable- Story can be changed until in sprint
+
+Valuable- Story must deliver value to customer
+
+Estimable- Story must have estimated effort
+
+Small- Story must be acieveable in sprint
+
+Testable- Story must include test criteria
