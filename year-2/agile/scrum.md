@@ -58,9 +58,11 @@ What constitutes as done
 
 - Developed
 
+- Documentation updated
+
 - Tested
 
-- Used in production
+- In production
 
 ## Benefits of time boxing
 
@@ -75,3 +77,42 @@ What constitutes as done
 - Motivates closure
 
 - Improves predictability
+
+
+## Benefits of short duration
+
+- Ease of planning
+
+- Fast feedback
+
+- Bounded error
+
+- Imporved return n investment
+
+- Rejuvenated excitement
+
+- Frequent checkpoints
+
+## Technical debt
+
+- Code refactored
+
+- Code in standard format
+
+- Code is commented
+
+- Code is checked in
+
+- Code has been inspected
+
+## Testing
+
+- Unit tested
+
+- Integration
+
+- Regression
+
+- Platform
+
+- Language
