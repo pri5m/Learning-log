@@ -36,6 +36,11 @@ public class GreetingController {
 </html>
  ```
  
+ ```
+ http://localhost:8080/greeting/?name=Holly
+ Hello, Holly!
+ ```
+ 
  Alternatively
  ```html
 <body>
