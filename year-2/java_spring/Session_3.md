@@ -2,6 +2,7 @@
 
 [Difference between controller and restcontroller](https://www.javacodegeeks.com/2017/08/difference-restcontroller-controller-annotation-spring-mvc-rest.html)
 
+controllers/GreetingControler.java
 ```Java
 @Controller
 public class GreetingController {
@@ -15,4 +16,28 @@ model.addAttribute("name", name);
 return "greeting";
 }
 }
+```
+
+ src/m ain/resources/templates/greeting.html
+ ```html
+ <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <title>Getting Started: Serving Web
+  Content</title>
+  <meta http-equiv="Content-Type"
+  content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+  </body>
+</html>
+ ```
+ 
+ Alternatively
+ ```html
+<body>
+  <p th:text = "'Hello from Thymeleaf, ' + ${name} +'!'" />
+  <p >Hello from Thymeleaf <span th:text = "${name}">Dave</span ></p >
+</body>
 ```
