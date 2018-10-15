@@ -1,5 +1,7 @@
 # Setting up ssh key
 
+[Doc  links](https://docs.gitlab.com/ee/ssh/)
+
 ```
 Check that there isn't already a key using this command
  cat ~/.ssh/id_rsa.pub
