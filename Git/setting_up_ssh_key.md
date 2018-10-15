@@ -1,8 +1,10 @@
 # Setting up ssh key
 
 ```
+Check that there isn't already a key using this command
  cat ~/.ssh/id_rsa.pub
 ...
+Set up key by linking to gitlab profile
 
 $ ssh-keygen -o -t rsa -C "<my email address" -b 4096
 ...
