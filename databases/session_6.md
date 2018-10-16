@@ -17,15 +17,60 @@ INNER JOIN table2
 ON table1.column_name=table2.column_name;
 ```
 
-## LEFT OUTER JOIN: 
+## LEFT JOIN: 
 
 Return all rows from the left table, and the matched rows from the right table
 
-## RIGHT OUTER JOIN: 
+LEFT JOIN returns all rows from the left table (table1), with the matching rows in the right table
+(table2). The result is NULL in the right side when there is no match.
+
+```
+SELECT column_name(s)
+FROM table1
+LEFT OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+```
+
+## RIGHT JOIN: 
 
 Return all rows from the right table, and the matched rows from the left table
+
+RIGHT JOIN returns all rows from the right table (table2), with the matching rows in the left
+table (table1). The result is NULL in the left side when there is no match.
+
+```
+SELECT column_name(s)
+FROM table1
+RIGHT OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+```
 
 ## FULL OUTER JOIN: 
 
 Return all rows when there is a match in ONE of the tables
+
+FULL OUTER JOIN returns all rows from the left table (table1) and from the right table (table2),
+i.e. it combines the results of LEFT and RIGHT joins. All rows from both tables will be included in
+the result grid irrespectively whether there is a matching row in another table.
+
+```
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name=table2.column_name;
+```
+
+## Cross join
+
+CROSS JOIN produces a result
+set which is the product of
+rows of two associated tables.
+This is called a Cartesian
+Product.
+
+```
+SELECT size, color
+FROM sizes
+CROSS JOIN colors
+```
 
