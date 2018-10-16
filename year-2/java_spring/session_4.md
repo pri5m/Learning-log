@@ -76,6 +76,8 @@ return new ModelAndView("addPerson", model.asMap());
 
 # Exersize
 
+Enter info into a form and the info is them retrieved and displayed to the user
+
 **PersonController.java**
 ```java
 @RestController
