@@ -161,3 +161,23 @@ return instance;
 }
 }
 ```
+
+# Services
+
+[Slides](https://learningcentral.cf.ac.uk/webapps/blackboard/execute/content/file?cmd=view&content_id=_4842094_1&course_id=_387554_1)
+
+## Remember what the controller is for
+
+• It is adapting web requests into application
+events
+
+• A request to “/api/products” means deal with a “send product catalogue” event.
+
+• The application handles the event, and returns objects to suit.
+
+• The controller adapts that back to the web world.
+
+• That event could be triggered by other means...
+
+- IIOP, messaging, custom protocols, etc.
+
