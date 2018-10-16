@@ -74,3 +74,21 @@ FROM sizes
 CROSS JOIN colors
 ```
 
+# GROUP BY and HAVING
+
+Aggregate functions: MIN, MAX, SUM, AVG, COUNT
+
+The HAVING clause was added to SQL because the WHERE keyword could not be
+used with aggregate functions.
+
+```
+SELECT Employees.LastName,
+COUNT(Orders.OrderID) AS NumberOfOrders
+FROM Orders
+INNER JOIN Employees
+ON Orders.EmployeeID=Employees.EmployeeID)
+GROUP BY EmploeeID
+HAVING COUNT(Orders.OrderID) > 10;
+```
+
+## CASE
