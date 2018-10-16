@@ -135,3 +135,5 @@ public class PersonController {
     </body>
 </html>
 ```
+
+Add attribute is basically a key value pair the key is used in the thymeleaf template 
