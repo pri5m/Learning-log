@@ -137,3 +137,27 @@ public class PersonController {
 ```
 
 Add attribute is basically a key value pair the key is used in the thymeleaf template 
+
+# Sessions
+
+[Slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4835114-dt-content-rid-11854591_2/courses/1819-CM6213/Slides/Spring%20Boot/W2.11%20-%20Sessions%20and%20Double%20Submits.pdf)
+
+[Redirect and forwards](https://www.baeldung.com/spring-redirect-and-forward)
+
+# Singleton
+
+[Slide](https://learningcentral.cf.ac.uk/webapps/blackboard/execute/content/file?cmd=view&content_id=_4842093_1&course_id=_387554_1)
+
+```java
+public class ClassicSingleton {
+private static ClassicSingleton instance = null;
+protected ClassicSingleton() {
+// Exists only to defeat instantiation. }
+public static ClassicSingleton getInstance() {
+if(instance == null) {
+instance = new ClassicSingleton();
+}
+return instance;
+}
+}
+```
