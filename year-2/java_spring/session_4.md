@@ -181,3 +181,81 @@ events
 
 - IIOP, messaging, custom protocols, etc.
 
+# Spring redirects
+
+[Website link](https://www.baeldung.com/spring-redirect-and-forward)
+
+## Why do a redirect?
+
+There are many possible examples and reasons of course. One simple one might be POSTing form data, working around the double submission problem, or just delegating the execution flow to another controller method.
+
+## RedirectView
+
+```
+@Controller
+@RequestMapping("/")
+public class RedirectController {
+     
+    @GetMapping("/redirectWithRedirectView")
+    public RedirectView redirectWithUsingRedirectView(
+      RedirectAttributes attributes) {
+        attributes.addFlashAttribute("flashAttribute", "redirectWithRedirectView");
+        attributes.addAttribute("attribute", "redirectWithRedirectView");
+        return new RedirectView("redirectedUrl");
+    }
+}
+```
+Notice here how we’re injecting the redirect attributes into the method – the framework will do the heavy lifting here and allow us to interact with these attributes.
+
+We’re adding the model attribute attribute – which will be exposed as HTTP query parameter. The model must contain only objects – generally Strings or objects that can be converted to Strings.
+
+Using RedirectView – is suboptimal for a few reasons.
+
+First- we’re now coupled to the Spring API because we’re using the RedirectView directly in our code.
+
+Second – we now need to know from the start, when implementing that controller operation – that the result will always be a redirect – which may not always be the case.
+
+## Redirect with the Prefix redirect
+
+A better option is using the prefix redirect: – the redirect view name is injected into the controller like any other logical view name. The controller is not even aware that redirection is happening.
+
+```
+@Controller
+@RequestMapping("/")
+public class RedirectController {
+     
+    @GetMapping("/redirectWithRedirectPrefix")
+    public ModelAndView redirectWithUsingRedirectPrefix(ModelMap model) {
+        model.addAttribute("attribute", "redirectWithRedirectPrefix");
+        return new ModelAndView("redirect:/redirectedUrl", model);
+    }
+}
+```
+
+When a view name is returned with the prefix redirect: – the UrlBasedViewResolver (and all its subclasses) will recognize this as a special indication that a redirect needs to happen. The rest of the view name will be used as the redirect URL.
+
+A quick but important note here is that – when we use this logical view name here – redirect:/redirectedUrl – we’re doing a redirect relative to the current Servlet context.
+
+We can use a name such as a redirect: http://localhost:8080/spring-redirect-and-forward/redirectedUrl if we need to redirect to an absolute URL.
+
+So now, when we execute the curl command:
+
+```curl -i http://localhost:8080/spring-rest/redirectWithRedirectPrefix```
+
+We’ll immediately get redirected:
+
+```
+HTTP/1.1 302 Found
+Server: Apache-Coyote/1.1
+Location: 
+  http://localhost:8080/spring-rest/redirectedUrl?attribute=redirectWithRedirectPrefix
+```
+
+## Forward with the prefix foward
+
+Before the code, let’s go over a quick, high-level overview of the semantics of forward vs. redirect:
+
+- redirect will respond with a 302 and the new URL in the Location header; the browser/client will then make another request to the new URL
+
+- forward happens entirely on a server side; the Servlet container forwards the same request to the target URL; the URL won’t change in the browser
+
