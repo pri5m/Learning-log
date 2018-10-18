@@ -52,3 +52,5 @@ MySQL does doesn't support materialized views, but it is possible simulate mater
 ➢You need good knowledge of SQL and Procedural SQL to implement materialised views.
 
 ➢You would typically use it only when you process large volumes of data.
+
+[Wiki page on materialised views](https://en.wikipedia.org/wiki/Materialized_view)
