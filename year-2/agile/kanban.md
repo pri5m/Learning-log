@@ -23,3 +23,6 @@ to lead time ( WIP ↑ - LT ↑ )
 
 • The quality of work done is inversely related to
 lead time ( LT ↑ - QUAL ↓ )
+
+
+Calculate velocity
