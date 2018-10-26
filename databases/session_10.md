@@ -245,3 +245,27 @@ Example:
 DECLARE totalCount INT DEFAULT 0;
 SET totalCount = 10;
 ```
+
+## Conditional statements
+
+```
+IF expression THEN
+SQL statements;
+ELSEIF elseif-expression THEN
+SQL elseif-statements;
+...
+ELSE
+SQL else-statements;
+END IF;
+```
+
+You can use EXISTS condition in IF statement
+```
+IF
+EXISTS (SELECT customerID FROM customers WHERE username=NewUsername)
+THEN
+SELECT ‘Customer Already Exists’;
+ELSE
+SELECT ‘No Customers’;
+END IF;
+```
