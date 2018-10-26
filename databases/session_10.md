@@ -356,6 +356,87 @@ the function entirely
 To handle a result set inside a stored procedure, you use a cursor. A cursor allows you
 to iterate a set of rows returned by a query and process each row accordingly.
 
+```
+-- Now let's create a SP that will do the same thing, 
+-- i.e. it will calculate the number of modules 
+-- each lecturer teaches and update the table lecturers accordingly,
+-- But this time we will implement it using a cursor
+ 
+ -- We will look at how a CURSOR works in 7 STEPS:
+DROP PROCEDURE IF EXISTS updateLecturersWithCursor;
+
+DELIMITER //
+
+CREATE PROCEDURE updateLecturersWithCursor()
+BEGIN
+
+DECLARE finished INTEGER DEFAULT 0;
+DECLARE variable_lectuer_ID INTEGER; -- a variable for fetching the values from the cursor into
+
+-- (Step 1) declare cursor for the lecturers table. The cursor declaration must be after any variable declaration!
+ DEClARE lecturers_cursor CURSOR FOR 
+ SELECT lecturerID FROM lecturers;
+
+
+
+/* (Step 2) Next, you need to declare a handler for 'Not found' conditionWhen working with MySQL cursor, you must also declare a 
+NOT FOUND handler to handle the situation when the cursor 
+could not find any row. Because each time you call the FETCH statement, 
+the cursor attempts to read the next row in the result set. 
+When the cursor reaches the end of the result set, 
+it will not be able to get the data, and a condition is raised. 
+The handler below is used to handle this condition.
+*/
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+-- whenever no more rows is found, then this variable  will be set to 1
+
+
+-- (Step 3) The OPEN statement initialises the result set for the cursor, 
+-- therefore, you must call the OPEN statement before fetching rows from the result set.
+OPEN lecturers_cursor;
+		 
+		 -- named loop
+		 get_lecturers_loop: LOOP
+		 
+                 -- (Step 4) Then, you use the FETCH statement to retrieve the next row pointed by the cursor 
+                 -- and move the cursor to the next row in the result set.
+				 FETCH lecturers_cursor INTO variable_lectuer_ID;
+				 
+                 -- (Step 5) check if there are any rows to fetch
+				 IF finished = 1 THEN 
+				 LEAVE get_lecturers_loop; -- exit the loop when the condition is met
+				 END IF;
+				 
+				 -- (Step 6) Now, given that the variable 'finished' is still 0
+				 -- you must handle the value from the lecturers table 
+
+					UPDATE university.lecturers
+					SET NumberOfModulesTaught = 
+					(Select COUNT(*) FROM modules WHERE lecturerID=variable_lectuer_ID)
+					WHERE lecturerID=variable_lectuer_ID;
+	
+		 END LOOP get_lecturers_loop;
+ 	 
+     
+ -- (Step 7) Finally, you call the CLOSE statement to deactivate the cursor 
+ --     and release the memory associated with it 
+ CLOSE lecturers_cursor; -- close the cursor
+ 
+ 
+END//
+
+DELIMITER ;
+
+-- check the table
+SELECT * FROM lecturers;
+
+-- update the table
+CALL updateLecturersWithCursor();
+
+-- check the result
+SELECT * FROM lecturers;
+```
+
 [Link 1](http://plsql-tutorial.com/plsql-passing-parameters-procedure-function.htm)
 
 [Link 2](https://www.w3resource.com/mysql/mysql-procedure.php)
