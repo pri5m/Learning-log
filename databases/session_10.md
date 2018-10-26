@@ -308,6 +308,38 @@ terminated by a semicolon (;)
 statement delimiter.
 A WHILE statement can be labeled.
 
+```
+DROP PROCEDURE IF EXISTS while_and_string_functions$$
+
+ CREATE PROCEDURE while_and_string_functions()
+ BEGIN
+ 
+ DECLARE x  INT;
+ DECLARE str  VARCHAR(255);
+ 
+ SET x = 1;
+ SET str =  '';
+ 
+ WHILE x  <= 20 DO
+ SET  str = CONCAT(str,x,',');
+ SET  x = x + 1; 
+ END WHILE;
+ 
+ SET str = SUBSTRING(str,1,length(str)-1);  
+ 
+ SELECT str;
+ 
+ END$$
+ 
+DELIMITER ;
+
+
+CALL while_and_string_functions();
+```
+
+Output
+1,2,3,4,5...
+
 ## LOOP
 
 LOOP implements a simple loop construct,
