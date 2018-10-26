@@ -269,3 +269,29 @@ ELSE
 SELECT ‘No Customers’;
 END IF;
 ```
+
+```
+DROP procedure IF EXISTS ReportOnModuleMarksAllAndPerModule;
+DELIMITER //ReportOnModuleMarksAllAndPerModule
+
+// Takes int modulel amrk in as parameter
+CREATE PROCEDURE ReportOnModuleMarksAllAndPerModule (SpecificModuleCode int)
+BEGIN
+
+//If true, null is input parameter it will return a generic mark
+IF ISNULL(SpecificModuleCode) THEN
+
+SELECT m.moduleTitle, MIN(a.finalMark) as LowestMark, MAX(a.finalMark) as HighestMark, CAST(AVG(a.finalMark) as DECIMAL(4,2))  as AverageMark
+FROM assignments a
+INNER JOIN modules m ON m.moduleCode=a.moduleCode
+GROUP BY m.moduleCode;
+
+ELSE
+
+// Calls another store procedure
+CALL ReportOnModuleMarksPerModule(SpecificModuleCode);
+
+END IF;
+END//
+DELIMITER ;
+```
