@@ -101,3 +101,19 @@ are already supported in stored procedures.
 ➢Stored procedures are secure. The database administrator can grant appropriate permissions to
 applications that access stored procedures in the database without giving any permissions on
 the underlying database tables.
+
+
+## Disadvantages of stored procedures
+
+➢If you use a lot of stored procedures, the memory usage of every connection that is using those
+stored procedures will increase substantially. In addition, if you overuse a large number of logical
+operations inside store procedures, the CPU usage will also increase because the database
+server is not well-designed for logical operations.
+
+➢Constructs of stored procedures make it more difficult to develop stored procedures that have
+complicated business logic.
+
+➢It is difficult to debug stored procedures (there are additional tools).
+
+➢Developing and maintaining stored procedures requires a skill set that not all application
+developers possess. 
