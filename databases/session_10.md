@@ -117,3 +117,26 @@ complicated business logic.
 
 ➢Developing and maintaining stored procedures requires a skill set that not all application
 developers possess. 
+
+## IN and OUT parameters in SP
+
+The real power of stored procedures is
+the ability to pass parameters and have
+the stored procedure handle the differing
+requests that are made.
+
+**Types of Parameters**
+
+1) IN type parameter: To send values to stored
+procedures.
+
+2) OUT type parameter: To get values from
+stored procedures. This is similar to a return type
+in functions.
+
+3) IN OUT parameter: To send values and get
+values from stored procedures.
+
+*NOTE:* If a parameter type is not explicitly
+defined, then by default is ‘IN’ type.
+
