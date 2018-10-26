@@ -10,7 +10,7 @@ well-structured steps and procedures within its programming context to compose a
 contains a systematic order of statements, functions and commands to complete a
 computational task or program.
 
-**Typical Added Features
+**Typical Added Features**
 
 ➢ Declared constraints and variables
 
@@ -67,7 +67,7 @@ If a variable is not initialized then it defaults to NULL value.
 The block is not stored in the database, an, therefore, it is called an anonymous block (even if it
 has a label).
 
-*Anonymous Blocks are not supported in MySQL
+*Anonymous Blocks are not supported in MySQL*
 
 ## Stored procedure
 
@@ -75,7 +75,7 @@ A stored procedure is a segment of declarative SQL statements stored inside the 
 catalog (schema). A stored procedure can be invoked by triggers, other stored procedures, and
 applications such as Java, Python, PHP, etc.
 
-**Characteristics:
+**Characteristics:**
 
 1.Has a name.
 
@@ -84,3 +84,20 @@ applications such as Java, Python, PHP, etc.
 3.Is stored in the schema.
 
 4.Can be called by many users.
+
+
+## Advantages of stored procedures
+
+➢Stored procedures help to increase the performance of the applications.
+
+➢Stored procedures help to reduce the traffic between application and database server because
+instead of sending multiple lengthy SQL statements, the application has to send only name and
+parameters of the stored procedure.
+
+➢Stored procedures are reusable and transparent to any applications. Stored procedures expose
+the database interface to all applications so that developers don’t have to develop functions that
+are already supported in stored procedures.
+
+➢Stored procedures are secure. The database administrator can grant appropriate permissions to
+applications that access stored procedures in the database without giving any permissions on
+the underlying database tables.
