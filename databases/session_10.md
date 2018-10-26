@@ -278,7 +278,7 @@ DELIMITER //ReportOnModuleMarksAllAndPerModule
 CREATE PROCEDURE ReportOnModuleMarksAllAndPerModule (SpecificModuleCode int)
 BEGIN
 
-//If true, null is input parameter it will return a generic mark
+//If true, null is input parameter it will return a report of all the modules
 IF ISNULL(SpecificModuleCode) THEN
 
 SELECT m.moduleTitle, MIN(a.finalMark) as LowestMark, MAX(a.finalMark) as HighestMark, CAST(AVG(a.finalMark) as DECIMAL(4,2))  as AverageMark
@@ -289,6 +289,7 @@ GROUP BY m.moduleCode;
 ELSE
 
 // Calls another store procedure
+// Will provide a report for that particular module code 
 CALL ReportOnModuleMarksPerModule(SpecificModuleCode);
 
 END IF;
