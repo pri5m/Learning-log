@@ -156,3 +156,34 @@ END$$
 
 DELIMITER ; 
 ```
+
+```
+CREATE PROCEDURE ReportOnModuleMarksPerModuleOUT (IN SpecificModuleCode int, OUT HighestMark DOUBLE, OUT LowestMark DOUBLE)
+BEGIN
+
+SELECT m.moduleTitle, MIN(a.finalMark) as LowestMark, MAX(a.finalMark) as HighestMark, CAST(AVG(a.finalMark) as DECIMAL(4,2))  as AverageMark
+FROM assignments a
+INNER JOIN modules m ON m.moduleCode=a.moduleCode
+WHERE m.moduleCode = SpecificModuleCode -- this SQL query references the input parameter 
+GROUP BY m.moduleCode;
+
+
+SELECT MIN(a.finalMark) INTO LowestMark
+FROM assignments a
+INNER JOIN modules m ON m.moduleCode=a.moduleCode
+WHERE m.moduleCode = SpecificModuleCode -- this SQL query references the input parameter 
+GROUP BY m.moduleCode;
+
+
+SELECT MAX(a.finalMark) INTO HighestMark
+FROM assignments a
+INNER JOIN modules m ON m.moduleCode=a.moduleCode
+WHERE m.moduleCode = SpecificModuleCode -- this SQL query references the input parameter 
+GROUP BY m.moduleCode;
+
+
+END//
+
+DELIMITER ;
+
+```
