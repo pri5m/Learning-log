@@ -140,3 +140,19 @@ values from stored procedures.
 *NOTE:* If a parameter type is not explicitly
 defined, then by default is ‘IN’ type.
 
+```
+DROP PROCEDURE IF EXISTS MyFirstStoredProcedure;
+-- GENERAL STUCTURE OF a SP
+
+DELIMITER $$
+
+CREATE PROCEDURE MyFirstStoredProcedure ()
+BEGIN
+
+-- The executable part
+SELECT 'Database Systems' as 'My favorite module is';
+
+END$$
+
+DELIMITER ; 
+```
