@@ -167,7 +167,7 @@ INNER JOIN modules m ON m.moduleCode=a.moduleCode
 WHERE m.moduleCode = SpecificModuleCode -- this SQL query references the input parameter 
 GROUP BY m.moduleCode;
 
-
+// INTO puts the output of this query into the defined OUT parameter
 SELECT MIN(a.finalMark) INTO LowestMark
 FROM assignments a
 INNER JOIN modules m ON m.moduleCode=a.moduleCode
