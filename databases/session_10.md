@@ -296,3 +296,36 @@ END IF;
 END//
 DELIMITER ;
 ```
+## WHILE loop
+
+The statement list within
+a WHILE statement is repeated as
+long as
+the search_condition expression is
+true. statement_list consists of one or
+more SQL statements, each
+terminated by a semicolon (;)
+statement delimiter.
+A WHILE statement can be labeled.
+
+## LOOP
+
+LOOP implements a simple loop construct,
+enabling repeated execution of the statement
+list, which consists of one or more
+statements, each terminated by a semicolon (;) statement delimiter. The statements within
+the loop are repeated until the loop is
+terminated. Usually, this is accomplished with a LEAVE statement. Within a stored
+function, RETURN can also be used, which exits
+the function entirely
+
+## CURSOR in MySQL
+
+To handle a result set inside a stored procedure, you use a cursor. A cursor allows you
+to iterate a set of rows returned by a query and process each row accordingly.
+
+[Link 1](http://plsql-tutorial.com/plsql-passing-parameters-procedure-function.htm)
+
+[Link 2](https://www.w3resource.com/mysql/mysql-procedure.php)
+
+[Link 3](https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html)
