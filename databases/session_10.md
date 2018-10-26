@@ -187,3 +187,61 @@ END//
 DELIMITER ;
 
 ```
+
+## Type of Variables in MySQL
+
+➢ Local variables
+
+Local variables are set in the scope of a statement or block of statements.Once that statement or block of
+statements has completed, the variable goes out of scope.
+
+➢Session variables
+
+Session variables are set in the scope of your session with the MySQL server.A session starts with a
+connection to the server and ends when the connection is closed. Variables go out of scope once the
+connection is terminated. Variables created during your connection cannot be referenced from other
+sessions.To declare or reference a session variable, prefix the variable name with an @ symbol:
+
+```SET @session_variable = 100;```
+
+➢Global variables
+
+Global variables exist across connections. They are set using the GLOBAL keyword:
+
+```SET GLOBAL max_connections = 300;```
+
+## Local Variable DECLARE Syntax
+
+Stored programs can use DECLARE to define local variables
+Variable declarations must appear before cursor or handler declarations.
+Syntax:
+
+```DECLARE var_name [, var_name] ... type [DEFAULT value]```
+
+This statement declares local variables within stored programs. To provide a default value for a variable,
+include a DEFAULT clause. The value can be specified as an expression; it need not be a constant. If
+the DEFAULT clause is missing, the initial value is NULL.
+
+The scope of a local variable is the BEGIN ... END block within which it is declared. The variable can be
+referred to in blocks nested within the declaring block, except those blocks that declare a variable with the
+same name.
+
+A local variable should not have the same name as a table column.
+
+Variables can be set directly with the SET statement.
+
+## Declaring Variables
+
+To declare variable:
+
+```DECLARE variable_name datatype(size) DEFAULT default_value;```
+
+To set variable:
+
+```SET variable_name = value;```
+
+Example:
+```
+DECLARE totalCount INT DEFAULT 0;
+SET totalCount = 10;
+```
