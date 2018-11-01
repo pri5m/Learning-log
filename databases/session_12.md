@@ -34,3 +34,181 @@ known state.
 
 12. Maintain separate changelog for Stored Procedures.
 
+## Chnage the schema of this database into a normalised one
+
+```
+DROP SCHEMA IF EXISTS uni;
+
+CREATE SCHEMA uni;
+
+USE uni;
+
+CREATE TABLE modulesOriginal 
+(
+  moduleCode int NOT NULL PRIMARY KEY,
+  moduleTitle char(255) NOT NULL,
+  startDate date NULL DEFAULT '2016-10-01',
+  endDate date NULL DEFAULT '2017-01-21',
+  credit smallint NOT NULL,
+  lecturerID int NOT NULL,
+  lecturerName varchar(50) NOT NULL,
+  lecturerSurname varchar(50)
+);
+
+CREATE TABLE modules
+( 
+  moduleCode int NOT NULL PRIMARY KEY,
+  moduleTitle char(255) NOT NULL,
+  startDate date NULL DEFAULT '2016-10-01',
+  endDate date NULL DEFAULT '2017-01-21',
+  credit smallint NOT NULL,
+  lecturerID int NOT NULL
+);
+
+CREATE TABLE lecturers
+(
+  lecturerID int NOT NULL,
+  lecturerName varchar(50) NOT NULL,
+  lecturerSurname varchar(50)
+);
+
+
+INSERT INTO modulesOriginal
+(`moduleCode`,
+`moduleTitle`,
+`startDate`,
+`endDate`,
+`credit`,
+`lecturerID`,
+`lecturerName`,
+`lecturerSurname`)
+VALUES
+(111,
+'Databases',
+'2016-10-01',
+'2017-01-21',
+20,
+1,
+'Nia',
+'Williams');
+
+
+INSERT INTO modulesOriginal
+(`moduleCode`,
+`moduleTitle`,
+`startDate`,
+`endDate`,
+`credit`,
+`lecturerID`,
+`lecturerName`,
+`lecturerSurname`)
+VALUES
+(222,
+'Emerging Tech',
+'2016-10-01',
+'2017-01-21',
+20,
+2,
+'Ian',
+'Smith');
+
+
+INSERT INTO modulesOriginal
+(`moduleCode`,
+`moduleTitle`,
+`startDate`,
+`endDate`,
+`credit`,
+`lecturerID`,
+`lecturerName`,
+`lecturerSurname`)
+VALUES
+(333,
+'Databases',
+'2016-10-01',
+'2017-01-21',
+20,
+3,
+'Mark',
+'Johns');
+
+INSERT INTO modulesOriginal
+(`moduleCode`,
+`moduleTitle`,
+`startDate`,
+`endDate`,
+`credit`,
+`lecturerID`,
+`lecturerName`,
+`lecturerSurname`)
+VALUES
+(444,
+'Java',
+'2016-10-01',
+'2017-01-21',
+10,
+4,
+'Ellie',
+'Marks');
+
+
+INSERT INTO modulesOriginal
+(`moduleCode`,
+`moduleTitle`,
+`startDate`,
+`endDate`,
+`credit`,
+`lecturerID`,
+`lecturerName`,
+`lecturerSurname`)
+VALUES
+(555,
+'Agile',
+'2016-10-01',
+'2017-01-21',
+20,
+5,
+'Rob',
+'Evans');
+
+SELECT * FROM modulesOriginal;
+
+
+CREATE TABLE IF NOT EXISTS db_versions
+(
+db_version varchar(5),
+active boolean,
+description text,
+PRIMARY KEY (db_version) 
+);
+
+INSERT INTO db_versions VALUES ('0.1', TRUE, 'Unnormalised schema (UNF)');
+
+
+-- CREATE a stored proceudre that returns the version of the database
+DROP procedure IF EXISTS `find_db_version`;
+
+DELIMITER $$
+
+CREATE PROCEDURE find_db_version ()
+BEGIN
+
+SELECT db_version FROM db_versions WHERE active=TRUE;
+
+END$$
+
+DELIMITER ;
+
+CALL find_db_version (); -- shows the version of the DB you work with 
+-- (given that the data in the table db_verisons is up to date)
+
+INSERT INTO modules(moduleCode, moduleTitle, startDate, endDate, credit, lecturerID)
+SELECT moduleCode, moduleTitle, startDate, endDate, credit, lecturerID
+FROM modulesoriginal;
+
+INSERT INTO lecturers(lecturerID, lecturerName, lecturerSurname)
+SELECT lecturerID, lecturerName, lecturerSurname
+FROM modulesoriginal;
+```
+
+Transfer the data from moduklesoriginal into two new normalised tables, lecturers and modules using INSERT INTO
