@@ -1,5 +1,8 @@
+# Schema Change Management and Database Migrations
 
-# Best practice of change management
+[Slides](https://learningcentral.cf.ac.uk/bbcswebdav/pid-4766727-dt-content-rid-11989835_2/courses/1819-CM6211/Week%205%20-%20Session%2012%20%20-%20%20Schema%20Change%20Management%20and%20Database%20Migrations.pdf)
+
+## Best practice of change management
 
 1. Work only on a local copy of the database (not on a production database) and
 propagate changes via versioned change scripts
