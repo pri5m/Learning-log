@@ -216,7 +216,7 @@ END;
 
 
 # Session code
-```
+```sql
 DROP SCHEMA IF EXISTS `university` ;
 
 
