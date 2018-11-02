@@ -312,8 +312,75 @@ performed.
 
 ## Locking
 
+The system of protecting a transaction from seeing or changing data that
+is being queried or changed by other transactions.
+The locking strategy must balance reliability and consistency of
+database operations (the principles of the ACID philosophy) against
+the performance needed for good concurrency.
 
+Use locking for cooperating table access between sessions.
 
+### Locking in MySQL
+
+MySQL allows a client session to acquire a table lock explicitly for preventing other sessionsfrom
+accessing the table during a specific period. A client session can acquire or release table locks
+only for itself. It cannot acquire or release table locks for other sessions.
+
+SQL statement for locking a table
+
+```LOCK TABLES table_name [READ | WRITE]```
+
+MySQL provides two lock types: ```READ``` and ```WRITE```.
+SQL statement for unlocking a table:
+
+```UNLOCK TABLES;```
+
+**You could not use LOCKs in storedprocedures!**
+
+The correct way to use LOCKTABLESand UNLOCK TABLESwith transactional tables,such
+as InnoDB tables, is to begin a transaction with SET autocommit = 0 (not START TRANSACTION)
+followed by LOCK TABLES, and to not call UNLOCK TABLESuntil you commit the transaction
+explicitly.
+
+### Require locks within a transaction
+
+Atransaction commit or rollback releases alllocks.
+
+When autocommit is enabled (default) acquiring a lock outside thetransaction has no
+effect. Because a commit is made at the end of each statement and acquired lock
+immediatelyreleased.
+
+## Deadlock
+
+A deadlock is a concurrency issue.
+
+A situation where different transactions are unable to proceed, because each holds a lock that the
+other needs.Becauseboth transactions are waiting for aresourceto becomeavailable,neither will
+ever release the locks it holds.
+
+A deadlock can occur when the transactions lock rows in multiple tables (through statements such
+as UPDATE or SELECT ... FOR UPDATE), but in the opposite order. A deadlock can also occur when
+such statements lock ranges of index records and gaps, with eachtransaction acquiring some locks
+but not others due to atiming issue.
+
+InnoDB detects deadlocks.
+
+### Minimizing deadlocks
+
+*Deadlocks cannot be completely avoided!*
+
+➢Use as few locks as possible
+
+➢ Reduce locking required for atransaction
+
+➢Usesmaller (shorter) transactions (a lock will only hold for the duration of a
+transaction)
+
+➢Access objects in the sameorder
+
+➢Avoid user interaction in transactions (If a transaction is waiting for user input and
+the user goes to lunch or even home for the weekend, the user delays the transaction
+from completing)
 
 # Session code
 ```sql
