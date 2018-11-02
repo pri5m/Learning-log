@@ -137,7 +137,7 @@ default, ODBC and JDBC require autocommit to be on, and each statement is a sing
 transaction. If you want to take advantage of transaction design possibilities, then you should
 turn autocommit off.
 
-General structure of a transaction in a store proceedure:
+#### General structure of a transaction in a store proceedure:
 
 ```
 BEGIN . .
@@ -158,3 +158,57 @@ Stored Procedure, you
 must declare an exit
 handler in the stored
 procedure. 
+
+#### MySQL JDBC Transaction
+
+```
+try
+{
+Connection con = DriverManager.getConnection(dbURL,dbUser,dbPassword);
+con.setAutoCommit(false);
+// perform operations such as insert, update, delete here
+// if everything is OK, commit the transaction
+con.commit();
+} catch(SQLException e){
+// in case of exception, rollback the transaction
+con.rollback();
+}
+```
+
+### Error handling
+
+When an error occurs inside astored procedure, it is important to handle it appropriately, suchas
+continuing or exiting the current code block’s execution, and issuingameaningful error message.
+
+```DECLARE action HANDLER FOR condition_value statement;```
+
+action:
+
+• CONTINUE : the execution of the enclosing code block ( BEGIN …END )continues.
+
+• EXIT: the execution of the enclosing code block, where the handleris declared, terminates.
+
+condition_value:
+
+• A MySQL error code.
+
+• A standard SQLSTATE value (SQLWARNING , NOTFOUND orSQLEXCEPTION)
+
+• A named condition associated with either a MySQL error code orSQLSTATE value.
+
+### Handlers
+
+```
+DECLARE e x i t handler f o r sqlexception
+BEGIN
+- - Handle an sql EXCEPTION
+ROLLBACK;
+END;
+DECLARE e x i t handler f o r sqlwarning
+BEGIN
+- - Handle an sql WARNING
+ROLLBACK;
+END;
+```
+
+## Concurrency Control
