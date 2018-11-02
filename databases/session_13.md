@@ -213,6 +213,106 @@ END;
 
 ## Concurrency Control
 
+The ability of multiple operations (in database terminology, transactions)
+to run simultaneously, without interfering with each other. Concurrency is
+also involved with performance, because ideally the protection for multiple
+simultaneous transactions works with a minimum of performance overhead,
+using efficient mechanisms for locking.
+
+### Schedule
+
+Schedules and schedule properties are fundamental concepts in database concurrency
+control theory.
+
+Schedule - the chronological sequence in which the component operations of the different
+transactions are executed. A schedule can have many transactions in it, each comprising of a
+number of statements.
+
+To process transactions concurrently, the database server must execute some statements of one
+transaction, then some statements from other transactions, before continuing to process further
+operations from the first. Applying transactions concurrently can result in inconsistencies.
+
+### Typical types of inconsistency
+
+**Dirty read:** Transaction A modifies a row, but does not commit or roll back the change. Transaction B reads the
+modified row. Transaction A then either further changes the row before performing a COMMIT, or rolls back its
+modification. In either case, transaction B has seen the row in a state which was never committed.
+
+**Non-repeatable read:** Transaction A reads a row. Transaction B then modifies or deletes the row and performs a
+COMMIT. If transaction A then attempts to read the same row again, the row will have been changed or deleted.
+
+**Phantom row:** (or Phantom Read) Transaction A reads a set of rows that satisfy some condition. Transaction B
+then executes an INSERT or an UPDATE on a row which did not previously meet A's condition. Transaction B
+commits these changes. These newly committed rows now satisfy Transaction A's condition. If Transaction A then
+repeats the read, it obtains the updated set of rows.
+
+**Lost update:** This might happen if Transactions A first reads in value into a variable and then uses the variable in
+an update statement in a later step. When this update executes, Transaction B updates the same data. Whichever
+of these transactions in committed first becomes a lost update because it was replaced by the second update.
+
+The inconsistency appears because of the way the statements were interleaved; the result produced would not
+be possible if all transactions were executed sequentially.
+
+### Serializability
+
+Serializability is the classical concurrency scheme. It ensures that a schedule for executing
+concurrent transactions is equivalent to one that executes the transactions serially in some
+order. It assumes that all accesses to the database are done using read and write operations. A
+schedule is called ``correct'' if we can find a serial schedule that is ``equivalent'' to it. Given a set
+of transactions T1...Tn, two schedules S1 and S2 of these transactions are equivalent if the
+following conditions are satisfied:
+
+➢Read-Write Synchronization: If a transaction reads a value written by another transaction in one
+schedule, then it also does so in the other schedule.
+
+➢Write-Write Synchronization: If a transaction overwrites the value of another transaction in one
+schedule, it also does so in the other schedule.
+
+These two properties ensure that there can be no difference in the effects of the two schedules.
+
+Serializability is the commonly accepted criterion for correctness. A serializable schedule is
+accepted as correct because the database is not influenced by the concurrent execution of the
+transactions.
+
+### Types of scheduals
+
+*Several questions*
+
+There are different types of schedules:
+
+Serial Schedule − transactions are executed in a serial manner, one after another.
+
+Serializable Schedule - a schedule that is equivalent (in its outcome) to a serial schedule. It is
+said to have the serializability property. Knowing that a schedule is serializable does not settle in
+which order transactions would best be executed, but rather states that concurrency has added
+no effect.
+
+Non-serializable Schedule – is a schedule that introduces various inconsistencies due to
+concurrent execution of transaction.
+
+### Transaction isolation
+
+*Several questions*
+
+There are several isolation levels available in MySQL, that help to avoid inconsistencies:
+
+➢NONE – puts no restrictions on the read and updates to the database.
+
+➢READ UNCOMMITTED - Allows uncommitted changes by one transaction to be readable by other
+transactions. SELECT statements are performed in a nonlocking fashion, but a possible earlier version
+of a row might be used. Thus, using this isolation level, such reads are not consistent. This is also
+called a dirty read. Otherwise, this isolation level works like READ COMMITTED.
+
+➢READ COMMITED – makes all updates to a table invisible to all other transactions until a commit is
+performed.
+
+➢REPEATABLE READ – keeps all SELECT consistent in a single transaction.
+
+➢SERIALIZABLE – causes all read and updates to operate in a serialized sequence
+
+## Locking
+
+
 
 
 # Session code
