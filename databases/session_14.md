@@ -160,3 +160,95 @@ volumes, reducing latency, and improving throughput.
 ➢If it is a standard project, utility – go with something you know
 
 ➢Better throughput and concurrency, at the expense of stability, consistency, or availability.
+
+The choice to use a NoSQL database is often based on hype, or
+a wrong assumption that relational databases cannot perform as
+well as a NoSQL database. Operational costs, as well as other
+stability and maturity concerns, are often overlooked by
+engineers when it comes to selecting a database. Yoav Abrahami
+
+### Using MySQL as a NoSQL engine
+
+Design your schema to be optimized for reads:
+
+Do not normalize.
+
+Fields only exist to be indexed. If a field is not needed for an index, store it in one blob/text field (such as JSON
+or XML).
+
+Do not use foreign keys.
+
+Design your schema to enable reading a single row on query.
+
+Any field that is not used as a condition in a query has been folded into a single blob field
+
+Do not perform table alter commands. Table alter commands introduce locks and downtimes. Instead, use live
+migrations.
+
+When querying data:
+
+Query for records by primary key or by index.
+
+Avoid using DB locks or complex queries
+
+Do not use joins.
+
+Do not use aggregations.
+
+Run housekeeping queries (BI, data exploration, etc.) on a replica, not on the master database.
+
+# JSON objects
+
+JSON Syntax Rules
+
+➢JSON syntax is derived from JavaScript object notation syntax:
+
+➢Data is in name/value pairs
+
+➢Data is separated by commas
+
+➢Curly braces hold objects
+
+➢Square brackets hold arrays
+
+```
+{"employees":[
+{ "firstName":"John", "lastName":"Doe" },
+{ "firstName":"Anna", "lastName":"Smith" },
+{ "firstName":"Peter", "lastName":"Jones" }
+]}
+
+```
+
+### The JSON Data Type in MySQL
+
+MySQL's addition of a JSON data type makes the relational database easier to use and blurs the lines
+between SQL and NoSQL databases.
+
+Before MySQL 5.7, you could store a JSON-formatted document in a character field. But large strings are
+messy to search, and writing regular expressions for finding values within that string can be a frustrating
+experience. And if you changed one part of the string you had to rewrite the entire string, which is terribly
+inefficient but was necessary up to MySQL 5.6.
+
+MySQL introduced a native JSON data type in MySQL 5.7. So like an integer, a char, or a real, there became
+a way to store an entire JSON document in a column in a table of a database—and this document in a
+column could be roughly a gigabyte in size! The server would make sure it was a valid JSON document and
+then save it in a binary format that's optimized for searching.
+
+The data type also comes with over 20 functions. These functions will extract key-value pairs from the
+document, update data, provide metadata about the data, output non-JSON columns in JSON format, and
+more.
+
+### Advantages
+
+The JSON data type provides these advantages over storing JSON-format strings in a string column:
+
+•Automatic validation of JSON documents stored in JSON columns. Invalid documents produce an error.
+
+•Optimized storage format. JSON documents stored in JSON columns are converted to an internal format that permits
+quick read access to document elements. When the server later must read a JSON value stored in this binary format, the
+value need not be parsed from a text representation. The binary format is structured to enable the server to look up subobjects
+or nested values directly by key or array index without reading all values before or after them in the document.
+
+
+[Operations docs](https://dev.mysql.com/doc/refman/5.7/en/json-function-reference.html)
