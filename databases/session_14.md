@@ -41,4 +41,59 @@ OLTP systems gather input, process the data and update existing data to reflect 
 
 OLTP is typically contrasted to OLAP. OLTP is generally characterized by less complex queries and a larger volume, and oriented towards processing transactions rather than business intelligence or reporting. 
 
+### Data Warehouses and OLTP requirements
+
+**Workload** - Data warehouses are designed to accommodate ad hoc queries and data analysis. Data warehouse should be optimized to perform well for a wide variety of possible query and analytical operations. OLTP systems support only predefined operations. 
+
+**Data modifications** - A data warehouse is updated on a regular basis by the ETL process (run nightly or weekly) using bulk data modification techniques. The end users of a data warehouse do not directly update the data warehouse except when using analytical tools, such as data mining, to make predictions with associated probabilities, assign customers to market segments, and develop customer profiles. In OLTP systems, end users routinely issue individual data modification statements to the database. The OLTP database is always up to date, and reflects the current state of each business transaction.
+
+**Schema design** - Data warehouses often use denormalized or partially denormalized schemas to optimize query and analytical performance. OLTP systems often use fully normalized schemas to optimize update/insert/delete performance, and to guarantee data consistency.
+
+**Typical operations** - A typical data warehouse query scans thousands or millions of rows. For example, "Find the total sales for all customers last month.“ A typical OLTP operation accesses only a handful of records. For example, "Retrieve the current order for this customer."
+
+**Historical data** - Data warehouses usually store many months or years of data. This is to support historical analysis and reporting. OLTP systems usually store data from only a few weeks or months. The OLTP system stores only historical data as needed to successfully meet the requirements of the current transaction.
+
+## Data Marts
+
+A data mart is a repository of data that is designed to serve a particular community of knowledge workers.
+Data warehousing emphasizes the capture of data from diverse sources for useful analysis and access, but does not generally start from the point-of-view of the end user who may need access to specialized, sometimes local databases. The latter idea is known as the data mart.
+
+A data warehouse is a central repository for all an organization's data. The goal of a data mart is to meet the particular demands of a specific group of users within the organisation, such as human resource management. Generally, an organization's data marts are subsets of the organisation's data warehouse.
+
+Because data marts are optimized to look at data in a unique way, the design process tends to start with an analysis of user needs. In contrast, a data warehouse's design process tends to start with an analysis of what data already exists and how it can be collected and managed in such a way that it can be used later on. A data warehouse tends to be a strategic, but somewhat unfinished concept; a data mart tends to be tactical and aimed at meeting an immediate need.
+
+## Distributed systems
+
+A distributed system consists of a collection of autonomous computers, connected through a network and distribution middleware, which enables computers to coordinate their activities and to share the resources of the system, so that users perceive the system as a single, integrated computing facility.
+
+Characteristics:
+
+- Multiple autonomous components 
+
+- Components are not shared by all users 
+
+- Resources may not be accessible 
+
+- Software runs in concurrent processes on different processors 
+
+- Multiple Points of control 
+
+- Multiple Points of failure
+
+
+- Data stored at a number of sites, each site logically consists of a single processor. 
+
+- Processors at different sites are interconnected by a computer network, no multiprocessors 
+
+- Distributed database is a database, not a collection of files, i.e. data logically related as exhibited in the users’ access patterns 
+
+- Distributed -DBMS is a full-fledged DBMS, not a remote file system
+
+- Resource Sharing 
+
+- Openness 
+
+- Concurrency 
+
+- Scalability 
 
