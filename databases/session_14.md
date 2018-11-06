@@ -97,3 +97,66 @@ Characteristics:
 
 - Scalability 
 
+# NoSQL Databases (beyond relational model)
+
+[Intro to NoSQL by Martin Fowler](https://www.youtube.com/watch?v=qI_g07C_Q5I)
+
+### Characteristics
+
+➢Non-relational, Not-Only-SQL
+
+➢Cluster-friendly (although, not for all of them this is the primary focus)
+
+➢Open-source (predominantly, but not always)
+
+➢Schema-less (not quite)
+
+All NoSQL databases claim to be schema-less, which means there is no schema enforced by the database themselves, but
+there is the implicit schema in any code that accesses the data.
+
+➢Flexible (add any node without a schema)
+
+### NoSQL data model four types
+
+1. Key Values Store – aggregate-oriented
+
+2. Document - aggregate-oriented
+
+3. Column family - aggregate-oriented
+
+4. Graph model – decomposes data even more than Relational
+
+ALL these four types are said to be schema-less
+
+Aggregate-oriented - databases are designed for storing and running data on clusters. You do
+not do transactions outside aggregate. 
+
+### When to use
+
+1. You have big data – large amount data, more than you could fit in one DB on one machine.
+Running RDB on clusters is a large-scale data problem
+
+2. Data model does not fit well with business model (articles in journalism, pushing the article
+in and out is easier than splitting metadata in RDB)
+
+3. You need to get rid of impedance mismatch problem
+
+4. You are aiming for easier development and looking for the improvement of programmer
+productivity by using a database that better matches application's needs
+
+5. The project involves dealing with analytics – data warehousing, information mining
+
+6. You need to improve data access performance via a combination of handling larger data
+volumes, reducing latency, and improving throughput.
+
+## Disadvantages
+
+➢Immature
+
+➢Lack of experience (not like with RDBMSs)
+
+➢It involves taking a risk (Is it a strategic problem for your business?)
+
+➢If it is a standard project, utility – go with something you know
+
+➢Better throughput and concurrency, at the expense of stability, consistency, or availability.
