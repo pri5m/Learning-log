@@ -252,3 +252,15 @@ or nested values directly by key or array index without reading all values befor
 
 
 [Operations docs](https://dev.mysql.com/doc/refman/5.7/en/json-function-reference.html)
+
+# Aspects to consider:
+
+➢What criteria to take into account when making the choice
+
+➢Which DBMSs to consider
+
+➢What is the best choice DBMS?
+
+➢What is the second best choice DBMS?
+
+➢Why? Justify your group decision.
