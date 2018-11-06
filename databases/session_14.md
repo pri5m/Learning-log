@@ -22,3 +22,23 @@ A common way of introducing data warehousing is to refer to the characteristics 
 
 **Time Variant** - In order to discover trends in business, analysts need large amounts of data and must focus on change over time. This is very much in contrast to online transaction processing (OLTP) systems, where performance requirements demand that historical data be moved to an archive. 
 
+## Online Analytical Processing (OLAP) Engine 
+
+Online Analytical Processing (abbreviated OLAP) - a category of database processing oriented towards decision support. 
+Typical applications of OLAP include business reporting for sales, marketing, management reporting, business process management (BPM), budgeting and forecasting, financial reporting etc.
+
+OLAP tools enable users to analyze multidimensional data interactively from multiple perspectives. OLAP consists of three basic analytical operations: (1) consolidation (roll-up), (2) drill-down, and (3) slicing and dicing.
+
+## Online Transaction Processing  (OLTP) Systems
+
+OLTP systems facilitate and manage transaction-oriented applications, typically for data entry and retrieval transaction processing.
+
+OLTP systems respond immediately to user requests.
+
+OLTP systems process all kinds of queries (read, insert, update and delete), OLAP is generally optimized for read only and might not even support other kinds of queries.
+
+OLTP systems gather input, process the data and update existing data to reflect the collected and processed information.
+
+OLTP is typically contrasted to OLAP. OLTP is generally characterized by less complex queries and a larger volume, and oriented towards processing transactions rather than business intelligence or reporting. 
+
+
