@@ -21,4 +21,14 @@ collection exists within a single database. Collections do not enforce a schema.
 within a collection can have different fields. Typically, all documents in a collection have a similar
 or related purpose.
 
-## Modeling cardinality important for exam
+**Modeling cardinality important for exam**
+
+Setting  up mongo db
+
+Follow the file path. Open the cmd window and run 'mongod'
+
+```C:\mongodb\bin>mongod```
+
+Then follow path. Open cmd window run 'mongo'
+
+```C:\Users\<student_number>>mongo```
